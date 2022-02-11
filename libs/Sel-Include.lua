@@ -123,6 +123,7 @@ function init_include()
 	state.AutoLockstyle	 	  = M(false, 'AutoLockstyle Mode')
 	state.AutoTrustMode 	  = M(false, 'Auto Trust Mode')
 	state.RngHelper		 	  = M(false, 'RngHelper')
+	state.HoverShot		 	  = M(true, 'HoverShot')
 	state.RngHelperQuickDraw  = M(false, 'RngHelperQuickDraw')
 	state.AutoTankMode 		  = M(false, 'Auto Tank Mode')
 	state.AutoAcceptRaiseMode = M(false, 'Auto Accept Raise Mode')
@@ -149,6 +150,7 @@ function init_include()
 	state.NotifyBuffs		  = M(false, 'Notify Buffs')
 	state.UnlockWeapons		  = M(false, 'Unlock Weapons')
 	state.SelfWarp2Block 	  = M(true, 'Block Warp2 on Self')
+	state.MiniQueue		 	  = M(true, 'MiniQueue')
 
 	state.AutoBuffMode 		  = M{['description'] = 'Auto Buff Mode','Off','Auto'}
 	state.RuneElement 		  = M{['description'] = 'Rune Element','Ignis','Gelus','Flabra','Tellus','Sulpor','Unda','Lux','Tenebrae'}
@@ -1151,7 +1153,7 @@ function default_post_midcast(spell, spellMap, eventArgs)
 					end
 					curecheat = false
 				elseif sets.Self_Healing then
-					if sets.Self_Healing.SIRD and state.CastingMode.value:contains('SIRD') and (player.in_combat or being_attacked) and not buffactive['Aquaveil'] then
+					if sets.Self_Healing.SIRD and state.CastingMode.value:contains('SIRD') and (player.in_combat or being_attacked) then
 						equip(sets.Self_Healing.SIRD)
 					else
 						equip(sets.Self_Healing)
@@ -1161,6 +1163,8 @@ function default_post_midcast(spell, spellMap, eventArgs)
 				equip(sets.Self_Refresh)
 			end
 		end
+		
+		set_elemental_obi_cape_ring(spell, spellMap)
 		
 		if state.Capacity.value == true then
 			if set.contains(spell.targets, 'Enemy') then
@@ -1828,7 +1832,7 @@ function get_precast_set(spell, spellMap)
     
     if spell.action_type == 'Magic' then
 		if state.CastingMode.current:contains('DT') and not (player.in_combat or being_attacked) then
-		elseif state.CastingMode.current:contains('SIRD') and (buffactive['Aquaveil'] or (not (player.in_combat or being_attacked))) then
+		elseif state.CastingMode.current:contains('SIRD') and not (player.in_combat or being_attacked) then
         elseif equipSet[state.CastingMode.current] then
             equipSet = equipSet[state.CastingMode.current]
             mote_vars.set_breadcrumbs:append(state.CastingMode.current)
@@ -1844,9 +1848,6 @@ function get_precast_set(spell, spellMap)
         equipSet = get_ranged_set(equipSet, spell, spellMap)
     end
 
-    -- Update defintions for element-specific gear that may be used.
-    set_elemental_obi_cape_ring(spell, spellMap)
-    
     -- Return whatever we've constructed.
     return equipSet
 end
@@ -1895,7 +1896,7 @@ function get_midcast_set(spell, spellMap)
     -- After the default checks, do checks for specialized modes (casting mode, etc).
     
     if spell.action_type == 'Magic' then
-		if state.CastingMode.current:contains('SIRD') and (buffactive['Aquaveil'] or (not (player.in_combat or being_attacked))) then
+		if state.CastingMode.current:contains('SIRD') and not (player.in_combat or being_attacked) then
         elseif equipSet[state.CastingMode.current] then
             equipSet = equipSet[state.CastingMode.current]
             mote_vars.set_breadcrumbs:append(state.CastingMode.current)
