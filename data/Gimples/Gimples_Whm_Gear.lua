@@ -16,6 +16,9 @@ function user_job_setup()
 	gear.obi_high_nuke_waist = "Yamabuki-no-Obi"
 	gear.obi_nuke_back = "Toro Cape"
 
+	gear.WHMFCCape = { name="Alaunus's Cape", augments={'"Fast Cast"+10',}}
+    gear.WHMCURECape = { name="Alaunus's Cape", augments={'MND+20','"Cure" potency +10%',}}
+
 		-- Additional local binds
 	send_command('bind ^` input /ma "Arise" <t>')
 	send_command('bind !` input /ja "Penury" <me>')
@@ -52,10 +55,21 @@ function init_gear_sets()
     -- Precast Sets
 
     -- Fast cast sets for spells
-    sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
-		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
-		body="Inyanga Jubbah +2",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Lebeche Ring",
-		back="Perimede Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Regal Pumps +1"}
+    sets.precast.FC = {main="Gada",
+    sub="Sors Shield",
+    ammo="Hydrocera",
+    head="Nahtirah Hat",
+    body="Inyanga Jubbah +2",
+    hands="Telchine Gloves", augments={'"Fast Cast"+4','Enh. Mag. eff. dur. +10',},
+    legs="Telchine Braconi", augments={'"Fast Cast"+3','Pet: Damage taken -2%',},
+    feet="Regal Pumps",
+    neck="Voltsurge Torque",
+    waist="Embla Sash",
+    left_ear="Etiolation Earring",
+    right_ear="Hearty Earring",
+    left_ring="Kishar Ring",
+    right_ring="Lebeche Ring",
+    back=gear.WHMFCCape,}
 		
     sets.precast.FC.DT = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
 		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
@@ -66,11 +80,39 @@ function init_gear_sets()
 	
     sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {})
 
-    sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {legs="Ebers Pant. +1"})
+    sets.precast.FC['Healing Magic'] = {main="Gada",
+    sub="Sors Shield",
+    ammo="Hydrocera",
+    head="Theo. Cap +1",
+    body="Inyanga Jubbah +2",
+    hands="Telchine Gloves", augments={'"Fast Cast"+4','Enh. Mag. eff. dur. +10',},
+    legs="Telchine Braconi", augments={'"Fast Cast"+3','Pet: Damage taken -2%',},
+    feet="Hygieia Clogs +1",
+    neck="Voltsurge Torque",
+    waist="Embla Sash",
+    left_ear="Etiolation Earring",
+    right_ear="Nourish. Earring",
+    left_ring="Kishar Ring",
+    right_ring="Lebeche Ring",
+    back=gear.WHMFCCape,}
 
     sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 	
-    sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {feet="Hygieia Clogs +1"})
+    sets.precast.FC.Cure = {main="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',},
+	sub="Sors Shield",
+	ammo="Hydrocera",
+	head="Piety Cap",
+	body="Inyanga Jubbah +2",
+	hands="Telchine Gloves", augments={'"Fast Cast"+4','Enh. Mag. eff. dur. +10',},
+	legs="Doyen Pants",
+	feet="Hygieia Clogs +1",
+	neck="Voltsurge Torque",
+	waist="Embla Sash",
+	left_ear="Etiolation Earring",
+	right_ear="Nourish. Earring",
+	left_ring="Kishar Ring",
+	right_ring="Lebeche Ring",
+	back=gear.WHMFCCape}
 
     sets.precast.FC.Curaga = sets.precast.FC.Cure
 
@@ -150,15 +192,37 @@ function init_gear_sets()
 
 	sets.midcast['Full Cure'] = sets.midcast.FastRecast
 	
-	sets.midcast.Cure = {main="Queller Rod",sub="Sors Shield",ammo="Pemphredo Tathlum",
-		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Regal Earring",ear2="Glorious Earring",
-		body="Theo. Bliaut +2",hands="Theophany Mitts +3",ring1="Janniston Ring",ring2="Menelaus's Ring",
-		back="Alaunus's Cape",waist="Luminary Sash",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
+	sets.midcast.Cure = {main="Gada",
+    sub="Sors Shield",
+    ammo="Hydrocera",
+    head="Theo. Cap +1",
+    body="Annoint. Kalasiris",
+    hands="Theo. Mitts +1",
+    legs="Sifahir Slacks",
+    feet="Regal Pumps",
+    neck="Voltsurge Torque",
+    waist="Embla Sash",
+    left_ear="Gwati Earring",
+    right_ear="Nourish. Earring",
+    left_ring="Sirona's Ring",
+    right_ring="Lebeche Ring",
+    back=gear.WHMCURECape}
 		
-	sets.midcast.CureSolace = {main="Queller Rod",sub="Sors Shield",ammo="Pemphredo Tathlum",
-		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Regal Earring",ear2="Glorious Earring",
-		body="Ebers Bliaut +1",hands="Theophany Mitts +3",ring1="Janniston Ring",ring2="Menelaus's Ring",
-		back="Alaunus's Cape",waist="Luminary Sash",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
+	sets.midcast.CureSolace = {main="Gada",
+    sub="Sors Shield",
+    ammo="Hydrocera",
+    head="Theo. Cap +1",
+    body="Annoint. Kalasiris",
+    hands="Theo. Mitts +1",
+    legs="Sifahir Slacks",
+    feet="Regal Pumps",
+    neck="Voltsurge Torque",
+    waist="Embla Sash",
+    left_ear="Gwati Earring",
+    right_ear="Nourish. Earring",
+    left_ring="Sirona's Ring",
+    right_ring="Lebeche Ring",
+    back=gear.WHMCURECape}
 
 	sets.midcast.LightWeatherCure = {main="Chatoyant Staff",sub="Curatio Grip",ammo="Esper Stone +1",
 		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Nourish. Earring +1",ear2="Glorious Earring",
@@ -180,10 +244,21 @@ function init_gear_sets()
 		body="Theo. Bliaut +2",hands="Theophany Mitts +3",ring1="Janniston Ring",ring2="Menelaus's Ring",
 		back="Twilight Cape",waist="Hachirin-no-Obi",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
 
-	sets.midcast.Curaga = {main="Queller Rod",sub="Sors Shield",ammo="Pemphredo Tathlum",
-		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Regal Earring",ear2="Glorious Earring",
-		body="Theo. Bliaut +2",hands="Theophany Mitts +3",ring1="Janniston Ring",ring2="Menelaus's Ring",
-		back="Alaunus's Cape",waist="Luminary Sash",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
+	sets.midcast.Curaga = {main="Gada",
+    sub="Sors Shield",
+    ammo="Hydrocera",
+    head="Theo. Cap +1",
+    body="Annoint. Kalasiris",
+    hands="Theo. Mitts +1",
+    legs="Sifahir Slacks",
+    feet="Regal Pumps",
+    neck="Voltsurge Torque",
+    waist="Embla Sash",
+    left_ear="Gwati Earring",
+    right_ear="Nourish. Earring",
+    left_ring="Sirona's Ring",
+    right_ring="Lebeche Ring",
+    back=gear.WHMCURECape}
 		
 	sets.midcast.LightWeatherCuraga = {main="Chatoyant Staff",sub="Curatio Grip",ammo="Esper Stone +1",
 		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Nourish. Earring +1",ear2="Glorious Earring",
@@ -239,10 +314,7 @@ function init_gear_sets()
 		body="Ebers Bliaut +1",hands="Fanatic Gloves",ring1="Haoma's Ring",ring2="Menelaus's Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Th. Pant. +3",feet="Vanya Clogs"}
 
-	sets.midcast.StatusRemoval = {main=gear.grioavolr_fc_staff,sub="Clemency Grip",ammo="Hasty Pinion +1",
-		head="Ebers Cap +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
-		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
-		back="Swith Cape +1",waist="Witful Belt",legs="Ebers Pant. +1",feet="Regal Pumps +1"}
+	sets.midcast.StatusRemoval = {head="Orison Cap +2",legs="Orison Pantaloons +2", neck="Cleric's Torque"}
 		
 	sets.midcast.Erase = set_combine(sets.midcast.StatusRemoval, {neck="Cleric's Torque"})
 
@@ -258,7 +330,21 @@ function init_gear_sets()
 
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",sub="Ammurapi Shield",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"})
 
-	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {hands="Ebers Mitts +1",legs="Th. Pant. +3",})
+	sets.midcast.Regen = {main="Bolelabunga",
+	sub="Sors Shield",
+	ammo="Hydrocera",
+	head="Inyanga Tiara +2",
+	body="Cleric's Briault",
+	hands="Telchine Gloves", augments={'"Fast Cast"+4','Enh. Mag. eff. dur. +10',},
+	legs="Theo. Pant. +1",
+	feet="Theo. Duckbills",
+	neck="Voltsurge Torque",
+	waist="Embla Sash",
+	left_ear="Andoaa Earring",
+	right_ear="Nourish. Earring",
+	left_ring="Sirona's Ring",
+	right_ring="Kishar Ring",
+	back="Disperser's Cape",}
 	
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
@@ -364,10 +450,21 @@ function init_gear_sets()
 		back="Umbra Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-	sets.idle = {main="Mpaca's Staff",sub="Umbra Strap",ammo="Homiliary",
-		head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Witching Robe",hands=gear.chironic_refresh_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back="Moonlight Cape",waist="Carrier's Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+	sets.idle = {main="Bolelabunga",
+    sub="Sors Shield",
+    ammo="Hydrocera",
+    head="Befouled Crown",
+    body="Annoint. Kalasiris",
+    hands="Inyanga Dastanas +2",
+    legs="Assiduity Pants",
+    feet="Inyanga Crackows +1",
+    neck="Warder's Charm +1",
+    waist="Carrier's sash",
+    left_ear="Hearty Earring",
+    right_ear="Etiolation Earring",
+    left_ring="Defending Ring",
+    right_ring="Inyanga Ring",
+    back="Disperser's Cape",}
 
 	sets.idle.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Homiliary",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
