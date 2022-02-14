@@ -21,9 +21,6 @@ beta_examples_and_information/*
 data/instructions.txt
 libs/Mote-*
 libs/rev1/*
-*_Crafting.lua
-*-Items.lua
-*-Globals.lua
 data/export/*
 data/common/*
 data/User/*
