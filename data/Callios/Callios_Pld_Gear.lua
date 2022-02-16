@@ -10,7 +10,7 @@ function user_job_setup()
     state.MagicalDefenseMode:options('MDT_HP','MDT','MDT_Reraise')
 	state.ResistDefenseMode:options('MEVA','MEVA_HP')
 	state.IdleMode:options('Normal','Tank','Magic','PDT','MDT','Kiting')
-	state.Weapons:options('None','BurtgangOchain','BurtgangAegis','NaeglingOchain','NaeglingAegis')
+	state.Weapons:options('None','BurtgangOchain','BurtgangAegis','NaeglingOchain','NaeglingAegis','Cleave')
 	
     state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP','Twilight'}
 	
@@ -369,6 +369,7 @@ function init_gear_sets()
 	sets.weapons.NaeglingAegis = {main="Naegling",sub="Aegis"}
 	sets.weapons.SakpataOchain = {main="Sakpata's Sword",sub="Ochain"}
 	sets.weapons.DualWeapons = {main="Naegling",sub="Machaera +2"}
+    sets.weapons.Cleave = {main="Malevolence", augments={'INT+10','Mag. Acc.+10','"Mag.Atk.Bns."+10','"Fast Cast"+5',},sub="Ochain"}
 
     sets.defense.Block = {main="Burtgang",sub="Ochain",ammo="Staunch Tathlum +1",
 		head="Chev. Armet +1",neck="Diemer Gorget",ear1="Creed Earring",ear2="Thureous Earring",
