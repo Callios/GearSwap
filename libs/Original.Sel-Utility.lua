@@ -909,8 +909,7 @@ end
 -- Variables it sets: classes.Daytime, and classes.DuskToDawn.  They are set to true
 
 function item_available(item)
-	local found_item = find_single_item(item)
-	if found_item then
+	if player.inventory[item] or player.wardrobe[item] or player.wardrobe2[item] or player.wardrobe3[item] or player.wardrobe4[item] or player.wardrobe5[item] or player.wardrobe6[item] or player.wardrobe7[item] or player.wardrobe8[item] or player.satchel[item] then
 		return true
 	else
 		return false
@@ -918,14 +917,11 @@ function item_available(item)
 end
 
 function item_owned(item)
-	local all_bags = res.bags:map((string.stripchars-{' '}) .. string.lower .. table.get-{'en'})
-	for _, bag_name in pairs(all_bags) do
-		if player[bag_name][item] then
-			return true
-		end
+	if player.inventory[item] or player.wardrobe[item] or player.wardrobe2[item] or player.wardrobe3[item] or player.wardrobe4[item] or player.wardrobe5[item] or player.wardrobe6[item] or player.wardrobe7[item] or player.wardrobe8[item] or player.safe[item] or player.safe2[item] or player.storage[item] or player.locker[item] or player.satchel[item] or player.sack[item] or player.case[item] then
+		return true
+	else
+		return false
 	end
-
-	return false
 end
 
 function check_disable(spell, spellMap, eventArgs)
@@ -1669,66 +1665,14 @@ function is_party_member(playerid)
 	return false
 end
 
-function get_items_in_equippable_bags()
-	local equippable_bags = res.bags:equippable(true):map(windower.ffxi.get_items..table.get-{'id'}):filter(table.get-{'enabled'}):map(L..table.key_filter-{functions.equals('number')..type})
-	for bag_id, bag in pairs(equippable_bags) do
-		bag:map(table.set-{'bag',bag_id})
-	end
-	return L{equippable_bags:extract()}:flatten(false)
-end
-
-function get_items_in_everywhere_bags()
-	local everywhere_bags = res.bags:access("Everywhere"):map(windower.ffxi.get_items..table.get-{'id'}):filter(table.get-{'enabled'}):map(L..table.key_filter-{functions.equals('number')..type})
-	for bag_id, bag in pairs(everywhere_bags) do
-		bag:map(table.set-{'bag',bag_id})
-	end
-	return L{everywhere_bags:extract()}:flatten(false)
-end
-
 function get_usable_item(name)--returns time that you can use the item again
-	local item = find_single_item(name)
-
-	if item and item.extdata then
-		return extdata.decode(item)
-	end
-end
-
-function find_single_item(name, bags)
-	name = name:lower()
-	local bags = bags or "Everywhere"
-	local bag_items = L{}
-	
-	if bags == "Equippable" then
-		bag_items = get_items_in_equippable_bags()
-	else
-		bag_items = get_items_in_everywhere_bags()
-	end
-
-	local found_index = bag_items:find(function(item)
-		if type(item) == 'table' then
-			return res.items[item.id] and (res.items[item.id].name:lower() == name or res.items[item.id].name_log:lower() == name)
-		end
-	end)
-
-	return found_index and bag_items[found_index]
-end
-
-function find_all_of_item(name, bags)
-	name = name:lower()
-	local bags = bags or "Everywhere"
-	local bag_items = L{}
-
-	if bags == "Equippable" then
-		bag_items = get_items_in_equippable_bags()
-	else
-		bag_items = get_items_in_everywhere_bags()
-	end
-
-	return bag_items:filter(function(item)
-		if type(item) == 'table' then
-			return res.items[item.id] and (res.items[item.id].name:lower() == name or res.items[item.id].name_log:lower() == name)
-		end
-	end)
+	for _,n in pairs({"inventory","wardrobe","wardrobe2","wardrobe3","wardrobe4","wardrobe5","wardrobe6","wardrobe7","wardrobe8","satchel"}) do
+        for _,v in pairs(gearswap.items[n]) do
+            if type(v) == "table" and v.id ~= 0 and res.items[v.id].english:lower() == name:lower() then
+                return extdata.decode(v)
+            end
+        end
+    end
 end
 
 function cp_ring_equip(ring)--equips given ring
@@ -2062,22 +2006,21 @@ function is_nuke(spell, spellMap)
 	end
 end
 
-function ammo_left(name, check_bags)
-	local ammo_to_count = name or player.equipment.ammo or nil
-	local bags_to_check = check_bags or "Equippable"
-	local ammo_count = 0
+function ammo_left()
 
-	if ammo_to_count then
-		local ammo = find_all_of_item(ammo_to_count, bags_to_check)
-
-		for index, item in pairs(ammo) do
-			if type(item) ~= 'number' then
-				ammo_count = ammo_count + item.count
-			end
-		end
-	end
-
-	return ammo_count
+	local InventoryAmmo = ((player.inventory[player.equipment.ammo] or {}).count or 0)
+	local WardrobeAmmo = ((player.wardrobe[player.equipment.ammo] or {}).count or 0)
+	local Wardrobe2Ammo = ((player.wardrobe2[player.equipment.ammo] or {}).count or 0)
+	local Wardrobe3Ammo = ((player.wardrobe3[player.equipment.ammo] or {}).count or 0)
+	local Wardrobe4Ammo = ((player.wardrobe4[player.equipment.ammo] or {}).count or 0)
+	local Wardrobe5Ammo = ((player.wardrobe5[player.equipment.ammo] or {}).count or 0)
+	local Wardrobe6Ammo = ((player.wardrobe6[player.equipment.ammo] or {}).count or 0)
+	local Wardrobe7Ammo = ((player.wardrobe7[player.equipment.ammo] or {}).count or 0)
+	local Wardrobe8Ammo = ((player.wardrobe8[player.equipment.ammo] or {}).count or 0)
+		
+	local AmmoLeft = InventoryAmmo + WardrobeAmmo + Wardrobe2Ammo + Wardrobe3Ammo + Wardrobe4Ammo + Wardrobe5Ammo + Wardrobe6Ammo + Wardrobe7Ammo + Wardrobe8Ammo    
+		
+	return AmmoLeft	
 end
 
  --Equip command but accepts the set name as a string to work around inability to use equip() in raw events.
@@ -2224,11 +2167,27 @@ function check_ammo()
 end
 
 function count_available_ammo(ammo_name)
-	return ammo_left(ammo_name)
+	local ammo_count = 0
+	
+    for _,n in pairs({"inventory","wardrobe","wardrobe2","wardrobe3","wardrobe4","wardrobe5","wardrobe6","wardrobe7","wardrobe8","satchel"}) do
+		if player[n][ammo_name] then
+			ammo_count = ammo_count + player[n][ammo_name].count
+		end
+    end
+
+	return ammo_count
 end
 
 function count_total_ammo(ammo_name)
-	return ammo_left(ammo_name, "Everywhere")
+	local ammo_count = 0
+	
+    for _,n in pairs({"inventory","wardrobe","wardrobe2","wardrobe3","wardrobe4","wardrobe5","wardrobe6","wardrobe7","wardrobe8","satchel"}) do
+		if player[n][ammo_name] then
+			ammo_count = ammo_count + player[n][ammo_name].count
+		end
+    end
+
+	return ammo_count
 end
 
 function check_rune()
@@ -2338,7 +2297,7 @@ function item_name_to_id(name)
 	if name == nil or name == 'empty' then
 		return 22299
 	else
-		return (find_single_item(name, "Equippable") or {id = nil}).id
+		return (player.inventory[name] or player.wardrobe[name] or player.wardrobe2[name] or player.wardrobe3[name] or player.wardrobe4[name] or player.wardrobe5[name] or player.wardrobe6[name] or player.wardrobe7[name] or player.wardrobe8[name] or {id=nil}).id
 	end
 end
 

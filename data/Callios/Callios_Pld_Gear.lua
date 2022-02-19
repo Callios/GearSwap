@@ -1,7 +1,7 @@
 function user_job_setup()
 
     -- Options: Override default values	
-	state.OffenseMode:options('Normal','Sakpata','Acc')
+	state.OffenseMode:options('Normal','Sakpata','SakpataMDT','Acc')
     state.HybridMode:options('Normal','Tank','DDTank')
     state.WeaponskillMode:options('Match','Normal', 'Acc')
     state.CastingMode:options('Normal','SIRD')
@@ -317,7 +317,7 @@ function init_gear_sets()
         back=gear.PLDEnm,waist="Carrier's sash",legs="Carmine Cuisses +1",feet="Sakpata's Leggings"}
 
     sets.idle.Magic = {main="Burtgang",sub="Aegis",ammo="Staunch Tathlum +1",
-		head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+		head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa earring +1",ear2="Tuisto earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Archon Ring",ring2="Defending Ring",
 		back=gear.PLDEnm,waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
@@ -327,7 +327,7 @@ function init_gear_sets()
 		back="Shadow Mantle",waist="Flume Belt +1",legs="Sakpata's Cuisses",feet="Souveran Schuhs +1"}
 		
     sets.idle.MDT = {main="Burtgang",sub="Aegis",ammo="Staunch Tathlum +1",
-		head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+		head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa earring +1",ear2="Tuisto earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Archon Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
@@ -439,6 +439,11 @@ sets.engaged.Burtgang.MythicAM3 = set_combine(sets.engaged.Burtgang, {ammo="Gins
         head="Sakpata's Helm",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Brutal Earring",
         body="Sakpata's breastplate",hands="Sakpata's gauntlets",ring1="Chirich Ring +1",ring2="Defending Ring",
         back=gear.PLDTP,waist="Sailfi belt +1",legs="Sakpata's cuisses",feet="Sakpata's Leggings"}
+
+    sets.engaged.SakpataMDT = {main="Burtgang",sub="Aegis",ammo="Staunch Tathlum +1",
+        head="Sakpata's Helm",neck="Warder's Charm +1",ear1="Cessance Earring",ear2="Brutal Earring",
+        body="Sakpata's breastplate",hands="Sakpata's gauntlets",ring1="Chirich Ring +1",ring2="Defending Ring",
+        back=gear.PLDTP,waist="Carrier's Sash",legs="Sakpata's cuisses",feet="Sakpata's Leggings"}
 
 sets.engaged.Sakpata.MythicAM3 = {main="Burtgang",sub="Ochain",ammo="Staunch Tathlum +1",
         head="Sakpata's Helm",neck="Combatant's Torque",ear1="Telos Earring",ear2="Dedition Earring",
