@@ -61,7 +61,7 @@ function init_gear_sets()
 	sets.HPCure = {main="Bunzi's Rod",sub="Nibiru Cudgel",ammo="Pemphredo Tathlum",
 		head="Carmine Mask +1",neck="Incanter's Torque",ear1="Etiolation Earring",ear2="Mendi. Earring",
 		body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Janniston Ring",ring2="Menelaus's Ring",
-		back="Moonlight Cape",waist="Carrier's Sash",legs="Carmine Cuisses +1",feet="Medium's Sabots"}
+		back="Moonbeam Cape",waist="Carrier's Sash",legs="Carmine Cuisses +1",feet="Medium's Sabots"}
 
 	-- Precast Sets
 
@@ -73,7 +73,7 @@ function init_gear_sets()
     sets.precast.Waltz = {ammo="Staunch Tathlum +1",
         head="Carmine Mask +1",neck="Unmoving Collar +1",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
         body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Defending Ring",ring2="Valseur's Ring",
-        back="Moonlight Cape",waist="Chaac Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
+        back="Moonbeam Cape",waist="Chaac Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
 	
 	sets.Self_Waltz = {body="Passion Jacket",ring1="Asklepian Ring"}
 
@@ -346,12 +346,12 @@ function init_gear_sets()
 	sets.midcast.Cure = {main="Bunzi's Rod",sub="Sakpata's Sword",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Regal Earring",ear2="Mendi. Earring",
 		body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Janniston Ring",ring2="Menelaus's Ring",
-		back="Moonlight Cape",waist="Luminary Sash",legs="Nyame Flanchard",feet="Medium's Sabots"}
+		back="Moonbeam Cape",waist="Luminary Sash",legs="Nyame Flanchard",feet="Medium's Sabots"}
 		
 	sets.midcast.UnlockedCure = {main="Bunzi's Rod",sub="Sakpata's Sword",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Regal Earring",ear2="Mendi. Earring",
 		body="Nyame Mail",hands="Telchine Gloves",ring1="Metamor. Ring +1",ring2="Janniston Ring",
-		back="Moonlight Cape",waist="Luminary Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back="Moonbeam Cape",waist="Luminary Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.midcast.Cursna =  set_combine(sets.midcast.Cure, {neck="Debilis Medallion",hands="Hieros Mittens",
 		back="Oretan. Cape +1",ring1="Haoma's Ring",ring2="Menelaus's Ring",waist="Witful Belt"})
@@ -382,22 +382,22 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].UnlockedAoEHealing = {main="Bunzi's Rod",sub="Sakpata's Sword",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Unmoving Collar +1",ear1="Tuisto Earring",ear2="Odnowa Earring +1",
 		body="Nyame Mail",hands="Telchine Gloves",ring1="Janniston Ring",ring2="Gelatinous Ring +1",
-		back="Moonlight Cape",waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back="Moonbeam Cape",waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 					
 	sets.midcast['Blue Magic'].AoEHealing = {main="Bunzi's Rod",sub="Sakpata's Sword",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Unmoving Collar +1",ear1="Tuisto Earring",ear2="Odnowa Earring +1",
 		body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Janniston Ring",ring2="Gelatinous Ring +1",
-		back="Moonlight Cape",waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back="Moonbeam Cape",waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.midcast['Blue Magic'].Healing = {main="Bunzi's Rod",sub="Sakpata's Sword",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Tuisto Earring",ear2="Odnowa Earring +1",
 		body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Janniston Ring",ring2="Gelatinous Ring +1",
-		back="Moonlight Cape",waist="Eschan Stone",legs="Gyve Trousers",feet="Medium's Sabots"}
+		back="Moonbeam Cape",waist="Eschan Stone",legs="Gyve Trousers",feet="Medium's Sabots"}
 		
 	sets.midcast['Blue Magic'].UnlockedHealing = {main="Bunzi's Rod",sub="Sakpata's Sword",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Regal Earring",ear2="Mendi. Earring",
 		body="Nyame Mail",hands="Telchine Gloves",ring1="Metamor. Ring +1",ring2="Janniston Ring",
-		back="Moonlight Cape",waist="Luminary Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back="Moonbeam Cape",waist="Luminary Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.midcast['Blue Magic'].SkillBasedBuff = {main="Iris",sub="Iris",ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +3",neck="Mirage Stole +2",ear1="Gifted Earring",ear2="Njordr Earring",
@@ -440,7 +440,7 @@ function init_gear_sets()
 	sets.idle.PDT = {main="Sakpata's Sword",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 				head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Ethereal Earring",
 		        body="Jhakri Robe +2",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Dark Ring",
-				back="Moonlight Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+				back="Moonbeam Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
 
@@ -453,7 +453,7 @@ function init_gear_sets()
 	sets.defense.MDT = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 				head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
 		        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shadow Ring",
-				back="Moonlight Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+				back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.defense.MEVA = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",

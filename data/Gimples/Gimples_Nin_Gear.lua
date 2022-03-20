@@ -36,7 +36,7 @@ function init_gear_sets()
     sets.Enmity = {ammo="Paeapua",
         head="Dampening Tam",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Trux Earring",
         body="Emet Harness +1",hands="Kurys Gloves",ring1="Petrov Ring",ring2="Vengeful Ring",
-        back="Moonlight Cape",waist="Goading Belt",legs="Nyame Flanchard",feet="Amm Greaves"}
+        back="Moonbeam Cape",waist="Goading Belt",legs="Nyame Flanchard",feet="Amm Greaves"}
 
     -- Precast sets to enhance JAs
     sets.precast.JA['Mijin Gakure'] = {} --legs="Mochizuki Hakama",--main="Nagi"
@@ -49,7 +49,7 @@ function init_gear_sets()
     sets.precast.Waltz = {ammo="Yamarang",
         head="Mummu Bonnet +2",neck="Unmoving Collar +1",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
         body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Defending Ring",ring2="Valseur's Ring",
-        back="Moonlight Cape",waist="Chaac Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
+        back="Moonbeam Cape",waist="Chaac Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
 
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
@@ -180,14 +180,14 @@ function init_gear_sets()
     sets.idle = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonlight Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
     sets.defense.PDT = {ammo="Togakushi Shuriken",
         head="Dampening Tam",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         body="Emet Harness +1",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonlight Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo="Togakushi Shuriken",
         head="Dampening Tam",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",

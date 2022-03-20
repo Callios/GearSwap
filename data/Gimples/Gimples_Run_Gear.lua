@@ -53,7 +53,7 @@ function init_gear_sets()
     sets.Enmity.DT = {main="Aettir",sub="Utu Grip",ammo="Staunch Tathlum +1",
         head="Nyame Helm",neck="Unmoving Collar +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
         body="Emet Harness +1",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Moonlight Ring",
-        back="Moonlight Cape",waist="Flume Belt +1",legs="Eri. Leg Guards +1",feet="Nyame Sollerets"}
+        back="Moonbeam Cape",waist="Flume Belt +1",legs="Eri. Leg Guards +1",feet="Nyame Sollerets"}
 		
 	--------------------------------------
 	-- Precast sets
@@ -126,7 +126,7 @@ function init_gear_sets()
     sets.precast.Waltz = {ammo="Yamarang",
         head="Carmine Mask +1",neck="Unmoving Collar +1",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
         body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Defending Ring",ring2="Valseur's Ring",
-        back="Moonlight Cape",waist="Chaac Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
+        back="Moonbeam Cape",waist="Chaac Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
         
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
@@ -139,12 +139,12 @@ function init_gear_sets()
     sets.precast.FC = {main="Malignance Sword",sub="Chanter's Shield",ammo="Impatiens",
             head="Rune. Bandeau +3",neck="Voltsurge Torque",ear1="Etiolation Earring",ear2="Loquac. Earring",
             body="Dread Jupon",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Kishar Ring",
-            back="Moonlight Cape",waist="Carrier's Sash",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
+            back="Moonbeam Cape",waist="Carrier's Sash",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 			
 	sets.precast.FC.DT = {main="Malignance Sword",sub="Chanter's Shield",ammo="Impatiens",
         head="Rune. Bandeau +3",neck="Unmoving Collar +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
         body="Runeist's Coat +3",hands="Leyline Gloves",ring1="Gelatinous Ring +1",ring2="Moonlight Ring",
-        back="Moonlight Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Carmine Greaves +1"}
+        back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Carmine Greaves +1"}
 		
 	sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash", legs="Futhark Trousers +1"})
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck='Magoraga Beads'})
@@ -197,12 +197,12 @@ function init_gear_sets()
     sets.midcast.FastRecast = {main="Malignance Sword",sub="Chanter's Shield",ammo="Pemphredo Tathlum",
             head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
             body="Dread Jupon",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Kishar Ring",
-            back="Moonlight Cape",waist="Flume Belt +1",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
+            back="Moonbeam Cape",waist="Flume Belt +1",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 			
 	sets.midcast.FastRecast.DT = {main="Aettir",sub="Utu Grip",ammo="Staunch Tathlum +1",
         head="Nyame Helm",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Moonlight Ring",
-        back="Moonlight Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back="Moonbeam Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	sets.midcast.FastRecast.SIRD = {main="Aettir",sub="Utu Grip",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Moonlight Necklace",ear1="Genmei Earring",ear2="Trux Earring",
@@ -215,7 +215,7 @@ function init_gear_sets()
 	
     sets.midcast['Phalanx'] = set_combine(sets.midcast['Enhancing Magic'],{main="Deacon Sword",sub="Chanter's Shield",head="Futhark Bandeau +1",body=gear.taeon_phalanx_body,hands=gear.herculean_phalanx_hands,legs="Carmine Cuisses +1",feet=gear.herculean_nuke_feet})
 	
-	sets.midcast['Phalanx'].SIRD = set_combine(sets.midcast.FastRecast.SIRD,{main="Deacon Sword",sub="Chanter's Shield",head="Futhark Bandeau +1",back="Moonlight Cape",})
+	sets.midcast['Phalanx'].SIRD = set_combine(sets.midcast.FastRecast.SIRD,{main="Deacon Sword",sub="Chanter's Shield",head="Futhark Bandeau +1",back="Moonbeam Cape",})
 	
     sets.midcast['Regen'] = set_combine(sets.midcast['Enhancing Magic'],{head="Rune. Bandeau +3",neck="Sacro Gorget"}) 
 	sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'],{head="Erilaz Galea +1"}) 
@@ -256,7 +256,7 @@ function init_gear_sets()
     sets.idle = {main="Aettir",sub="Utu Grip",ammo="Homiliary",
 		head="Rawhide Mask",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
 		body="Runeist's Coat +3",hands="Regal Gauntlets",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Rawhide Trousers",feet=gear.herculean_refresh_feet}
+		back="Moonbeam Cape",waist="Flume Belt +1",legs="Rawhide Trousers",feet=gear.herculean_refresh_feet}
 		
     sets.idle.Sphere = set_combine(sets.idle,{body="Mekosu. Harness"})
 			
@@ -268,7 +268,7 @@ function init_gear_sets()
 	sets.idle.KiteTank = {main="Aettir",sub="Utu Grip",ammo="Staunch Tathlum +1",
         head="Nyame Helm",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Moonlight Ring",
-        back="Moonlight Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Hippo. Socks +1"}
+        back="Moonbeam Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Hippo. Socks +1"}
 
 	sets.Kiting = {legs="Carmine Cuisses +1"}
 	
@@ -296,15 +296,15 @@ function init_gear_sets()
 	sets.defense.PDT_HP = {main="Aettir",sub="Utu Grip",ammo="Staunch Tathlum +1",
         head="Nyame Helm",neck="Unmoving Collar +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
         body="Runeist's Coat +3",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Moonlight Ring",
-        back="Moonlight Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back="Moonbeam Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	sets.defense.MDT = {main="Aettir",sub="Utu Grip",ammo="Yamarang",
         head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Sanare Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Archon Ring",ring2="Shadow Ring",
-        back="Moonlight Cape",waist="Engraved Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back="Moonbeam Cape",waist="Engraved Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	sets.defense.MDT_HP = {main="Aettir",sub="Utu Grip",ammo="Yamarang",
         head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Moonlight Ring",
-        back="Moonlight Cape",waist="Engraved Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back="Moonbeam Cape",waist="Engraved Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	sets.defense.MEVA = {main="Aettir",sub="Utu Grip",ammo="Yamarang",
         head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Sanare Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Purity Ring",ring2="Vengeful Ring",
@@ -312,7 +312,7 @@ function init_gear_sets()
 	sets.defense.MEVA_HP = {main="Aettir",sub="Utu Grip",ammo="Yamarang",
         head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Moonlight Ring",
-        back="Moonlight Cape",waist="Engraved Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back="Moonbeam Cape",waist="Engraved Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Brutal Earring"}
@@ -355,7 +355,7 @@ function init_gear_sets()
 	sets.engaged.Tank_HP = {main="Aettir",sub="Utu Grip",ammo="Staunch Tathlum +1",
 			head="Nyame Helm",neck="Unmoving Collar +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
 			body="Nyame Mail",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Moonlight Ring",
-			back="Moonlight Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+			back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.Acc.Tank = sets.engaged.Tank
 	sets.engaged.FullAcc.Tank = sets.engaged.Tank

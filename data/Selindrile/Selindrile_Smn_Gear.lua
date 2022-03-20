@@ -251,7 +251,7 @@ function init_gear_sets()
     sets.idle.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
         head="Convoker's Horn +3",neck="Loricate Torque +1",ear1="C. Palug Earring",ear2="Ethereal Earring",
         body="Shomonjijoe +1",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonlight Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Baayami Sabots"}
+        back="Moonbeam Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Baayami Sabots"}
 		
     -- perp costs:
     -- spirits: 7
@@ -268,12 +268,12 @@ function init_gear_sets()
     sets.idle.Avatar = {main="Gridarvor",sub="Umbra Strap",ammo="Epitaph",
         head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="C. Palug Earring",ear2="Evans Earring",
         body="Shomonjijoe +1",hands=gear.merlinic_refresh_hands,ring1="Evoker's Ring",ring2="Stikini Ring +1",
-        back="Moonlight Cape",waist="Lucidity Sash",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
+        back="Moonbeam Cape",waist="Lucidity Sash",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 		
     sets.idle.PDT.Avatar = {main="Malignance Pole",sub="Umbra Strap",ammo="Epitaph",
         head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="C. Palug Earring",ear2="Evans Earring",
         body="Shomonjijoe +1",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonlight Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
+        back="Moonbeam Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 
     sets.idle.Spirit = {main="Gridarvor",sub="Umbra Strap",ammo="Epitaph",
         head="Convoker's Horn +3",neck="Caller's Pendant",ear1="C. Palug Earring",ear2="Ethereal Earring",
@@ -311,12 +311,12 @@ function init_gear_sets()
     sets.defense.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Epitaph",
         head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Enmerkar Earring",
         body="Shomonjijoe +1",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonlight Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Baayami Sabots"}
+        back="Moonbeam Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Baayami Sabots"}
 
     sets.defense.MDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Epitaph",
         head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Enmerkar Earring",
         body="Shomonjijoe +1",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonlight Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Baayami Sabots"}
+        back="Moonbeam Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Baayami Sabots"}
 
     sets.defense.MEVA = {main="Malignance Pole",sub="Enki Strap",ammo="Epitaph",
         head="Amalric Coif +1",neck="Warder's Charm +1",ear1="Lugalbanda Earring",ear2="Sanare Earring",

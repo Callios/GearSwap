@@ -223,7 +223,7 @@ function job_setup()
 							['VivaciousGaston']='Nihility Song',['Hip.Familiar']='Back Heel',['DaringRoland']='Nihility Song',
 							['SlimeFamiliar']='Digest',['SultryPatrice']='Digest',}
 
-	state.AutoFightMode = M(true, 'Auto Fight Mode')
+	state.AutoFightMode = M(false, 'Auto Fight Mode')
 	state.AutoReadyMode = M(false, 'Auto Ready Mode')
 	state.AutoCallPet = M(false, 'Auto Call Pet')
 	state.PetMode = M{['description']='Pet Mode','Tank','DD'}

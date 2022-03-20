@@ -139,9 +139,9 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
 sets.precast.WS = {
-        head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Meghanada Cuirie +2",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Epaminondas's Ring",
-        back=gear.COR_STRWSD,waist="Fotia Belt",legs="Meghanada Chausses +2",feet="Nyame Sollerets"}
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Epaminondas's Ring",
+        back=gear.COR_STRWSD,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
         
     sets.precast.WS.Acc = {
         head="Carmine Mask +1",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
@@ -164,7 +164,7 @@ sets.precast.WS = {
         head="Nyame Helm",neck="Caro Necklace",
         body="Nyame Mail",hands="Nyame Gauntlets",ear1="Ishvara Earring",ear2="Moonshade Earring",
         ring1="Regal Ring",ring2="Epaminondas's Ring",
-        back=gear.COR_STRWSD,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Lanun Bottes +3"}
+        back=gear.COR_STRWSD,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.precast.WS['Savage Blade'].Acc = {ammo=gear.WSbullet,
         head="Carmine Mask +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
@@ -173,13 +173,13 @@ sets.precast.WS = {
     
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Laksamana's Frac +3",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Dingir Ring",
-        back=gear.COR_STRWSD,waist="Fotia Belt",legs="Nyame Flanchard",feet="Lanun Bottes +3"}
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Epaminondas's Ring",
+        back=gear.COR_AGIWSD,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.precast.WS['Last Stand'].Acc = {ammo=gear.WSbullet,
-        head="Malignance Chapeau",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Regal Ring",ring2="Dingir Ring",
-        back=gear.camws,waist="Fotia Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Dingir Ring",
+        back=gear.COR_AGIWSD,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
         
     sets.precast.WS['Detonator'] = sets.precast.WS['Last Stand']
     sets.precast.WS['Detonator'].Acc = sets.precast.WS['Last Stand'].Acc
@@ -193,7 +193,7 @@ sets.precast.WS = {
     sets.precast.WS['Split Shot'].Acc = sets.precast.WS['Last Stand'].Acc
     
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
-        head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Friomisi Earring",
+        head="Pixie Hairpin +1",neck="Commodore Charm +2",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Archon Ring",ring2="Dingir Ring",
         back=gear.COR_AGIWSD,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Lanun Bottes +3"}
         
@@ -203,17 +203,17 @@ sets.precast.WS = {
         back=gear.COR_AGIWSD,waist="Fotia Belt",legs="Lustratio Subligar +1",feet="Adhemar Gamashes +1"}      
 
     sets.precast.WS['Aeolian Edge'] = {ammo=gear.MAbullet,
-        head="Nyame Helm",neck="Sanctity Necklace",ear2="Friomisi Earring",
+        head="Nyame Helm",neck="Commodore Charm +2",ear2="Friomisi Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Ilabrat Ring",ring2="Dingir Ring",
         back=gear.COR_AGIWSD,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Lanun Bottes +3"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
-        head="Nyame Helm",neck="Sanctity Necklace",ear1="Novio Earring",ear2="Friomisi Earring",
+        head="Nyame Helm",neck="Commodore Charm +2",ear1="Novio Earring",ear2="Friomisi Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Dingir Ring",
         back=gear.COR_AGIWSD,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +3"}
 
     sets.precast.WS['Wildfire'].Acc = {ammo=gear.MAbullet,
-        head="Nyame Helm",neck="Sanctity Necklace",ear1="Novio Earring",ear2="Friomisi Earring",
+        head="Nyame Helm",neck="Commodore Charm +2",ear1="Novio Earring",ear2="Friomisi Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Dingir Ring",
         back=gear.COR_AGIWSD,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +3"}
         
@@ -251,7 +251,7 @@ sets.precast.WS = {
 
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
-        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Enervating Earring",ear2="Telos Earring",
+        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Crepuscular Earring",ear2="Telos Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Ilabrat Ring",
         back=gear.COR_RNG,waist="Kwahu Kachina Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
@@ -303,7 +303,7 @@ sets.precast.WS = {
     sets.defense.MEVA = {ammo=gear.RAbullet,
         head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Eabani Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shadow Ring",
-        back="Moonlight Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})

@@ -4,17 +4,18 @@ function user_job_setup()
 	state.HybridMode:options('Normal','DT')
     state.CastingMode:options('Normal','Resistant','AoE')
     state.IdleMode:options('Normal','NoRefresh','DT')
-	state.Weapons:options('None','Carnwenhan','Naegling','Aeneas','DualWeapons','DualNaegling','DualTauret','DualAeolian')
+	state.Weapons:options('None','Carnwenhan','Naegling','Aeneas','Gleti','DualWeapons','DualNaegling','DualTauret','DualAeolian','DualGleti')
 
 	--gear.melee_jse_back = {name="Intarabus's Cape",augments={'Accuracy+20 Attack+20'}}
 	--gear.magic_jse_back = {name="Intarabus's Cape",augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}
 	gear.BRD_MACC_FC = {name ="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Fast Cast"+10',}}
 	gear.BRD_MELEE = {name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+	gear.BRD_WS = {name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = 'Daurdabla'
 	-- How many extra songs we can keep from Daurdabla/Terpander
-    info.ExtraSongs = 1
+    info.ExtraSongs = 2
 	
 	-- Set this to false if you don't want to use custom timers.
     state.UseCustomTimers = M(false, 'Use Custom Timers')
@@ -42,11 +43,13 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Carnwenhan = {main="Carnwenhan",sub="Genmei Shield"}
 	sets.weapons.Aeneas = {main="Aeneas",sub="Genmei Shield"}
+	sets.weapons.Gleti = {main="Gleti's Knife",sub="Genmei Shield"}
 	sets.weapons.DualWeapons = {main="Aeneas",sub="Fusetto +2"}
 	sets.weapons.DualNaegling = {main="Naegling",sub="Fusetto +2"}
 	sets.weapons.Naegling = {main="Naegling",sub="Genmei Shield"}
 	sets.weapons.DualTauret = {main="Tauret",sub="Fusetto +2"}
 	sets.weapons.DualAeolian = {main="Tauret",sub="Malevolence"}
+	sets.weapons.DualGleti = {main="Naegling",sub="Gleti's Knife"}
 
     sets.buff.Sublimation = {waist="Embla Sash"}
     sets.buff.DTSublimation = {waist="Embla Sash"}
@@ -124,22 +127,22 @@ function init_gear_sets()
 	sets.precast.WS = {range="Linos",
 		head="Ayanmo zucchetto +2",neck="Caro necklace",ear1="Ishvara earring",ear2="Moonshade earring",
 		body="Bihu Jstcorps. +3",hands="Nyame gauntlets",ring1="Epaminondas's ring",ring2="Ilabrat ring",
-		back=gear.BRD_MELEE,waist="Grunfeld rope",legs="Lustratio subligar +1",feet="Lustratio leggings +1"}
+		back=gear.BRD_WS,waist="Grunfeld rope",legs="Lustratio subligar +1",feet="Lustratio leggings +1"}
 		
 	sets.precast.WS.Acc = {range="Linos",
 		head="Ayanmo zucchetto +2",neck="Caro necklace",ear1="Ishvara earring",ear2="Moonshade earring",
 		body="Bihu Jstcorps. +3",hands="Nyame gauntlets",ring1="Epaminondas's ring",ring2="Ilabrat ring",
-		back=gear.BRD_MELEE,waist="Grunfeld rope",legs="Lustratio subligar +1",feet="Lustratio leggings +1"}
+		back=gear.BRD_WS,waist="Grunfeld rope",legs="Lustratio subligar +1",feet="Lustratio leggings +1"}
 		
 	sets.precast.WS['Savage Blade'] = {range="Linos",
 		head="Nyame Helm",neck="Fotia gorget",ear1="Brutal earring",ear2="Moonshade earring",
 		body="Bihu Jstcorps. +3",hands="Nyame gauntlets",ring1="Metamorph Ring +1",ring2="Epaminondas's ring",
-		back=gear.BRD_MELEE,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame sollerets"}
+		back=gear.BRD_WS,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame sollerets"}
 
 	sets.precast.WS['Mordant Rime'] = {range="Linos",
 		head="Bihu roundlet +3",neck="Moonbow Whistle +1",ear1="Brutal earring",ear2="Regal Earring",
 		body="Bihu Jstcorps. +3",hands="Bihu Cuffs +3",ring1="Epaminondas's ring",ring2="Ilabrat ring",
-		back=gear.BRD_MELEE,waist="Grunfeld rope",legs="Lustratio subligar +1",feet="Bihu Slippers +3"}
+		back=gear.BRD_WS,waist="Grunfeld rope",legs="Lustratio subligar +1",feet="Bihu Slippers +3"}
 		
 
 	sets.precast.WS['Rudra\'s Storm'] = set_combine(sets.precast.WS, {
@@ -159,7 +162,7 @@ function init_gear_sets()
 		hands="Nyame Gauntlets",
 		ring1="Epaminondas's ring",
 		ring2="Metamorph Ring +1",
-		back=gear.BRD_MELEE,
+		back=gear.BRD_WS,
 		waist="Orpheus's Sash",
 		legs="Nyame Flanchard",
 		feet="Nyame Sollerets",
@@ -171,7 +174,7 @@ function init_gear_sets()
 		hands="Bunzi's Gloves",
         legs="Lustr. Subligar +1",
         ring1="Begrudging Ring",
-        back=gear.BRD_MELEE,
+        back=gear.BRD_WS,
         waist="Fotia Belt",
         })
 
@@ -295,7 +298,7 @@ function init_gear_sets()
 	sets.idle.NoRefresh = {main="Daybreak",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa earring +1",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Moonbeam Ring",
-		back="Moonlight Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Fili Cothurnes +1"}
+		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Fili Cothurnes +1"}
 
 	sets.idle.DT = {main="Daybreak",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa earring +1",
@@ -328,7 +331,7 @@ function init_gear_sets()
 	
 	sets.engaged = {main="Naegling", range="linos",
 		head="Nyame Helm",neck="Combatant's torque",ear1="Telos Earring",ear2="Cessance Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Chirich ring +1",ring2="Chirich ring +1",
+		body="Ashera Harness",hands="Nyame Gauntlets",ring1="Chirich ring +1",ring2="Chirich ring +1",
 		back=gear.BRD_MELEE,waist="Sailfi Belt +1",legs="Nyame flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.DT = {main="Naegling", range="linos",
@@ -343,7 +346,7 @@ function init_gear_sets()
 
 	sets.engaged.DW = {main="Naegling", sub="Fusetto +2", range="linos",
 		head="Nyame Helm",neck="Combatant's torque",ear1="Suppanomimi",ear2="Eabani Earring",
-		body="Ayanmo Corazza +2",hands="Bunzi's Gloves",ring1="Chirich ring +1",ring2="Chirich ring +1",
+		body="Ashera Harness",hands="Bunzi's Gloves",ring1="Chirich ring +1",ring2="Chirich ring +1",
 		back=gear.BRD_MELEE,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.DW.DT = {main="Naegling", sub="Fusetto +2", range="linos",
@@ -367,7 +370,7 @@ function select_default_macro_book()
 	set_macro_page(1, 10)
 end
 
-state.Weapons:options('None','Naegling','Carnwenhan','Aeneas','DualWeapons','DualNaegling','DualTauret','DualAeolian')
+state.Weapons:options('None','Naegling','Carnwenhan','Aeneas','DualWeapons','DualNaegling','DualTauret','DualAeolian','DualGleti')
 
 autows_list = {['Naegling']='Savage Blade',['Aeneas']="Rudra's Storm",['DualWeapons']="Rudra's Storm",['DualNaegling']='Savage Blade',['DualTauret']='Evisceration',
      ['DualAeolian']='Aeolian Edge'}

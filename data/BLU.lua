@@ -118,7 +118,7 @@ function job_setup()
 
     -- Physical spells with Mnd stat mod
     blue_magic_maps.PhysicalMnd = S{
-        'Ram Charge','Screwdriver','Tourbillion'
+        'Ram Charge','Screwdriver'
     }
 
     -- Physical spells with Chr stat mod
@@ -194,7 +194,7 @@ function job_setup()
         'Barbed Crescent','Battle Dance','Benthic Typhoon','Bilgestorm',
 		'Feather Storm','Frypan','Head Butt','Hydro Shot','Pinecone Bomb','Queasyshroom',
 		'Saurian Slide','Seedspray','Spiral Spin','Sprout Smack','Sub-zero Smash',
-		'Sudden Lunge','Sweeping Gouge','Tail Slap','Terror Touch','Wild Oats','Whirl of Rage',
+		'Sudden Lunge','Sweeping Gouge','Tail Slap','Terror Touch','Wild Oats','Whirl of Rage','Tourbillion',
     }
         
     -- Healing spells

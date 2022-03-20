@@ -420,7 +420,7 @@ function init_gear_sets()
 	sets.defense.PDT = {main="Terra's Staff",sub="Umbra Strap",range=empty,ammo="Staunch Tathlum +1 +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		back="Moonbeam Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.defense.NukeLock = sets.midcast['Elemental Magic']
 		
@@ -503,8 +503,8 @@ function init_gear_sets()
 
 	sets.engaged.DT = {
 		head="Malignance Chapeau",neck="Sanctity Necklace",ear1="Dignitary's Earring",ear2="Telos Earring",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Ilabrat Ring",ring2="Chirich Ring +1",
-		back=gear.RDMCape_TP,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Chirich Ring +1",
+		back=gear.RDMCape_TP,waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
 	sets.engaged.Acc.DT = {
 		head="Malignance Chapeau",neck="Sanctity Necklace",ear1="Dignitary's Earring",ear2="Telos Earring",
@@ -552,6 +552,11 @@ function init_gear_sets()
 		back=gear.RDMCape_DW,waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.DW.EnspellOnly = {
+		head="Malignance Chapeau",neck="Sanctity Necklace",ear1="Suppanomimi",ear2="Hollow Earring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
+		back="Ghostfyre Cape",waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}
+
+	sets.engaged.EnspellOnly = {
 		head="Malignance Chapeau",neck="Sanctity Necklace",ear1="Suppanomimi",ear2="Hollow Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back="Ghostfyre Cape",waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}

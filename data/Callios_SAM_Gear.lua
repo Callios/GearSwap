@@ -292,17 +292,17 @@ sets.precast.WS['Namas Arrow'] = {ranged="Yoichinoyumi",ammo="Yoichi's Arrow",
     sets.idle.Town = {ammo="Staunch Tathlum +1",
         head="Valorous Mask",neck="Bathy Choker +1",ear1="Infused Earring",ear2="Etiolation Earring",
         body="Wakido Domaru +3",hands="Wakido Kote +3",ring1="Gelatinous ring +1",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Ryuo Hakama +1",feet="Danzo Sune-Ate"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Nyame Flanchard",feet="Danzo Sune-Ate"}
     
     sets.idle.Field = {ammo="Staunch Tathlum +1",
         head="Valorous Mask",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Etiolation Earring",
         body="Wakido Domaru +3",hands="Wakido Kote +3",ring1="Gelatinous Ring +1",ring2="Defending Ring",
-        back="Solemnity Cape",waist="Flume Belt",legs="Ryuo Hakama +1",feet="Danzo Sune-Ate"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Nyame Flanchard",feet="Danzo Sune-Ate"}
 
     sets.idle.Weak = {ammo="Staunch Tathlum +1",
         head="Valorous Mask",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Etiolation Earring",
-        body="Wakido Domaru +3",hands="Macabre Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Ryuo Hakama +1",feet="Nyame Sollerets"}
+        body="Wakido Domaru +3",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+        back="Moonbeam Cape",waist="Flume Belt",legs="Nyame Sollerets",feet="Nyame Sollerets"}
     
     -- Defense sets
     sets.defense.PDT = {ammo="Staunch Tathlum +1",

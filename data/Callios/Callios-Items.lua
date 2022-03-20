@@ -31,6 +31,14 @@ gear.taeon_phalanx_feet = {name="Taeon Boots", augments={'Spell interruption rat
 gear.taeon_DW_feet = {name="Taeon Boots", augments={'Accuracy+23','"Dual Wield"+3',}}
 gear.taeon_Snap_head = {name="Taeon Chapeau", augments={'Rng.Acc.+19','"Snapshot"+3','"Snapshot"+5',}}
 
+
+gear.taeon_pet_head =  { name="Taeon Chapeau", augments={'Pet: Accuracy+21 Pet: Rng. Acc.+21','Pet: "Dbl. Atk."+5','Pet: Damage taken -2%',}}
+gear.taeon_pet_body =  { name="Taeon Tabard", augments={'Pet: Accuracy+23 Pet: Rng. Acc.+23','Pet: "Dbl. Atk."+4','Pet: Damage taken -3%',}}
+gear.taeon_pet_hands = { name="Taeon Gloves", augments={'Pet: Accuracy+22 Pet: Rng. Acc.+22','Pet: "Dbl. Atk."+5','Pet: Damage taken -3%',}}
+gear.taeon_pet_legs =  { name="Taeon Tights", augments={'Pet: Accuracy+20 Pet: Rng. Acc.+20','Pet: "Dbl. Atk."+4','Pet: Damage taken -3%',}}
+gear.taeon_pet_feet =  { name="Taeon Boots", augments={'Pet: Attack+25 Pet: Rng.Atk.+25','Pet: "Dbl. Atk."+5','Pet: Damage taken -4%',}}
+
+
 -- Telchine Enhancing Stuff
 
     gear.telchine_ehn_head ={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
@@ -93,6 +101,11 @@ gear.taeon_Snap_head = {name="Taeon Chapeau", augments={'Rng.Acc.+19','"Snapshot
     gear.RNG_RAWSD  = { name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}}
     gear.RNG_SNAP   = { name="Belenus's Cape", augments={'Snapshot +10'}}
 
+
+--- BLU Stuff 
+
+    gear.BLUSTRWS   = {name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+    gear.BLUNUKE    = {name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
 --- HERC Stuff
 
     gear.Herculean_HercFeetFC = {name="Herculean Boots", augments={'"Mag.Atk.Bns."+12','"Fast Cast"+6','Mag. Acc.+1',}}
