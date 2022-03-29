@@ -1,10 +1,8 @@
 shihei = 0 
 utsubuff = "\\cs(255,0,0)0"
-phalanxyn = "\\cs(255,0,0)No"
-reprisalyn = "\\cs(255,0,0)No"
-cocoonyn = "\\cs(255,0,0)No" 
-crusadeyn = "\\cs(255,0,0)No"
-
+phalanxyn = "\\cs(255,127,0)No"
+reprisalyn = "\\cs(255,127,0)No"
+cocoonyn = "\\cs(255,127,0)No" 
 function user_job_setup()
 
     -- Options: Override default values	
@@ -566,19 +564,18 @@ end
 ----
 ----
 gearswap_box = function()
-    str = '        \\cs(130,130,130)BuffWatcher\\cr\n'
-    str = str.."\\cs(255,255,255)Shihei Count: "..shihei.."\\cr\n"
+    str = '           \\cs(130,130,130)BuffWatcher\\cr\n'
+    str = str.."\\cs(255,255,255)  Shihei(U): "..shihei.."\\cr\n"
     str = str..'Utsusemi Shadows: '..utsubuff.."\\cr\n"
     str = str..'Phalanx: '..phalanxyn.."\\cr\n"
     str = str..'Reprisal: '..reprisalyn.."\\cr\n"
-    str = str..'Crusade: '..crusadeyn.."\\cr\n"
     str = str..'Cocoon:  '..cocoonyn.."\\cr\n"
     return str
      end
     
     -- This is what determines the starting location of the Information Section.
     -- Update the X, Y positions to change where this box defaults. Once loaded the box is dragable. 
-    gearswap_box_config = {pos={x=20,y=240},padding=8,text={font='sans-serif',size=11,stroke={width=2,alpha=255},Fonts={'sans-serif'},},bg={black},flags={}}
+    gearswap_box_config = {pos={x=20,y=240},padding=8,text={font='sans-serif',size=10,stroke={width=2,alpha=255},Fonts={'sans-serif'},},bg={alpha=0},flags={}}
     gearswap_jobbox = texts.new(gearswap_box_config)
     
      function user_setup()
@@ -636,88 +633,49 @@ gearswap_box = function()
             end
         end
     end
-    --  function job_buff_change(buff, gain)
-    --      if buffactive['Copy Image'] then
-    --          utsubuff = "\\cs(255,127,0)1"
-    --      elseif buffactive['Copy Image (2)'] then 
-    --          utsubuff = "\\cs(255,255,0)2"
-    --      elseif buffactive['Copy Image (3)'] then
-    --         utsubuff = "\\cs(127,255,0)3"
-    --      elseif buffactive['Copy Image (4+)'] then
-    --          utsubuff = "\\cs(0,255,0)4+"
-    --      else 
-    --          utsubuff = "\\cs(255,0,0)0"
-    --      end
-    --      if buffactive['Phalanx'] then
-    --          phalanxyn = "\\cs(0,255,0)Yes"
-    --      else
-    --          phalanxyn ="\\cs(255,0,0)No"
-    --      end
-    --      if buffactive['Reprisal'] then
-    --          reprisalyn = "\\cs(0,255,0)Yes"
-    --      else
-    --          reprisalyn ="\\cs(255,0,0)No"
-    --      end
-    --      if buffactive['Defense Boost'] then
-    --          cocoonyn = "\\cs(0,255,0)Yes"
-    --      else
-    --          cocoonyn ="\\cs(255,0,0)No"
-    --     end
-    --     if buffactive['Enmity Boost'] then
-    --         crusadeyn = "\\cs(0,255,0)Yes"
-    --     else
-    --         crusadeyn ="\\cs(255,0,0)No"
-    --    end
-    --      gearswap_jobbox:text(gearswap_box())
-    --      gearswap_jobbox:show()
-    --  end
+     function buff_change(buff, gain)
+         if buffactive['Copy Image'] then
+             utsubuff = "\\cs(255,127,0)1"	
+         elseif buffactive['Copy Image (2)'] then 
+             utsubuff = "\\cs(255,255,0)2"
+         elseif buffactive['Copy Image (3)'] then
+             utsubuff = "\\cs(127,255,0)3"
+         elseif buffactive['Copy Image (4+)'] then
+             utsubuff = "\\cs(0,255,0)4+"
+         else 
+             utsubuff = "\\cs(255,0,0)0"
+         end
+         if buffactive['Phalanx'] then
+             phalanxyn = "\\cs(0,255,0)Yes"
+         else
+             phalanxyn ="\\cs(255,127,0)No"
+         end
+         if buffactive['Reprisal'] then
+             reprisalyn = "\\cs(0,255,0)Yes"
+         else
+             reprisalyn ="\\cs(255,127,0)No"
+         end
+         if buffactive['Defense Boost'] then
+             cocoonyn = "\\cs(0,255,0)Yes"
+         else
+             cocoonyn ="\\cs(255,127,0)No"
+        end
+    
+         gearswap_jobbox:text(gearswap_box())
+         gearswap_jobbox:show()
+     end	
     --  function aftercast(spell, act, spellMap, eventArgs)
     --     check_tool_count()
     --     buff_change()
     --     gearswap_jobbox:text(gearswap_box())
     --     gearswap_jobbox:show()
     -- end 
-    function job_buff_change(buff,gain)
-        if buff == "Phalanx" then
+    function notify_buffs(buff, gain)
+        if state.NotifyBuffs.value and NotifyBuffs:contains(buff) then
             if gain then
-                phalanxyn = "\\cs(0,255,0)Yes"
+                windower.chat.input('/p '..buff:ucfirst()..' on me!')
             else
-                phalanxyn = "\\cs(255,0,0)No"
+                windower.chat.input('/p '..buff:ucfirst()..' is off now.')
             end
         end
-        if buff == "Reprisal" then
-            if gain then
-                reprisalyn = "\\cs(0,255,0)Yes"
-            else
-                reprisalyn = "\\cs(255,0,0)No"
-            end
-        end
-        if buff == "Enmity Boost" then
-            if gain then
-                crusadeyn = "\\cs(0,255,0)Yes"
-            else
-                crusadeyn = "\\cs(255,0,0)No"
-            end
-        end
-        if buff == "Defense Boost" then
-            if gain then
-                cocoonyn = "\\cs(0,255,0)Yes"
-            else
-                cocoonyn = "\\cs(255,0,0)No"
-            end
-        end
-        if buffactive['Copy Image'] then
-            utsubuff = "\\cs(255,127,0)1"	
-        elseif buffactive['Copy Image (2)'] then 
-            utsubuff = "\\cs(255,255,0)2"
-        elseif buffactive['Copy Image (3)'] then
-            utsubuff = "\\cs(127,255,0)3"
-        elseif buffactive['Copy Image (4+)'] then
-            utsubuff = "\\cs(0,255,0)4+"
-        else 
-            utsubuff = "\\cs(255,0,0)0" 
-        end
-        check_tool_count()
-        gearswap_jobbox:text(gearswap_box())
-        gearswap_jobbox:show()
     end

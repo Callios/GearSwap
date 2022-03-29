@@ -5,7 +5,7 @@ function user_job_setup()
     state.HybridMode:options('Normal','DT')
     state.RangedMode:options('Normal', 'Acc')
     state.WeaponskillMode:options('Match','Normal','DT','SomeAcc','Acc','FullAcc','Fodder','Proc')
-	state.IdleMode:options('Normal', 'Sphere')
+	state.IdleMode:options('Normal','Regain','Sphere')
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
@@ -39,7 +39,7 @@ function init_gear_sets()
     --------------------------------------
 
 	sets.TreasureHunter = {hands="Plunderer's Armlets +1",waist="Chaac Belt",feet="Skulk. Poulaines"}
-    sets.Kiting = {feet="Jute Boots"}
+    sets.Kiting = {feet="Jute Boots +1"} --ctrl F10
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {head="Frenzy Sallet"}
@@ -55,8 +55,8 @@ function init_gear_sets()
     -- Extra Melee sets.  Apply these on top of melee sets.
     sets.Knockback = {}
 	sets.Suppa = {ear1="Suppanomimi", ear2="Sherida Earring"}
-	sets.DWEarrings = {ear1="Dudgeon Earring",ear2="Heartseeker Earring"}
-	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",hands="Floral Gauntlets",waist="Reiki Yotai"}
+	sets.DWEarrings = {ear1="Suppanomimi",ear2="Eabani Earring"}
+	sets.DWMax = {ear1="Suppanomimi",ear2="Eabani Earring",body="Adhemar Jacket +1",hands="Floral Gauntlets",waist="Reiki Yotai"}
 	sets.Parry = {hands="Turms Mittens +1",ring1="Defending Ring"}
 	sets.Ambush = {body="Plunderer's Vest +3"} --body="Plunderer's Vest +1"
 	
@@ -144,7 +144,7 @@ function init_gear_sets()
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {ammo="Cath Palug Stone",
         head="Nyame Helm",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Odr Earring",
-        body="Nyame Mail",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Regal Ring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Ilabrat Ring",ring2="Regal Ring",
         back=gear.THFCape_DEXWS,waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"})
 
     sets.precast.WS["Rudra's Storm"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {neck="Caro Necklace",ear1="Moonshade Earring",body="Meg. Cuirie +2",back=gear.wsd_jse_back})
@@ -327,12 +327,15 @@ function init_gear_sets()
     sets.idle = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Bathy Choker +1",ear1="Infused Earring",ear2="Odnowa Earring +1",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Defending Ring",
-        back="Moonbeam",waist="Flume Belt",legs="Malignance Tights",feet="Jute Boots +1"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Malignance Tights",feet="Jute Boots +1"}
         
     sets.idle.TP = {ammo="Ginsen",
         head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
         back="Moonbeam Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Jute Boots +1"}   
+
+    sets.idle.Regain = set_combine(sets.idle,{head="Gleti's Mask",body="Gleti's cuirass",
+                                    hands="Gleti's gauntlets",legs="Gleti's breeches",feet="Gleti's Boots"})
         
     sets.idle.Town = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Bathy Choker +1",ear1="Infused Earring",ear2="Odnowa Earring +1",

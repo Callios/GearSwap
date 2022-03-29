@@ -92,19 +92,21 @@ function init_gear_sets()
 		body="Brioso justaucorps +3",	--15
 		legs="Kaykaus tights +1",		--10
 		feet="Bihu Slippers +3",
+		ring1="Defending Ring",
+		ring2="Gelatinous Ring +1",
 		back=gear.BRD_MACC_FC,
 	})
 
 	sets.precast.FC.SongDebuff = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
 	sets.precast.FC.SongDebuff.Resistant = set_combine(sets.precast.FC.BardSong,{range="Daurdabla"})
-	sets.precast.FC.Lullaby = {range="Marsyas"}
-	sets.precast.FC.Lullaby.Resistant = {range="Daurdabla"}
-	sets.precast.FC['Horde Lullaby'] = {range="Marsyas"}
-	sets.precast.FC['Horde Lullaby'].Resistant = {range="Daurdabla"}
-	sets.precast.FC['Horde Lullaby'].AoE = {range="Daurdabla"}
-	sets.precast.FC['Horde Lullaby II'] = {range="Marsyas"}
-	sets.precast.FC['Horde Lullaby II'].Resistant = {range="Daurdabla"}
-	sets.precast.FC['Horde Lullaby II'].AoE = {range="Daurdabla"}
+	sets.precast.FC.Lullaby = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
+	sets.precast.FC.Lullaby.Resistant = set_combine(sets.precast.FC.BardSong,{range="Daurdabla"})
+	sets.precast.FC['Horde Lullaby'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
+	sets.precast.FC['Horde Lullaby'].Resistant = set_combine(sets.precast.FC.BardSong,{range="Daurdabla"})
+	sets.precast.FC['Horde Lullaby'].AoE = set_combine(sets.precast.FC.BardSong,{range="Daurdabla"})
+	sets.precast.FC['Horde Lullaby II'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
+	sets.precast.FC['Horde Lullaby II'].Resistant = set_combine(sets.precast.FC.BardSong,{range="Daurdabla"})
+	sets.precast.FC['Horde Lullaby II'].AoE = set_combine(sets.precast.FC.BardSong,{range="Daurdabla"})
 		
 	sets.precast.FC.Mazurka = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
 	sets.precast.FC['Honor March'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
@@ -193,14 +195,14 @@ function init_gear_sets()
 
 	-- Gear to enhance certain classes of songs
 	sets.midcast.Ballad = {legs="Fili Rhingrave +1"}
-	sets.midcast.Lullaby = {range="Marsyas", hands="Brioso Cuffs +2"}
+	sets.midcast.Lullaby = {range="Marsyas", hands="Brioso Cuffs +2", body="Fili Hongreline +1"}
 	sets.midcast.Lullaby.Resistant = {range="Daurdabla", hands="Brioso Cuffs +2"}
-	sets.midcast['Horde Lullaby'] = {range="Marsyas",hands="Brioso Cuffs +2"}
+	sets.midcast['Horde Lullaby'] = {range="Marsyas",hands="Brioso Cuffs +2", body="Fili Hongreline +1"}
 	sets.midcast['Horde Lullaby'].Resistant = {range="Daurdabla",hands="Brioso Cuffs +2"}
-	sets.midcast['Horde Lullaby'].AoE = {range="Daurdabla",hands="Brioso Cuffs +2"}
-	sets.midcast['Horde Lullaby II'] = {range="Marsyas",hands="Brioso Cuffs +2"}
+	sets.midcast['Horde Lullaby'].AoE = {range="Daurdabla",hands="Brioso Cuffs +2", body="Fili Hongreline +1"}
+	sets.midcast['Horde Lullaby II'] = {range="Marsyas",hands="Brioso Cuffs +2", body="Fili Hongreline +1"}
 	sets.midcast['Horde Lullaby II'].Resistant = {range="Daurdabla",hands="Brioso Cuffs +2"}
-	sets.midcast['Horde Lullaby II'].AoE = {range="Daurdabla",hands="Brioso Cuffs +2"}
+	sets.midcast['Horde Lullaby II'].AoE = {range="Daurdabla",hands="Brioso Cuffs +2", body="Fili Hongreline +1"}
 	sets.midcast.Madrigal = {head="Fili Calot +1", back=gear.BRD_MACC_FC}
 	sets.midcast.Paeon = {head="Brioso roundlet +2"}
 	sets.midcast.March = {hands="Fili Manchettes"}

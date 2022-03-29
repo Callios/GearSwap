@@ -420,7 +420,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].Healing = {sub="Bunzi's Rod",ammo="Mavi Tathlum",
 		head="Carmine Mask +1",neck="Incanter's Torque",ear1="Etiolation Earring",ear2="Mendi. Earring",
 		body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
-		back="Fi Follet Cape +1",waist="Luminary Sash",legs="Carmine Cuisses +1",feet="Medium's Sabots"}
+		back="Fi Follet Cape +1",waist="Luminary Sash",legs="Carmine Cuisses +1",feet="Skaoi Boots"}
 
 		sets.midcast['Blue Magic']['Reaving Wind'] = set_combine(sets.midcast['Blue Magic'].MagicAccuracy, {hands="Hashishin bazubands"})
 		sets.midcast['Blue Magic']['Feather Tickle'] = sets.midcast['Blue Magic']['Reaving Wind']
@@ -477,7 +477,7 @@ function init_gear_sets()
 		        body="Gleti's Cuirass",hands="Gleti's Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 				back="Moonbeam Cape",waist="Flume Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
 
-	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
+	sets.idle.DTHippo = set_combine(sets.idle.PDT, {body="Nyame Mail",legs="Carmine Cuisses +1",feet="Nyame Sollerets"})
 
 	-- Defense sets
 	sets.defense.PDT = {main="Sakpata's Sword",sub="Genmei Shield",ammo="Staunch Tathlum +1",
