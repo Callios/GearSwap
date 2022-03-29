@@ -235,7 +235,7 @@ function init_gear_sets()
 	sets.idle = {main="Kali",sub="Ammurapi shield",ammo="Staunch Tathlum +1",
 		head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
 		body="Inyanga Jubbah +2",hands="Inyanga dastanas +2",ring1="Defending Ring",ring2="Inyanga Ring",
-		back="Solemnity Cape",waist="Carrier's Sash",legs="Assiduity Pants",feet="Inyanga crackows +1"}
+		back="Solemnity Cape",waist="Carrier's Sash",legs="Assiduity Pants",feet="Fili Cothurnes"}
 		
 	sets.idle.NoRefresh = {main="Daybreak",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
@@ -259,7 +259,7 @@ function init_gear_sets()
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shadow Ring",
 		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
-	sets.Kiting = {feet="Fili Cothurnes +1"}
+	sets.Kiting = {feet="Fili Cothurnes"}
 	sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.latent_refresh_grip = {sub="Oneiros Grip"}
 	sets.TPEat = {neck="Chrys. Torque"}
