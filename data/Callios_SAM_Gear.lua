@@ -292,33 +292,33 @@ sets.precast.WS['Namas Arrow'] = {ranged="Yoichinoyumi",ammo="Yoichi's Arrow",
     sets.idle.Town = {ammo="Staunch Tathlum +1",
         head="Valorous Mask",neck="Bathy Choker +1",ear1="Infused Earring",ear2="Etiolation Earring",
         body="Wakido Domaru +3",hands="Wakido Kote +3",ring1="Gelatinous ring +1",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Nyame Flanchard",feet="Danzo Sune-Ate"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Flanchard",feet="Danzo Sune-Ate"}
     
     sets.idle.Field = {ammo="Staunch Tathlum +1",
         head="Valorous Mask",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Etiolation Earring",
         body="Wakido Domaru +3",hands="Wakido Kote +3",ring1="Gelatinous Ring +1",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Nyame Flanchard",feet="Danzo Sune-Ate"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Flanchard",feet="Danzo Sune-Ate"}
 
     sets.idle.Weak = {ammo="Staunch Tathlum +1",
         head="Valorous Mask",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Etiolation Earring",
         body="Wakido Domaru +3",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Nyame Sollerets",feet="Nyame Sollerets"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Sollerets",feet="Nyame Sollerets"}
     
     -- Defense sets
     sets.defense.PDT = {ammo="Staunch Tathlum +1",
         head="Flamma Zucchetto +2",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
         body="Wakido Domaru +3",hands="Founder's Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
-        back="Solemnity Cape",waist="Flume Belt",legs="Ryuo Hakama +1",feet="Amm Greaves"}
+        back="Solemnity Cape",waist="Flume belt +1",legs="Ryuo Hakama +1",feet="Amm Greaves"}
 
     sets.defense.Reraise = {ammo="Staunch Tathlum +1",
         head="Twilight Helm",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Etiolation Earring",
         body="Twilight Mail",hands="Macabre Gauntlets +1",ring1="Dark Ring",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs=ValPantsSTP,feet="Amm Greaves"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs=ValPantsSTP,feet="Amm Greaves"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum +1",
         head="Kendatsuba jinpachi +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
         body="Kendatsuba samue +1",hands="Wakido kote +3",ring1="Dark Ring",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Kendatsuba hakama +1",feet="Kendatsuba Sune-Ate +1"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Kendatsuba hakama +1",feet="Kendatsuba Sune-Ate +1"}
 
     sets.Kiting = {feet="Danzo Sune-ate"}
 
@@ -374,7 +374,7 @@ sets.precast.WS['Namas Arrow'] = {ranged="Yoichinoyumi",ammo="Yoichi's Arrow",
 		hands="Wakido Kote +3",
 		ring1="Gelatinous ring +1",ring2="Defending Ring",
         back=CapeSTP,
-		waist="Flume Belt",
+		waist="Flume belt +1",
 		legs="Ryuo Hakama +1",
 		feet="Flamma Gambieras +2"}
 
@@ -398,7 +398,7 @@ sets.precast.WS['Namas Arrow'] = {ranged="Yoichinoyumi",ammo="Yoichi's Arrow",
         hands="Wakido Kote +3",
         ring1="Gelatinous ring +1",ring2="Defending Ring",
         back=CapeSTP,
-        waist="Flume Belt",
+        waist="Flume belt +1",
         legs="Kendatsuba hakama +1",
         feet="Kendatsuba Sune-Ate +1"}
 
@@ -410,7 +410,7 @@ sets.precast.WS['Namas Arrow'] = {ranged="Yoichinoyumi",ammo="Yoichi's Arrow",
         hands="Wakido Kote +3",
         ring1="Gelatinous ring +1",ring2="Defending Ring",
         back=CapeSTP,
-        waist="Flume Belt",
+        waist="Flume belt +1",
         legs="Kendatsuba hakama +1",
         feet="Kendatsuba Sune-Ate +1"}
 
@@ -465,12 +465,12 @@ sets.precast.WS['Namas Arrow'] = {ranged="Yoichinoyumi",ammo="Yoichi's Arrow",
 	sets.engaged.Reraise = {ammo="Staunch Tathlum +1",
         head="Twilight Helm",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Etiolation Earring",
         body="Twilight Mail",hands="Macabre Gauntlets +1",ring1="Dark Ring",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs=ValPantsSTP,feet="Amm Greaves"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs=ValPantsSTP,feet="Amm Greaves"}
     
 	sets.engaged.Acc.Reraise = {ammo="Staunch Tathlum +1",
         head="Twilight Helm",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Etiolation Earring",
         body="Twilight Mail",hands="Macabre Gauntlets +1",ring1="Dark Ring",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs=ValPantsSTP,feet="Amm Greaves"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs=ValPantsSTP,feet="Amm Greaves"}
 
     sets.buff.Sekkanoki = {hands="Unkai Kote +2"}
     sets.buff.Sengikori = {feet="Unkai Sune-Ate +2"}

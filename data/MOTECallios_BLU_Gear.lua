@@ -244,7 +244,7 @@ function init_gear_sets()
     legs="Malignance tights",
     feet="Aya. Gambieras +2",
     neck="Bathy Choker +1",
-    waist="Flume Belt",
+    waist="Flume belt +1",
     ear1="Odnowa Earring",
     ear2="Odnowa Earring +1",
     ring1="Defending Ring",
@@ -272,7 +272,7 @@ function init_gear_sets()
     legs="Malignance tights",
     feet="Nyame Sollerets",
     neck="Bathy Choker +1",
-    waist="Flume Belt",
+    waist="Flume belt +1",
     ear1="Odnowa Earring",
     ear2="Odnowa Earring +1",
     ring1="Defending Ring",
@@ -294,7 +294,7 @@ function init_gear_sets()
     legs="Malignance tights",
     feet="Nyame Sollerets",
     neck="Loricate torque +1",
-    waist="Flume belt",
+    waist="Flume belt +1",
     ear1="Odnowa Earring",
     ear2="Odnowa Earring +1",
     ring1="Defending Ring",
@@ -308,7 +308,7 @@ function init_gear_sets()
     legs="Aya. Cosciales +2",
     feet="Nyame Sollerets",
     neck="Loricate torque +1",
-    waist="Flume belt",
+    waist="Flume belt +1",
     ear1="Odnowa Earring",
     ear2="Odnowa Earring +1",
     ring1="Defending Ring",
@@ -319,7 +319,7 @@ function init_gear_sets()
     sets.Kiting = {ammo="Staunch tathlum +1",
         head="Aya. Zucchetto +2",neck="Loricate torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
         body="Ayanmo corazza +2",hands="Aya. Manopolas +2",ring1="Defending Ring",ring2="Gelatinous Ring +1",
-        back="Solemnity cape",waist="Flume Belt",legs="Carmine cuisses +1",feet="Aya. Gambieras +2"}
+        back="Solemnity cape",waist="Flume belt +1",legs="Carmine cuisses +1",feet="Aya. Gambieras +2"}
 
     -- Engaged sets
 

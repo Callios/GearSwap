@@ -158,19 +158,19 @@ function init_gear_sets()
     sets.idle = {ammo="Staunch tathlum +1",
 		head="Meghanada visor +2",neck="Bathy choker +1",ear1="Infused earring",ear2="Odnowa earring +1",
         body="Horos Casaque +3",hands="Meghanada gloves +2",ring1="Defending Ring",ring2="Gelatinous ring +1",
-        back="Solemnity cape",waist="Flume Belt",legs="Meghanada chausses +2",feet="Meghanada jambeaux +2"}
+        back="Solemnity cape",waist="Flume belt +1",legs="Meghanada chausses +2",feet="Meghanada jambeaux +2"}
 		
     sets.idle.Town = {ammo="Staunch tathlum +1",
 		head="Meghanada visor +2",neck="Bathy choker +1",ear1="Infused earring",ear2="Odnowa earring +1",
         body="Horos Casaque +3",hands="Meghanada gloves +2",ring1="Defending Ring",ring2="Gelatinous ring +1",
-        back="Solemnity cape",waist="Flume Belt",legs="Meghanada chausses +2",feet="Meghanada jambeaux +2"}
+        back="Solemnity cape",waist="Flume belt +1",legs="Meghanada chausses +2",feet="Meghanada jambeaux +2"}
     
     -- Defense sets
 
     sets.defense.PDT = {ammo="Staunch tathlum +1",
         head="Meghanada visor +2",neck="Loricate torque +1",ear1="Odnowa earring +1",ear2="Genmei Earring",
         body="Horos Casaque +3",hands="Meghanada gloves +2",ring1="Defending ring",ring2="Gelatinous ring +1",
-        back="Solemnity Cape",waist="Flume Belt",legs="Malignance tights",feet="Meghanada jambeaux +2"}
+        back="Solemnity Cape",waist="Flume belt +1",legs="Malignance tights",feet="Meghanada jambeaux +2"}
 
     sets.defense.MDT = {ammo="Staunch tathlum +1",
         head="Meghanada visor +2",neck="Loricate torque +1",ear1="Odnowa earring +1",ear2="Odnowa Earring",

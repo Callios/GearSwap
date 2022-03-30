@@ -89,7 +89,7 @@ function init_gear_sets()
     sets.precast.FC = {
         head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
         body="Adhemar Jacket",hands="Leyline Gloves",ring1="Rahab Ring",ring2="Lebeche Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs=gear.HercLegsFC,feet="Carmine Greaves +1"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs=gear.HercLegsFC,feet="Carmine Greaves +1"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads",body="Passion Jacket"})
 
@@ -200,7 +200,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {
         head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
         body="Adhemar Jacket",hands="Leyline Gloves",ring1="Rahab Ring",ring2="Lebeche Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs=gear.HercLegsFC,feet="Carmine Greaves +1"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs=gear.HercLegsFC,feet="Carmine Greaves +1"}
 		
 	-- Ranged sets
 
@@ -257,33 +257,33 @@ function init_gear_sets()
     sets.idle = {
         head="Meghanada Visor +2",neck="Bathy Choker +1",ear1="Infused Earring",ear2="Odnowa Earring +1",
         body="Meghanada Cuirie +2",hands="Meghanada Gloves +2",ring1="Defending Ring",ring2="Chirich Ring +1",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Meghanada Jambeaux +2"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet="Meghanada Jambeaux +2"}
 		
 	sets.idle.Town = {
         head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Infused Earring",ear2="Odnowa Earring +1",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Chirich Ring +1",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}			
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}			
 		
 	sets.idle.PDT = {
         head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Tuisto Earring",ear2="Odnowa Earring +1",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Purity Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}	
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Malignance Tights",feet="Malignance Boots"}	
     
     -- Defense sets
     sets.defense.PDT = {
         head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Tuisto Earring",ear2="Odnowa Earring +1",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Purity Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.defense.MDT = {
         head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Tuisto Earring",ear2="Odnowa Earring +1",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Purity Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
     sets.defense.MEVA = {
         head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Tuisto Earring",ear2="Odnowa Earring +1",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Purity Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
 	sets.DayIdle = {}

@@ -468,8 +468,8 @@ function init_gear_sets()
 
 	sets.idle.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Homiliary",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Witching Robe",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Stikini Ring +1",
-		back="Moonbeam Cape",waist="Carrier's Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Stikini Ring",
+		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Herald's Gaiters"}
 		
 	sets.idle.MDT = {main="Daybreak",sub="Ammurapi Shield",ammo="Homiliary",
 		head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Ethereal Earring",

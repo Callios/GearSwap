@@ -60,7 +60,7 @@ function init_gear_sets()
 
 	sets.HPDown = {head="Pixie Hairpin +1",neck="Loricate Torque +1",ear1="Mendicant's Earring",ear2="Evans Earring",
 		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
-		back="Swith Cape +1",waist="Flume Belt",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
+		back="Swith Cape +1",waist="Flume belt +1",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 		
 	sets.HPCure = {main="Nibiru Cudgel",sub="Nibiru Cudgel",ammo="Pemphredo Tathlum",
 		head="Carmine Mask +1",neck="Incanter's Torque",ear1="Etiolation Earring",ear2="Mendi. Earring",
@@ -457,25 +457,25 @@ function init_gear_sets()
 	sets.resting = {main="Bolelabunga",sub="Genmei Shield",ammo="Falcon Eye",
 			      head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Genmei Earring",
 			      body="Jhakri Robe +2",hands=gear.herculean_refresh_hands,ring1="Defending Ring",ring2="Sheltered Ring",
-			      back="Bleating Mantle",waist="Flume Belt",legs="Lengo Pants",feet=gear.herculean_refresh_feet}
+			      back="Bleating Mantle",waist="Flume belt +1",legs="Lengo Pants",feet=gear.herculean_refresh_feet}
 
 	-- Idle sets
 	sets.idle = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 			      head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Genmei Earring",
 			      body="Jhakri Robe +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
-			      back="Moonbeam Cape",waist="Flume Belt",legs="Lengo Pants",feet="Malignance Boots"}
+			      back="Moonbeam Cape",waist="Flume belt +1",legs="Lengo Pants",feet="Malignance Boots"}
 
 	sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
 	sets.idle.PDT = {main="Sakpata's Sword",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 				head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Genmei Earring",
 		        body="Jhakri Robe +2",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
-				back="Moonbeam Cape",waist="Flume Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+				back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	
 	sets.idle.Gleti = {main="Sakpata's Sword",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 				head="Gleti's Mask",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Genmei Earring",
 		        body="Gleti's Cuirass",hands="Gleti's Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
-				back="Moonbeam Cape",waist="Flume Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
+				back="Moonbeam Cape",waist="Flume belt +1",legs="Gleti's Breeches",feet="Gleti's Boots"}
 
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {body="Nyame Mail",legs="Carmine Cuisses +1",feet="Nyame Sollerets"})
 
@@ -483,7 +483,7 @@ function init_gear_sets()
 	sets.defense.PDT = {main="Sakpata's Sword",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 				head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
 		        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
-				back="Moonbeam Cape",waist="Flume Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+				back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.defense.MDT = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 				head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
@@ -501,7 +501,7 @@ function init_gear_sets()
 
     -- Extra Melee sets.  Apply these on top of melee sets.
     sets.Knockback = {}
-    sets.MP = {waist="Flume Belt",ear1="Suppanomimi"}
+    sets.MP = {waist="Flume belt +1",ear1="Suppanomimi"}
     sets.MP_Knockback = {}
 	sets.SuppaBrutal = {ear1="Suppanomimi", ear2="Brutal Earring"}
 	sets.DWEarrings = {ear1="Suppanomimi",ear2="Eabani Earring"}

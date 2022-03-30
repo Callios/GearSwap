@@ -204,7 +204,7 @@ function init_gear_sets()
     sets.idle = {ammo="Iron Gobbet",
         head="Felistris Mask",neck="Wiglen Gorget",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
         body="Qaaxo Harness",hands="Iuitl Wristbands",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-        back="Shadow Mantle",waist="Flume Belt",legs="Qaaxo Tights",feet="Skadi's Jambeaux +1"}
+        back="Shadow Mantle",waist="Flume belt +1",legs="Qaaxo Tights",feet="Skadi's Jambeaux +1"}
 
     sets.idle.Town = {main="Izhiikoh", sub="Sabebus",ammo="Charis Feather",
         head="Whirlpool Mask",neck="Charis Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
@@ -214,24 +214,24 @@ function init_gear_sets()
     sets.idle.Weak = {ammo="Iron Gobbet",
         head="Felistris Mask",neck="Wiglen Gorget",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
         body="Qaaxo Harness",hands="Buremte Gloves",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-        back="Shadow Mantle",waist="Flume Belt",legs="Kaabnax Trousers",feet="Skadi's Jambeaux +1"}
+        back="Shadow Mantle",waist="Flume belt +1",legs="Kaabnax Trousers",feet="Skadi's Jambeaux +1"}
     
     -- Defense sets
 
     sets.defense.Evasion = {
         head="Felistris Mask",neck="Ej Necklace",
         body="Qaaxo Harness",hands="Iuitl Wristbands",ring1="Beeline Ring",ring2=gear.DarkRing.physical,
-        back="Toetapper Mantle",waist="Flume Belt",legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"}
+        back="Toetapper Mantle",waist="Flume belt +1",legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"}
 
     sets.defense.PDT = {ammo="Iron Gobbet",
         head="Felistris Mask",neck="Twilight Torque",
         body="Qaaxo Harness",hands="Iuitl Wristbands",ring1="Defending Ring",ring2=gear.DarkRing.physical,
-        back="Shadow Mantle",waist="Flume Belt",legs="Nahtirah Trousers",feet="Iuitl Gaiters +1"}
+        back="Shadow Mantle",waist="Flume belt +1",legs="Nahtirah Trousers",feet="Iuitl Gaiters +1"}
 
     sets.defense.MDT = {ammo="Demonry Stone",
         head="Wayfarer Circlet",neck="Twilight Torque",
         body="Qaaxo Harness",hands="Wayfarer Cuffs",ring1="Defending Ring",ring2="Shadow Ring",
-        back="Engulfer Cape",waist="Flume Belt",legs="Wayfarer Slops",feet="Wayfarer Clogs"}
+        back="Engulfer Cape",waist="Flume belt +1",legs="Wayfarer Slops",feet="Wayfarer Clogs"}
 
     sets.Kiting = {feet="Skadi's Jambeaux +1"}
 

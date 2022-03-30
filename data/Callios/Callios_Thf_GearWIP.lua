@@ -308,14 +308,14 @@ function init_gear_sets()
     sets.resting = {ammo="Staunch Tathlum +1",
         head="Meghanada Visor +2 ",neck="Bathy Choker +1",ear1="Infused Earring",ear2="Odnowa Earring +1",
         body="Meghanada Cuirie +2",hands="Meghanada Gloves +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Meghanada Chausses +2",feet="Meghanada Jambeaux +2"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Meghanada Chausses +2",feet="Meghanada Jambeaux +2"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Bathy Choker +1",ear1="Infused Earring",ear2="Odnowa Earring +1",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Defending Ring",
-        back="Moonbeam",waist="Flume Belt",legs="Malignance Tights",feet="Meghanada Jambeaux +2"}
+        back="Moonbeam",waist="Flume belt +1",legs="Malignance Tights",feet="Meghanada Jambeaux +2"}
         
     sets.idle.TP = {ammo="Ginsen",
         head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
@@ -325,7 +325,7 @@ function init_gear_sets()
     sets.idle.Town = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Assassin's Gorget +2",ear1="Infused Earring",ear2="Odnowa Earring +1",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Karieyh Ring +1",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Malignance Tights",feet="Jute Boots +1"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Malignance Tights",feet="Jute Boots +1"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 

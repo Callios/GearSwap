@@ -156,13 +156,13 @@ function init_gear_sets()
     sets.midcast.FastRecast = {ammo="Staunch tathlum",
 		head=gear.HercHeadDT,neck="Orunmila's torque",ear1="Dignitary's earring",ear2="Zennaroi Earring",
         body="Dread jupon",hands="Leyline gloves",ring1="Defending ring",ring2="Patricius ring",
-        back="Moonbeam cape",waist="Flume Belt +1",legs="Mummu kecks +1",feet=gear.HercFeetDT}
+        back="Moonbeam cape",waist="Flume belt +1 +1",legs="Mummu kecks +1",feet=gear.HercFeetDT}
 		
     -- Specific spells
     sets.midcast.Utsusemi = {ammo="Staunch tathlum",
 		head=gear.HercHeadDT,neck="Loricate torque +1",ear1="Dignitary's earring",ear2="Zennaroi Earring",
         body="Ashera harness",hands="Leyline gloves",ring1="Defending ring",ring2="Moonbeam ring",
-        back="Moonbeam cape",waist="Flume Belt +1",legs="Mummu kecks +1",feet=gear.HercFeetDT}
+        back="Moonbeam cape",waist="Flume belt +1 +1",legs="Mummu kecks +1",feet=gear.HercFeetDT}
      
     -- Ranged gear -- acc + TH
     sets.midcast.RangedAttack = {
@@ -190,12 +190,12 @@ function init_gear_sets()
     sets.idle = {ammo="Staunch tathlum +1",
 		head="Meghanada visor +2",neck="Bathy choker +1",ear1="Infused earring",ear2="Odnowa earring +1",
         body="Meg. Cuirie +2",hands="Meghanada gloves +2",ring1="Defending ring",ring2="Dark ring",
-        back="Solemnity cape",waist="Flume Belt",legs="Meghanada chausses +2",feet="Jute boots +1"}
+        back="Solemnity cape",waist="Flume belt +1",legs="Meghanada chausses +2",feet="Jute boots +1"}
 		
     sets.idle.Town = {ammo="Staunch tathlum +1",
 		head="Meghanada visor +2",neck="Bathy choker +1",ear1="Infused earring",ear2="Odnowa earring +1",
         body="Meg. Cuirie +2",hands="Meghanada gloves +2",ring1="Defending ring",ring2="Dark ring",
-        back="Solemnity cape",waist="Flume Belt",legs="Meghanada chausses +2",feet="Jute boots +1"}
+        back="Solemnity cape",waist="Flume belt +1",legs="Meghanada chausses +2",feet="Jute boots +1"}
 	
     -- Defense sets
     sets.defense.PDT = {ammo="Staunch tathlum +1",

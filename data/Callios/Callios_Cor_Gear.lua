@@ -62,7 +62,7 @@ function init_gear_sets()
     sets.precast.CorsairRoll = {main="Rostam",range="Compensator",
         head="Lanun Tricorne",neck="Regal Necklace",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Lanun Frac +3",hands="Chasseur's Gants",ring1="Defending Ring",ring2="Dark Ring",
-        back=gear.COR_TP,waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        back=gear.COR_TP,waist="Flume belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
@@ -98,7 +98,7 @@ function init_gear_sets()
     sets.precast.Waltz = {
         head="Carmine Mask +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Defending Ring",ring2="Valseur's Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
 		
 	sets.Self_Waltz = {head="Mummu Bonnet +2",body="Passion Jacket",ring1="Asklepian Ring"}
         
@@ -110,7 +110,7 @@ function init_gear_sets()
     sets.precast.FC = {
         head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
         body="Adhemar Jacket",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs=gear.HercLegsFC,feet="Carmine Greaves +1"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs=gear.HercLegsFC,feet="Carmine Greaves +1"}
 
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads",body="Passion Jacket"})
 	
@@ -224,7 +224,7 @@ sets.precast.WS = {
     sets.precast.WS['Burning Blade'] = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         body="Meg. Cuirie +2",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Nyame Flanchard",feet="Meg. Jam. +2"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Flanchard",feet="Meg. Jam. +2"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {}
@@ -234,14 +234,14 @@ sets.precast.WS = {
     sets.midcast.FastRecast = {
         head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
         body="Adhemar Jacket",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs=gear.HercLegsFC,feet="Carmine Greaves +1"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs=gear.HercLegsFC,feet="Carmine Greaves +1"}
         
     -- Specific spells
 
 	sets.midcast.Cure = {
         head="Carmine Mask +1",neck="Incanter's Torque",ear1="Enchntr. Earring +1",ear2="Mendi. Earring",
         body="Adhemar Jacket",hands="Leyline Gloves",ring1="Janniston Ring",ring2="Lebeche Ring",
-        back="Solemnity Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
+        back="Solemnity Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 	
 	sets.Self_Healing = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Cure_Received = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
@@ -287,13 +287,13 @@ sets.precast.WS = {
     sets.idle.Refresh = {ammo=gear.RAbullet,
         head="Rawhide Mask",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Genmei Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Malignance Tights",feet="Malignance Boots"}
     
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Genmei Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Eabani Earring",

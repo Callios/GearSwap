@@ -119,33 +119,33 @@ function init_gear_sets()
     sets.idle.Town = {main="Tsurumaru", sub="Pole Grip",ammo="Thew Bomblet",
         head="Yaoyotl Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
         body="Otronif Harness +1",hands="Otronif Gloves",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-        back="Atheling Mantle",waist="Flume Belt",legs="Phorcys Dirs",feet="Danzo Sune-ate"}
+        back="Atheling Mantle",waist="Flume belt +1",legs="Phorcys Dirs",feet="Danzo Sune-ate"}
     
     sets.idle.Field = {
         head="Yaoyotl Helm",neck="Wiglen Gorget",ear1="Bladeborn Earring",ear2="Steelflash Earring",
         body="Otronif Harness +1",hands="Otronif Gloves",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-        back="Shadow Mantle",waist="Flume Belt",legs="Karieyh Brayettes +1",feet="Danzo Sune-ate"}
+        back="Shadow Mantle",waist="Flume belt +1",legs="Karieyh Brayettes +1",feet="Danzo Sune-ate"}
 
     sets.idle.Weak = {
         head="Twilight Helm",neck="Wiglen Gorget",ear1="Bladeborn Earring",ear2="Steelflash Earring",
         body="Twilight Mail",hands="Buremte Gloves",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-        back="Shadow Mantle",waist="Flume Belt",legs="Karieyh Brayettes +1",feet="Danzo Sune-ate"}
+        back="Shadow Mantle",waist="Flume belt +1",legs="Karieyh Brayettes +1",feet="Danzo Sune-ate"}
     
     -- Defense sets
     sets.defense.PDT = {ammo="Iron Gobbet",
         head="Yaoyotl Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
         body="Otronif Harness +1",hands="Otronif Gloves",ring1="Defending Ring",ring2=gear.DarkRing.physical,
-        back="Shadow Mantle",waist="Flume Belt",legs="Karieyh Brayettes +1",feet="Otronif Boots +1"}
+        back="Shadow Mantle",waist="Flume belt +1",legs="Karieyh Brayettes +1",feet="Otronif Boots +1"}
 
     sets.defense.Reraise = {
         head="Twilight Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
         body="Twilight Mail",hands="Buremte Gloves",ring1="Defending Ring",ring2="Paguroidea Ring",
-        back="Shadow Mantle",waist="Flume Belt",legs="Karieyh Brayettes +1",feet="Otronif Boots +1"}
+        back="Shadow Mantle",waist="Flume belt +1",legs="Karieyh Brayettes +1",feet="Otronif Boots +1"}
 
     sets.defense.MDT = {ammo="Demonry Stone",
         head="Yaoyotl Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
         body="Otronif Harness +1",hands="Otronif Gloves",ring1="Defending Ring",ring2="Shadow Ring",
-        back="Engulfer Cape",waist="Flume Belt",legs="Karieyh Brayettes +1",feet="Otronif Boots +1"}
+        back="Engulfer Cape",waist="Flume belt +1",legs="Karieyh Brayettes +1",feet="Otronif Boots +1"}
 
     sets.Kiting = {feet="Danzo Sune-ate"}
 

@@ -219,7 +219,7 @@ function init_gear_sets()
 	sets.midcast.SongEffect = {main="Carnwenhan",sub="Genmei shield",range="Gjallarhorn",
 		head="Fili calot",neck="Moonbow Whistle +1",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
 		body="Fili hongreline +1",hands="Fili Manchettes",ring1="Defending ring",ring2="Inyanga ring",
-		back=gear.BRD_MACC_FC,waist="Flume belt",legs="Inyanga shalwar +2",feet="Brioso Slippers +3"}
+		back=gear.BRD_MACC_FC,waist="Flume belt +1",legs="Inyanga shalwar +2",feet="Brioso Slippers +3"}
 		
 	sets.midcast.SongEffect.DW = {main="Carnwenhan",sub="Tauret"}
 
@@ -249,7 +249,7 @@ function init_gear_sets()
     sets.midcast.DaurdablaDummy = {main="Earth staff",sub="Enki Strap",range=info.ExtraSongInstrument,
 		head="Inyanga tiara +2",neck="Loricate torque +1",ear1="Enchntr. Earring +1",ear2="Loquacious earring",
 		body="Inyanga jubbah +2",hands="Inyanga dastanas +2",ring1="Defending ring",ring2="Gelatinous Ring +1",
-		back=gear.BRD_MACC_FC,waist="Flume Belt",legs="Inyanga shalwar +2",feet="Inyanga crackows +2"}
+		back=gear.BRD_MACC_FC,waist="Flume belt +1",legs="Inyanga shalwar +2",feet="Inyanga crackows +2"}
 
 	-- Other general spells and classes.
 	sets.midcast.Cure = {main="Daybreak",sub="Enki Strap",ammo="Pemphredo Tathlum",
@@ -290,7 +290,7 @@ function init_gear_sets()
 	sets.resting = {main="Chatoyant Staff",sub="Umbra Strap",ammo="Staunch Tathlum +1",
 		head=empty,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Respite Cloak",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-		back="Umbra Cape",waist="Flume Belt +1",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+		back="Umbra Cape",waist="Flume belt +1 +1",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 	
 	sets.idle = {main="Carnwenhan",sub="Genmei shield",range="Nibiru Harp",
 		head="Bunzi's Hat",neck="Bathy choker +1",ear1="Infused earring",ear2="Odnowa earring +1",
@@ -312,7 +312,7 @@ function init_gear_sets()
 	sets.defense.PDT = {range="Nibiru harp",
 		head="Bunzi's Hat",neck="Loricate torque +1",ear1="Genmei earring",ear2="Odnowa earring +1",
 		body="Bihu Jstcorps. +3",hands="Bihu Cuffs +3",ring1="Defending ring",ring2="Gelatinous ring +1",
-		back="Solemnity cape",waist="Flume belt",legs="Brioso cannions +3",feet="Nyame Sollerets"}
+		back="Solemnity cape",waist="Flume belt +1",legs="Brioso cannions +3",feet="Nyame Sollerets"}
 
 	sets.defense.MDT = {range="Nibiru harp",
 		head="Bunzi's Hat",neck="Warder's charm +1",ear1="Etiolation earring",ear2="Odnowa earring +1",

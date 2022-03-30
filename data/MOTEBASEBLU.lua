@@ -432,17 +432,17 @@ function init_gear_sets()
     sets.idle = {ammo="Staunch Tathlum",
         head="Rawhide Mask",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Ethereal Earring",
         body="Vrikodara Jupon",hands="Ayanmo Manopolas +1",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Ayanmo Gambieras +1"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet="Ayanmo Gambieras +1"}
 
     sets.idle.PDT = {ammo="Impatiens",
         head="Ayanmo Zucchetto +1",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Ethereal Earring",
         body="Ayanmo Corazza +1",hands="Ayanmo Manopolas +1",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Ayanmo Gambieras +1"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet="Ayanmo Gambieras +1"}
 
     sets.idle.Town = {main="Buramenk'ah",ammo="Impatiens",
         head="Ocelomeh Headpiece +1",neck="Sanctity Necklace",ear1="Bloodgem Earring",ear2="Loquacious Earring",
         body="Councilor's Garb",hands="Assimilator's Bazubands +1",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Luhlaza Charuqs"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet="Luhlaza Charuqs"}
 
     sets.idle.Learning = set_combine(sets.idle, sets.Learning)
 
@@ -451,7 +451,7 @@ function init_gear_sets()
     sets.defense.PDT = {ammo="Iron Gobbet",
         head="Ayanmo Zucchetto +1",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Suppanomimi",
         body="Ayanmo Corazza +1",hands="Ayanmo Manopolas +1",ring1="Defending Ring",ring2="Dark Ring",
-        back="Agema Cape",waist="Flume Belt",legs="Ayanmo Cosciales +1",feet="Ayanmo Gambieras +1"}
+        back="Agema Cape",waist="Flume belt +1",legs="Ayanmo Cosciales +1",feet="Ayanmo Gambieras +1"}
 
     sets.defense.MDT = {ammo="Demonry Stone",
         head="Ayanmo Zucchetto +1",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Suppanomimi",
