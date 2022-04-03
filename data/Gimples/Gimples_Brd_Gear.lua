@@ -4,10 +4,10 @@ function user_job_setup()
 	state.HybridMode:options('Normal','DT')
     state.CastingMode:options('Normal','Resistant','AoE')
     state.IdleMode:options('Normal','NoRefresh','DT')
-	state.Weapons:options('None','Naegling','Aeneas','DualWeapons','DualNaegling','DualTauret','DualAeolian')
+	state.Weapons:options('None','Naegling','Dagger','DualWeapons','DualNaegling','DualTauret')
 
-	gear.melee_jse_back = {name="Intarabus's Cape",augments={'Accuracy+20 Attack+20'}}
-	gear.magic_jse_back = {name="Intarabus's Cape",augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}
+	--gear.melee_jse_back = {name="Intarabus's Cape",augments={'Accuracy+20 Attack+20'}}
+	--gear.magic_jse_back = {name="Intarabus's Cape",augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}
 
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = 'Blurred Harp'
@@ -37,12 +37,12 @@ function init_gear_sets()
 	--------------------------------------
 
 	-- Weapons sets
-	sets.weapons.Aeneas = {main="Aeneas",sub="Genmei Shield"}
-	sets.weapons.DualWeapons = {main="Aeneas",sub="Blurred Knife +1"}
-	sets.weapons.DualNaegling = {main="Naegling",sub="Blurred Knife +1"}
-	sets.weapons.Naegling = {main="Naegling",sub="Genmei Shield"}
-	sets.weapons.DualTauret = {main="Tauret",sub="Blurred Knife +1"}
-	sets.weapons.DualAeolian = {main="Tauret",sub="Levante Dagger"}
+	sets.weapons.Dagger = {main="Skinflayer",sub="Genmei Shield"}
+	sets.weapons.DualWeapons = {main="Skinflayer",sub="Blurred Knife"}
+	sets.weapons.DualNaegling = {main="Kaja Sword",sub="Blurred Knife"}
+	sets.weapons.Naegling = {main="Kaja Sword",sub="Genmei Shield"}
+	sets.weapons.DualTauret = {main="Aija Dagger",sub="Blurred Knife"}
+	
 
     sets.buff.Sublimation = {waist="Embla Sash"}
     sets.buff.DTSublimation = {waist="Embla Sash"}
@@ -50,7 +50,7 @@ function init_gear_sets()
 	-- Precast Sets
 
 	-- Fast cast sets for spells
-	sets.precast.FC = {main="Kali",sub="Ammurapi Shield",ammo="Impatiens",
+	sets.precast.FC = {main=gear.kali_macc,sub="Ammurapi Shield",ammo="Impatiens",
 		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Etiolation Earring",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands=gear.telchine_enh_hands,ring1="Kishar Ring",ring2="Lebeche Ring",
 		back=gear.magic_jse_back,waist="Embla Sash",legs=gear.chironic_legs_FC,feet="Bihu Slippers +1"}
@@ -65,7 +65,7 @@ function init_gear_sets()
 	sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {main="Daybreak",sub="Genmei Shield"})
 	
-	sets.precast.FC.BardSong = {main="Kali",sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
+	sets.precast.FC.BardSong = {main=gear.kali_macc,sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
 		head="Fili calot +1",neck="Voltsurge Torque",ear1="Etiolation Earring",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands=gear.telchine_enh_hands,ring1="Kishar Ring",ring2="Lebeche Ring",
 		back=gear.magic_jse_back,waist="Embla Sash",legs=gear.chironic_legs_FC,feet="Bihu Slippers +1"}
@@ -80,7 +80,7 @@ function init_gear_sets()
 	sets.precast.FC['Horde Lullaby II'] = {range="Marsyas"}
 	sets.precast.FC['Horde Lullaby II'].Resistant = {range="Blurred Harp"}
 	sets.precast.FC['Horde Lullaby II'].AoE = {range="Blurred Harp"}
-	sets.precast.FC['Vital Etude'] = sets.precast.DaurdableDummy
+	
 		
 	sets.precast.FC.Mazurka = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
 	sets.precast.FC['Honor March'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
@@ -158,32 +158,32 @@ function init_gear_sets()
 	
 
 	-- For song buffs (duration and AF3 set bonus)
-	sets.midcast.SongEffect = {main="Kali",sub="Genmei Shield",range="Gjallarhorn",ammo=empty,
+	sets.midcast.SongEffect = {main=gear.kali_macc,sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
 		head="Fili Calot +1",neck="Moonbow Whistle",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Fili Hongreline +1",hands="Inyan. Dastanas +2",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back=gear.magic_jse_back,waist="Kobo Obi",legs="Inyanga Shalwar +2",feet="Brioso Slippers +1"}
+		body="Fili Hongreline +1",hands="Inyan. Dastanas +2",ring1="Defending Ring",ring2="Stikini Ring",
+		back=gear.brd_jse_macc,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Brioso Slippers +2"}
 		
-	sets.midcast.SongEffect.DW = {main="Kali",sub="Kali"}
+	sets.midcast.SongEffect.DW = {main=gear.kali_macc,sub=gear.kali_refresh}
 
 	-- For song defbuffs (duration primary, accuracy secondary)
-	sets.midcast.SongDebuff = {main="Kali",sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
+	sets.midcast.SongDebuff = {main=gear.kali_macc,sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
 		head="Inyanga Tiara +2",neck="Moonbow Whistle",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Fili Hongreline +1",hands="Inyan. Dastanas +2",ring1="Metamorph Ring +1",ring2="Stikini Ring +1",
-		back=gear.magic_jse_back,waist="Acuity Belt +1",legs="Inyanga Shalwar +2",feet="Brioso Slippers +1"}
+		body="Fili Hongreline +1",hands="Inyan. Dastanas +2",ring1="Defending Ring",ring2="Metamorph Ring +1",
+		back=gear.brd_jse_macc,waist="Eschan Stone",legs="Inyanga Shalwar +2",feet="Brioso Slippers +2"}
 		
 	sets.midcast.SongDebuff.DW = {main="Kali",sub="Kali"}
 
 	-- For song defbuffs (accuracy primary, duration secondary)
 	sets.midcast.SongDebuff.Resistant = {main="Daybreak",sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
 		head="Inyanga Tiara +2",neck="Moonbow Whistle",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2",ring1="Metamorph Ring +1",ring2="Stikini Ring +1",
-		back=gear.magic_jse_back,waist="Acuity Belt +1",legs="Inyanga Shalwar +2",feet="Aya. Gambieras +2"}
+		body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2",ring1="Defending Ring",ring2="Metamorph Ring +1",
+		back=gear.brd_jse_macc,waist="Eschan Stone",legs="Inyanga Shalwar +2",feet="Brioso Slippers +2"}
 
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",range="Gjallarhorn",ammo=empty,
 		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body="Inyanga Jubbah +2",hands="Gendewitha Gages +1",ring1="Kishar Ring",ring2="Prolix Ring",
-		back=gear.magic_jse_back,waist="Witful Belt",legs="Fili Rhingrave +1",feet="Aya. Gambieras +2"}
+		back=gear.magic_jse_back,waist="Embla Sash",legs="Fili Rhingrave +1",feet="Nyame Sollerets"}
 		
 	sets.midcast.SongDebuff.DW = {}
 
@@ -229,22 +229,22 @@ function init_gear_sets()
 
 	-- Resting sets
 	sets.resting = {main="Chatoyant Staff",sub="Umbra Strap",ammo="Staunch Tathlum +1",
-		head=empty,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Respite Cloak",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
+		head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+		body="Inyanga Jubbah +2",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
 		back="Umbra Cape",waist="Flume belt",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 	
-	sets.idle = {main="Kali",sub="Ammurapi shield",ammo="Staunch Tathlum +1",
+	sets.idle = {main=gear.kali_refresh,sub="Ammurapi shield",ammo="Staunch Tathlum +1",
 		head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
 		body="Inyanga Jubbah +2",hands="Inyanga dastanas +2",ring1="Defending Ring",ring2="Inyanga Ring",
 		back="Solemnity Cape",waist="Carrier's Sash",legs="Assiduity Pants",feet="Fili Cothurnes +1"}
 		
 	sets.idle.NoRefresh = {main="Daybreak",sub="Genmei Shield",ammo="Staunch Tathlum +1",
-		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
 		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Fili Cothurnes +1"}
 
 	sets.idle.DT = {main="Daybreak",sub="Genmei Shield",ammo="Staunch Tathlum +1",
-		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
 		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	
@@ -272,10 +272,10 @@ function init_gear_sets()
 	-- If you create a set with both offense and defense modes, the offense mode should be first.
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
-	sets.engaged = {main="Aeneas",sub="Genmei Shield",ammo="Aurgelmir Orb +1",
-		head="Aya. Zucchetto +2",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
-		back=gear.melee_jse_back,waist="Windbuffet Belt +1",legs="Aya. Cosciales +2",feet="Battlecast Gaiters"}
+	sets.engaged = {main="Skinflayer",sub="Genmei Shield",ammo="Aurgelmir Orb +1",
+		head="Nyame Helm",neck="Lissome Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Apate Ring",
+		back="Solemnity Cape",waist="Sarissaphoroi belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.DT = {main="Aeneas",sub="Genmei Shield",ammo="Aurgelmir Orb +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
@@ -287,14 +287,14 @@ function init_gear_sets()
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
 		back=gear.melee_jse_back,waist="Olseni Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
-	sets.engaged.DW = {main="Aeneas",sub="Blurred Knife +1",ammo="Aurgelmir Orb +1",
-		head="Aya. Zucchetto +2",neck="Asperity Necklace",ear1="Suppanomimi",ear2="Brutal Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
-		back=gear.melee_jse_back,waist="Reiki Yotai",legs="Aya. Cosciales +2",feet="Battlecast Gaiters"}
+	sets.engaged.DW = {main="Skinflayer",sub="Blurred Knife",ammo="Aurgelmir Orb +1",
+		head="Nyame Helm",neck="Lissome Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Apate Ring",
+		back="Solemnity Cape",waist="Reiki Yotai",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.DW.DT = {main="Aeneas",sub="Blurred Knife +1",ammo="Aurgelmir Orb +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Brutal Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Petrov Ring",ring2="Ilabrat Ring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Ilabrat Ring",
 		back=gear.melee_jse_back,waist="Reiki Yotai",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.DW.Acc = {main="Aeneas",sub="Blurred Knife +1",ammo="Aurgelmir Orb +1",
@@ -313,7 +313,7 @@ function select_default_macro_book()
 	set_macro_page(10, 10)
 end
 
-state.Weapons:options('None','Naegling','Aeneas','DualWeapons','DualNaegling','DualTauret','DualAeolian')
+state.Weapons:options('None','Naegling','Dagger','DualWeapons','DualNaegling','DualTauret')
 
 autows_list = {['Naegling']='Savage Blade',['Aeneas']="Rudra's Storm",['DualWeapons']="Rudra's Storm",['DualNaegling']='Savage Blade',['DualTauret']='Evisceration',
      ['DualAeolian']='Aeolian Edge'}

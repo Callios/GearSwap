@@ -82,9 +82,9 @@ gear.taeon_pet_feet =  { name="Taeon Boots", augments={'Pet: Attack+25 Pet: Rng.
     gear.odyssean_SIRDFeet = { name="Odyssean Greaves", augments={'Rng.Atk.+16','Accuracy+30','"Refresh"+1','Mag. Acc.+6 "Mag.Atk.Bns."+6',}}
     gear.odyssean_WSBODY = { name="Odyss. Chestplate", augments={'Accuracy+15','Weapon skill damage +5%','STR+9',}}
     gear.odyssean_MagWSFeet = { name="Odyssean Greaves", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Weapon skill damage +4%','INT+4','"Mag.Atk.Bns."+10',}}
-    gear.odyssean_MagWSHead = { name="Odyssean Helm", augments={'Magic Damage +5','"Mag.Atk.Bns."+7','Accuracy+19 Attack+19','Mag. Acc.+18 "Mag.Atk.Bns."+18',}}
     gear.odyssean_MagFCLegs = { name="Odyssean Cuisses", augments={'"Fast Cast"+5','Mag. Acc.+7','"Mag.Atk.Bns."+7',}}
     gear.odyssean_PhalanxBody = {name="Odyss. Chestplate", augments={'"Snapshot"+4','Mag. Acc.+17','Phalanx +3',}}
+    gear.odyssean_PhalanxHead ={name="Odyssean Helm", augments={'Pet: INT+9','STR+9','Phalanx +2','Accuracy+7 Attack+7'}}
 
 
 --- COR Stuff

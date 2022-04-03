@@ -9,7 +9,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-    state.Weapons:options('AeneasCento','AeneasGleti','TauretCento','TauretGleti','NaeglingBK')
+    state.Weapons:options('None','AeneasCento','AeneasGleti','TauretCento','TauretGleti','NaeglingBK')
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWMax','Parry'}
 	state.AmbushMode = M(false, 'Ambush Mode')
@@ -42,7 +42,7 @@ function init_gear_sets()
     sets.Kiting = {feet="Jute Boots +1"} --ctrl F10
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
-	sets.buff.Sleep = {head="Frenzy Sallet"}
+	sets.buff.Sleep = {}
 	
     sets.buff['Sneak Attack'] = {head="Malignance Chapeau",neck="Assassin's Gorget +2",ear1="Mache Earring +1",ear2="Sherida Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Ilabrat Ring",ring2="Regal Ring",

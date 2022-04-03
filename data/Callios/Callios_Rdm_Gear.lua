@@ -395,12 +395,12 @@ function init_gear_sets()
 
 	-- Idle sets
 	sets.idle = {main="Daybreak",sub="Sacro Bulwark",ammo="Homiliary",
-		head="Viti. Chapeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Eabani Earring",
+		head="Viti. Chapeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
 		body="Amalric doublet +1",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back="Moonbeam Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet='Malignance Boots'}
 		
 	sets.idle.PDT = {main="Daybreak",sub="Sacro Bulwark",ammo="Staunch Tathlum +1",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back="Moonbeam Cape",waist="Flume belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
