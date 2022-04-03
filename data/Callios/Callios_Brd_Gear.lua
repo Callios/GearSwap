@@ -29,7 +29,7 @@ function user_job_setup()
 	send_command('bind !r gs c weapons None;gs c update')
 	send_command('bind !q gs c weapons NukeWeapons;gs c update')
 	send_command('bind ^q gs c weapons Swords;gs c update')
-	send_command('bind @z gs c cycle UnlockWeapons')
+	
 
 	select_default_macro_book()
 end
@@ -252,7 +252,7 @@ function init_gear_sets()
 		back=gear.BRD_MACC_FC,waist="Flume belt +1",legs="Inyanga shalwar +2",feet="Inyanga crackows +2"}
 
 	-- Other general spells and classes.
-	sets.midcast.Cure = {main="Daybreak",sub="Enki Strap",ammo="Pemphredo Tathlum",
+	sets.midcast.Cure = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Kaykaus mitra +1",neck="Incanter's torque",ear1="Mendicant's earring",ear2="Novia earring",
 		body="Kaykaus bliaut +1",hands="Kaykaus cuffs +1",ring1="Sirona's ring",ring2="Lebeche ring",
 		back="Tempered cape +1",waist="Porous rope",legs="Kaykaus tights +1",feet="Kaykaus boots +1"}
