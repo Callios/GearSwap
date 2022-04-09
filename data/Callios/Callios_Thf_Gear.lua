@@ -9,7 +9,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-    state.Weapons:options('None2','AeneasCento','AeneasGleti','TauretCento','TauretGleti','NaeglingBK')
+    state.Weapons:options('None22','AeneasCento','AeneasGleti','TauretCento','TauretGleti','NaeglingBK')
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWMax','Parry'}
 	state.AmbushMode = M(false, 'Ambush Mode')
