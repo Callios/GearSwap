@@ -18,7 +18,7 @@ function user_job_setup()
 	state.ResistDefenseMode:options('MEVA','MEVA_HP')
 	state.IdleMode:options('Normal','Tank','Magic','PDT','MDT','Kiting')
 	state.Weapons:options('None','BurtgangOchain','BurtgangAegis','NaeglingOchain','NaeglingAegis','Cleave')
-	
+	state.AutoEmblem = M(false, 'Auto Emblem')
     state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP','Twilight'}
 	
 	gear.fastcast_jse_back = {name="Rudianos's Mantle",augments={'INT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10',}}
