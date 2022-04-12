@@ -9,7 +9,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT','NukeLock')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('None','Crocea','Naegling','Murgleis','Tauret','Club','DualWeapons','DualWeaponsMurg','MurgGleti','DualWeaponsCorcea','SanguineSpam','SanguineSpam2','DualEvisceration','DualClubs','DualAeolian','EnspellOnly')
+	state.Weapons:options('None','Crocea','Naegling','Murgleis','Tauret','Club','DualWeapons','DualWeaponsMurg','MurgGleti','DualWeaponsCorcea','SanguineSpam','SanguineSpam2','DualEvisceration','DualClubs','DualBlackHalo','DualAeolian','EnspellOnly')
 	
 	gear.obi_cure_back = "Tempered Cape +1"
 	gear.obi_cure_waist = "Witful Belt"
@@ -91,10 +91,10 @@ function init_gear_sets()
 	sets.precast.WS = {
         head="Nyame Helm",
 		neck="Fotia Gorget",
-		ear1="Brutal Earring",ear2="Sherida Earring",
+		ear2="Brutal Earring",ear1="Sherida Earring",
 		body="Nyame Mail",
 		hands="Nyame Gauntlets",
-		ring1="Rufescent Ring",ring2="Ilabrat Ring",
+		ring2="Rufescent Ring",ring1="Ilabrat Ring",
 		back=gear.RDMCape_STRWS,
 		waist="Fotia Belt",
 		legs="Nyame Flanchard",
@@ -123,6 +123,11 @@ function init_gear_sets()
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Metamorph Ring +1",ring2='Epaminondas\'s Ring',
 		back=gear.RDMCape_STRWS,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
+	sets.precast.WS['Black Halo'] = {
+			head="Nyame Helm",neck="Duelist Torque +2",ear1="Sherida Earring",ear2="Regal Earring",
+			body="Nyame Mail",hands="Nyame Gauntlets",ring1="Metamorph Ring +1",ring2='Epaminondas\'s Ring',
+			back=gear.RDMCape_STRWS,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
 	sets.precast.WS['Death Blossom'] = {
 		head="Nyame Helm",neck="Duelist Torque +2",ear1="Moonshade Earring",ear2="Regal Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Metamorph Ring +1",ring2='Epaminondas\'s Ring',

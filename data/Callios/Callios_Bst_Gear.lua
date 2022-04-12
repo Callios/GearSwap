@@ -144,27 +144,27 @@ function init_gear_sets()
 	sets.precast.WS = {ammo="Coiste Bodhar",
 		head="Nyame Helm",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Ilabrat Ring",
-		back="Lupine Cape",waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.BST_WS,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.WS.SomeAcc = {ammo="Coiste Bodhar",
 		head="Nayme Helm",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Ilabrat Ring",
-		back="Lupine Cape",waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.BST_WS,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.WS.Acc = {ammo="Voluspa Tathlum",
 		head="Nyame Helm",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Ilabrat Ring",
-		back="Lupine Cape",waist="Olseni Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.BST_WS,waist="Olseni Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.WS.FullAcc = {ammo="Voluspa Tathlum",
 	head="Nyame Helm",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 	body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Ilabrat Ring",
-	back="Lupine Cape",waist="Olseni Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+	back=gear.BST_WS,waist="Olseni Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.WS.Fodder = {ammo="Voluspa Tathlum",
 	head="Nyame Helm",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 	body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Ilabrat Ring",
-	back="Lupine Cape",waist="Olseni Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+	back=gear.BST_WS,waist="Olseni Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	-- Specific weaponskill sets.
 	sets.precast.WS['Ruinator'] = set_combine(sets.precast.WS, {})
@@ -179,29 +179,29 @@ function init_gear_sets()
 	sets.precast.WS['Primal Rend'] = {ammo="Ghastly Tathlum +1",
 		head="Jumalik Helm",neck="Baetyl Pendant",ear1="Crematio Earring",ear2="Friomisi Earring",
 		body="Jumalik Mail",hands="Leyline Gloves",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		back="Toro Cape",waist="Fotia Belt",legs="Tali'ah Sera. +2",feet="Tot. Gaiters +1"}
+		back=gear.BST_WS,waist="Fotia Belt",legs="Tali'ah Sera. +2",feet="Tot. Gaiters +1"}
 
 
 	sets.precast.WS['Decimation'] = {ammo="Coiste Bodhar",
 		head="Gleti's Mask",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Brutal Earring",
 		body="Gleti's Cuirass",hands="Gleti's Gauntlets",ring1="Epaminondas's Ring",ring2="Epona's Ring",
-		back="Lupine Cape",waist="Fotia Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
+		back=gear.BST_WS,waist="Fotia Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
 
 	sets.precast.WS['Aeolian Edge'] = {ammo="Coiste Bodhar",
 		head="Nyame Helm",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
 		body="Nyame Mail",hands="Nyame Guantlets",ring1="Epaminondas's Ring",ring2="Metamorph Ring +1",
-		back="Toro Cape",waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.BST_WS,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.WS['Cloudsplitter'] = {ammo="Coiste Bodhar",
 		head="Nyame Helm",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
 		body="Nyame Mail",hands="Nyame Guantlets",ring1="Epaminondas's Ring",ring2="Metamorph Ring +1",
-		back="Toro Cape",waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.BST_WS,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.WS['Savage Blade'] = {ammo="Coiste Bodhar",
         head="Nyame Helm",neck="Caro Necklace",
         body="Nyame Mail",hands="Nyame Gauntlets",ear1="Ishvara Earring",ear2="Moonshade Earring",
         ring1="Regal Ring",ring2="Epaminondas's Ring",
-        back=gear.BST_SAVAGE,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back=gear.BST_WS,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 		-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Brutal Earring",ear2="Sherida Earring",}
@@ -210,7 +210,7 @@ function init_gear_sets()
 				-- PET SIC & READY MOVES
 	sets.midcast.Pet.WS = {ammo="Voluspa Tathlum",
 		head=gear.taeon_pet_head,neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
-		body=gear.taeon_pet_body,hands="Nukumi Manoplas +1",ring1="Thurandaut Ring",ring2="C. Palug Ring",
+		body=gear.taeon_pet_body,hands=gear.taeon_pet_hands,ring1="Thurandaut Ring",ring2="C. Palug Ring",
 		back="Artio's Mantle",waist="Incarnation Sash",legs=gear.taeon_pet_legs,feet=gear.taeon_pet_feet}
 
 	sets.midcast.Pet.SomeAcc = set_combine(sets.midcast.Pet.WS, {main="Kerehcatl",sub=gear.PHYKumbha2,hands="Regimen Mittens"})
@@ -263,20 +263,20 @@ function init_gear_sets()
 		
 	sets.idle.Reraise = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 
-	sets.idle.Pet = {ammo="Voluspa Tathlum",
+	sets.idle.Pet = {ammo="Staunch Tathlum +1",
 		head="Gleti's Mask",neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		body="Gleti's Cuirass",hands="Gleti's Gloves",ring1="Defending Ring",ring2="C. Palug Ring",
-		back="Artio's Mantle",waist="Isa Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
+		back=gear.BST_TP,waist="Isa Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
 
-	sets.idle.Pet.Engaged = {ammo="Voluspa Tathlum",
+	sets.idle.Pet.Engaged = {ammo="Staunch Tathlum +1",
 		head="Gleti's Mask",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		body="Gleti's Cuirass",hands="Gleti's Gloves",ring1="Defending Ring",ring2="C. Palug Ring",
-		back="Artio's Mantle",waist="Isa Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
+		back=gear.BST_TP,waist="Isa Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
 
-	sets.idle.Pet.Engaged.DW = {ammo="Voluspa Tathlum",
+	sets.idle.Pet.Engaged.DW = {ammo="Staunch Tathlum +1",
 	head="Gleti's Mask",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 	body="Gleti's Cuirass",hands="Gleti's Gloves",ring1="Defending Ring",ring2="C. Palug Ring",
-	back="Artio's Mantle",waist="Isa Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
+	back=gear.BST_TP,waist="Isa Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
 
 	-- DEFENSE SETS
 	sets.defense.PDT = {ammo="Staunch Tathlum +1",
@@ -319,27 +319,27 @@ function init_gear_sets()
 	sets.engaged = {main="Dolichenus",ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-		back="Ground. Mantle +1",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		back=gear.BST_TP,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.SomeAcc = {ammo="Falcon Eye",
 		head="Malignance Chapeau",neck="Shulmanu Collar",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-		back="Letalis Mantle",waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
+		back=gear.BST_TP,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
 
 	sets.engaged.Acc = {ammo="Falcon Eye",
 		head="Malignance Chapeau",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Brutal Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Ramuh Ring +1",ring2="Epona's Ring",
-		back="Letalis Mantle",waist="Olseni Belt",legs="Malignance Tights",feet="Malignance Boots"}
+		back=gear.BST_TP,waist="Olseni Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.FullAcc = {ammo="Falcon Eye",
 		head="Malignance Chapeau",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back="Ground. Mantle +1",waist="Olseni Belt",legs="Malignance Tights",feet="Malignance Boots"}
+		back=gear.BST_TP,waist="Olseni Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.Fodder = {ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Asperity Necklace",ear1="Trux Earring",ear2="Brutal Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-		back="Bleating Mantle",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		back=gear.BST_TP,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
 	-- MELEE (SINGLE-WIELD) HYBRID SETS
 	sets.engaged.PDT = {ammo="Staunch Tathlum +1",
@@ -371,27 +371,27 @@ function init_gear_sets()
 	sets.engaged.DW = {main="Dolichenus",sub="Aguw's Axe",ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Anu Torque",ear1="Eabani Earring",ear2="Sherida Earring",
 		body="Gleti's Cuirass",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-		back="Ground. Mantle +1",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
+		back=gear.BST_TP,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.DW.SomeAcc = {ammo="Coiste Bodhar",
 	head="Malignance Chapeau",neck="Anu Torque",ear1="Eabani Earring",ear2="Sherida Earring",
 	body="Gleti's Cuirass",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-	back="Ground. Mantle +1",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
+	back=gear.BST_TP,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.DW.Acc = {ammo="Coiste Bodhar",
 	head="Malignance Chapeau",neck="Anu Torque",ear1="Eabani Earring",ear2="Sherida Earring",
 	body="Gleti's Cuirass",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-	back="Ground. Mantle +1",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
+	back=gear.BST_TP,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.DW.FullAcc = {ammo="Coiste Bodhar",
 	head="Malignance Chapeau",neck="Anu Torque",ear1="Eabani Earring",ear2="Sherida Earring",
 	body="Gleti's Cuirass",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-	back="Ground. Mantle +1",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
+	back=gear.BST_TP,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.DW.Fodder = {ammo="Coiste Bodhar",
 	head="Malignance Chapeau",neck="Anu Torque",ear1="Eabani Earring",ear2="Sherida Earring",
 	body="Gleti's Cuirass",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-	back="Ground. Mantle +1",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
+	back=gear.BST_TP,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
 	-- MELEE (DUAL-WIELD) HYBRID SETS
 	sets.engaged.DW.PDT = set_combine(sets.engaged.PDT, {})

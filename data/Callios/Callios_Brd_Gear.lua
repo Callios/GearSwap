@@ -287,9 +287,9 @@ function init_gear_sets()
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})
 
 	-- Resting sets
-	sets.resting = {main="Chatoyant Staff",sub="Umbra Strap",ammo="Staunch Tathlum +1",
-		head=empty,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Respite Cloak",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
+	sets.resting = {main="Chatoyant Staff",sub="Enki Strap",ammo="Staunch Tathlum +1",
+		head="Bunzi's Hat",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+		body="Inyanga jubbah +2",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
 		back="Umbra Cape",waist="Flume belt +1 +1",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 	
 	sets.idle = {main="Carnwenhan",sub="Genmei shield",range="Nibiru Harp",

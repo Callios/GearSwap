@@ -101,7 +101,9 @@ gear.taeon_pet_feet =  { name="Taeon Boots", augments={'Pet: Attack+25 Pet: Rng.
     gear.RNG_RAWSD  = { name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}}
     gear.RNG_SNAP   = { name="Belenus's Cape", augments={'Snapshot +10'}}
 
-
+    --- BST Stuff 
+    gear.BST_WS = { name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
+    gear.BST_TP = { name="Artio's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 --- BLU Stuff 
 
     gear.BLUSTRWS   = {name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}

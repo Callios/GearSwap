@@ -161,13 +161,13 @@ sets.precast.WS = {
         legs="Carmine Cuisses +1",feet="Carmine Greaves +1"})
     
     sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
-        head="Nyame Helm",neck="Caro Necklace",
+        head="Nyame Helm",neck="Commodore Charm +2",
         body="Nyame Mail",hands="Nyame Gauntlets",ear1="Ishvara Earring",ear2="Moonshade Earring",
         ring1="Regal Ring",ring2="Epaminondas's Ring",
         back=gear.COR_STRWSD,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.precast.WS['Savage Blade'].Acc = {ammo=gear.WSbullet,
-        head="Carmine Mask +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
+        head="Carmine Mask +1",neck="Commodore Charm +2",ear1="Moonshade Earring",ear2="Telos Earring",
         body="Meg. Cuirie +2",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Epaminondas's Ring",
         back=gear.COR_STRWSD,waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet="Lanun Bottes +3"}
     
