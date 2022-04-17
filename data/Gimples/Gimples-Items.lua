@@ -20,6 +20,7 @@ gear.telchine_enh_hands = {name="Telchine Gloves", augments={'"Fast Cast"+4','En
 
 ---BARD GEAR
 
+gear.brd_jse_fc = {name="Intarabus's Cape", augments={'"Fast Cast"+10',}}
 gear.brd_jse_macc = {name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+5','Damage taken-2%'}}
 gear.kali_macc = {name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10'}}
 gear.kali_refresh = {name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1'}}

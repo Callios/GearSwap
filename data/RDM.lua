@@ -610,6 +610,24 @@ function update_melee_groups()
 	end	
 end
 
+-- test below line --
+
+-- function update_melee_groups()
+-- 	classes.CustomMeleeGroups:clear()
+	
+-- 	if player.equipment.main and player.equipment.main == "Crocea Mors" and enspell ~= '' then
+-- 		if enspell:endswith('II') then
+-- 			classes.CustomMeleeGroups:append('Enspell2')
+-- 		else
+-- 			classes.CustomMeleeGroups:append('Enspell')
+-- 		end
+-- 	end
+	
+-- 	if player.equipment.main and player.equipment.main == "Murgleis" and state.Buff['Aftermath: Lv.3'] then
+-- 		classes.CustomMeleeGroups:append('AM')
+-- 	end	
+-- end
+
 buff_spell_lists = {
 	Auto = {--Options for When are: Always, Engaged, Idle, OutOfCombat, Combat
 		{Name='Refresh III',	Buff='Refresh',		SpellID=894,	When='Always'},

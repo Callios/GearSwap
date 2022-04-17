@@ -9,7 +9,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT','NukeLock')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('None','Crocea','Naegling','Murgleis','Tauret','Club','DualWeapons','DualWeaponsMurg','MurgGleti','DualWeaponsCorcea','SanguineSpam','SanguineSpam2','DualEvisceration','DualClubs','DualBlackHalo','DualAeolian','EnspellOnly')
+	state.Weapons:options('None','Crocea','Naegling','Murgleis','Tauret','Club','DualWeapons','DualWeaponsMurg','MurgGleti','DualWeaponsCorcea','SanguineSpam','SanguineSpam2','SanguineSpam3','DualEvisceration','DualClubs','DualBlackHalo','DualAeolian','EnspellOnly')
 	
 	gear.obi_cure_back = "Tempered Cape +1"
 	gear.obi_cure_waist = "Witful Belt"
@@ -459,6 +459,7 @@ function init_gear_sets()
 	sets.weapons.DualWeaponsCorcea = {main="Crocea Mors",sub="Machaera +2",range="Ullr",ammo="none"}
 	sets.weapons.SanguineSpam = {main="Crocea Mors",sub="Daybreak",range="Ullr",ammo="none"}
 	sets.weapons.SanguineSpam2 = {main="Crocea Mors",sub='Gleti\'s Knife',range="Ullr",ammo="none"}
+	sets.weapons.SanguineSpam3 = {main="Crocea Mors",sub='Tauret',range="Ullr",ammo="none"}
 	sets.weapons.DualWeaponsAcc = {main="Naegling",sub='Gleti\'s Knife',range="Ullr",ammo="none"}
 	sets.weapons.DualEvisceration = {main="Tauret",sub='Gleti\'s Knife',range="Ullr",ammo="none"}
 	sets.weapons.DualAeolian = {main="Tauret",sub="Daybreak",range="Ullr",ammo="none"}
@@ -494,7 +495,7 @@ function init_gear_sets()
 	sets.engaged.CroceaEnspell = {range="Ullr",
 		head="Umuthi Hat",neck="Dls. Torque +2",ear1="Suppanomimi",ear2="Digni. Earring",
 		body="Viti. Tabard +3",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
-		back="Ghostfyre Cape",waist="Orpheus's Sash",legs="Malignance Tights",feet="Carmine Greaves +1"}
+		back="Ghostfyre Cape",waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.Acc = {ammo="Ginsen",
 		head="Malignance Chapeau",neck="Anu Torque",ear1="Cessance Earring",ear2="Telos Earring",

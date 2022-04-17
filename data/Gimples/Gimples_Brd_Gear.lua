@@ -53,12 +53,12 @@ function init_gear_sets()
 	sets.precast.FC = {main=gear.kali_macc,sub="Ammurapi Shield",ammo="Impatiens",
 		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Etiolation Earring",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands=gear.telchine_enh_hands,ring1="Kishar Ring",ring2="Lebeche Ring",
-		back=gear.magic_jse_back,waist="Embla Sash",legs=gear.chironic_legs_FC,feet="Bihu Slippers +1"}
+		back=gear.brd_jse_fc,waist="Embla Sash",legs="Aya. Cosciales +2",feet="Bihu Slippers +1"}
 		
 	sets.precast.FC.DT = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
 		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Etiolation Earring",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands=gear.telchine_enh_hands,ring1="Kishar Ring",ring2="Lebeche Ring",
-		back=gear.magic_jse_back,waist="Embla Sash",legs="Aya. Cosciales +2",feet="Bihu Slippers +1"}
+		back=gear.brd_jse_fc,waist="Embla Sash",legs="Aya. Cosciales +2",feet="Bihu Slippers +1"}
 
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {feet="Vanya Clogs"})
 
@@ -68,7 +68,7 @@ function init_gear_sets()
 	sets.precast.FC.BardSong = {main=gear.kali_macc,sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
 		head="Fili calot +1",neck="Voltsurge Torque",ear1="Etiolation Earring",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands=gear.telchine_enh_hands,ring1="Kishar Ring",ring2="Lebeche Ring",
-		back=gear.magic_jse_back,waist="Embla Sash",legs=gear.chironic_legs_FC,feet="Bihu Slippers +1"}
+		back=gear.brd_jse_fc,waist="Embla Sash",legs="Aya. Cosciales +2",feet="Bihu Slippers +1"}
 
 	sets.precast.FC.SongDebuff = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
 	sets.precast.FC.SongDebuff.Resistant = set_combine(sets.precast.FC.BardSong,{range="Blurred Harp +1"})

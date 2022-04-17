@@ -42,11 +42,11 @@ function init_gear_sets()
 
 	-- Weapons sets
 	sets.weapons.Carnwenhan = {main="Carnwenhan",sub="Genmei Shield"}
+	sets.weapons.Naegling = {main="Naegling",sub="Genmei Shield"}
 	sets.weapons.Aeneas = {main="Aeneas",sub="Genmei Shield"}
 	sets.weapons.Gleti = {main="Gleti's Knife",sub="Genmei Shield"}
 	sets.weapons.DualWeapons = {main="Aeneas",sub="Fusetto +2"}
 	sets.weapons.DualNaegling = {main="Naegling",sub="Fusetto +2"}
-	sets.weapons.Naegling = {main="Naegling",sub="Genmei Shield"}
 	sets.weapons.DualTauret = {main="Tauret",sub="Fusetto +2"}
 	sets.weapons.DualAeolian = {main="Tauret",sub="Malevolence"}
 	sets.weapons.DualGleti = {main="Naegling",sub="Gleti's Knife"}
