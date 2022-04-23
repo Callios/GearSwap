@@ -213,7 +213,7 @@ function init_gear_sets()
 	sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +1"}
 	sets.midcast['Magic Finale'] = set_combine(sets.midcast.SongDebuff, {hands="Bewegt Cuffs",legs="Fili Rhingrave +1",})
 	sets.midcast.Mazurka = {range="Marsyas"}
-	
+	sets.midcast['Maiden']
 
 	-- For song buffs (duration and AF3 set bonus)
 	sets.midcast.SongEffect = {main="Carnwenhan",sub="Genmei shield",range="Gjallarhorn",
