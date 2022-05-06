@@ -100,6 +100,8 @@ gear.taeon_pet_feet =  { name="Taeon Boots", augments={'Pet: Attack+25 Pet: Rng.
     gear.RNG_RATP   = { name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10',}}
     gear.RNG_RAWSD  = { name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}}
     gear.RNG_SNAP   = { name="Belenus's Cape", augments={'Snapshot +10'}}
+    gear.RNG_TP     = { name="Belenus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10',}}
+    gear.RNG_SAVAGE = { name="Belenus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 
     --- BST Stuff 
     gear.BST_WS = { name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
@@ -108,6 +110,12 @@ gear.taeon_pet_feet =  { name="Taeon Boots", augments={'Pet: Attack+25 Pet: Rng.
 
     gear.BLUSTRWS   = {name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
     gear.BLUNUKE    = {name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
+
+--- WHM Stuff
+
+    gear.WHMFCCape = { name="Alaunus's Cape", augments={'"Fast Cast"+10',}}
+    gear.WHMCURECape = { name="Alaunus's Cape", augments={'MND+20','"Cure" potency +10%',}}
+    
 --- HERC Stuff
 
     gear.Herculean_HercFeetFC = {name="Herculean Boots", augments={'"Mag.Atk.Bns."+12','"Fast Cast"+6','Mag. Acc.+1',}}

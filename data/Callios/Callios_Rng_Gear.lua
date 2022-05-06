@@ -5,11 +5,12 @@ function user_job_setup()
 	state.RangedMode:options('Normal','Acc','Fodder')
 	state.WeaponskillMode:options('Match','Normal','Acc')
 	state.IdleMode:options('Normal','PDT')
-	state.Weapons:options('Annihilator','Fomalhaut','Yoichi','Trial','DualSavageWeapons','DualEviscerationWeapons','DualMagicWeapons','DualMalevolence','None')
+	state.Weapons:options('Annihilator','Fomalhaut','Yoichi','YoichiMain','Trial','DualSavageWeapons','DualEviscerationWeapons','DualMagicWeapons','DualMalevolence','None')
 	
 	WeaponType =  {['Fail-Not'] = "Bow",
 	               ['Yoichinoyumi'] = "Bow",
-	               ['Sparrowhawk'] = "Bow",				   
+	               ['Sparrowhawk'] = "Bow",
+				   ['Astrild'] = "Bow",				   
                    ['Fomalhaut'] = "Gun",
 				   ['Annihilator'] = "Gun",
 				   ['Armageddon'] = "Gun",
@@ -17,10 +18,10 @@ function user_job_setup()
                    }
 
 	DefaultAmmo = {
-		['Bow']  = {['Default'] = "Yochi's Arrow",
-					['WS'] = "Stone Arrow",
-					['Acc'] = "Yochi's Arrow",
-					['Magic'] = "Yochi's Arrow",
+		['Bow']  = {['Default'] = "Yoichi's Arrow",
+					['WS'] = "Yoichi's Arrow",
+					['Acc'] = "Yoichi's Arrow",
+					['Magic'] = "Yoichi's Arrow",
 					['MagicAcc'] = "Chrono Arrow",
 					['Unlimited'] = "Hauksbok Arrow",
 					['MagicUnlimited'] ="Hauksbok Arrow",
@@ -116,7 +117,7 @@ function init_gear_sets()
 	-- 30% flurry2 + 10% merits, only need 30 snapshot
 	-- 18 + 11 + 4 + 19 = 68 Rapid Shot, 28 Snapshot,	
 	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {
-		head="Orion Beret +2",			-- 0/18
+		head="Orion Beret +3",			-- 0/18
 		neck="Iskur Gorget",		-- 4/0
 		body="Amini Caban +1",			-- 0/0 velocity shot -7% delay
 		hands="Carmine Fin. Ga. +1",	-- 8/11
@@ -131,7 +132,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
         head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Karieyh Ring +1",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Epaminondas's Ring",
         back=gear.RNG_RAWSD,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
     sets.precast.WS.Acc = {
@@ -140,13 +141,13 @@ function init_gear_sets()
         back=gear.RNG_RAWSD,waist="Fotia Belt",legs="Arcadian Braccae +3",feet="Nyame Sollerets"}
 		
     sets.precast.WS['Coronach'] = {
-        head="Orion Beret +3",neck="Scout's Gorget +2",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Nyame Mail",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Karieyh Ring +1",
+        head="Nyame Helm",neck="Scout's Gorget +2",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        body="Nyame Mail",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Epaminondas's Ring",
         back=gear.RNG_RAWSD,waist="Fotia Belt",legs="Arcadian Braccae +3",feet="Nyame Sollerets"}	
 
     sets.precast.WS['Last Stand'] = {
         head="Orion Beret +3",neck="Scout's Gorget +2",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Nyame Mail",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Karieyh Ring +1",
+        body="Nyame Mail",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Epaminondas's Ring",
         back=gear.RNG_RAWSD,waist="Fotia Belt",legs="Arcadian Braccae +3",feet="Nyame Sollerets"}		
 
     sets.precast.WS['Hot Shot'] = {
@@ -176,8 +177,8 @@ function init_gear_sets()
 		
 	sets.precast.WS['Savage Blade'] = {ammo="Hauksbok Arrow",
 		head="Nyame Helm",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
-		body="Nyame Mail",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Karieyh Ring +1",
-		back=gear.RNG_RAWSD,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}	
+		body="Nyame Mail",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Metamorph Ring +1",
+		back=gear.RNG_SAVAGE,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}	
 		
 	sets.precast.WS['Aeolian Edge'] = {
         head="Nyame Helm",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
@@ -234,7 +235,7 @@ function init_gear_sets()
 		back=gear.RNG_RATP,feet="Oshosi Leggings"}
 	sets.buff['Double Shot'].Acc = {}
 	
-	sets.buff.Barrage = {head="Orion Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Crepuscular Earring",
+	sets.buff.Barrage = {head="Orion Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Crepuscular Earring",
         body="Orion Jerkin +2",hands="Orion Bracers +2",ring1="Regal Ring",ring2="Cacoethic Ring +1",
         back=gear.RNG_RATP,waist="Kwahu Kachina Belt +1",legs="Malignance Tights",feet="Orion Socks +1"}
 	
@@ -296,10 +297,11 @@ function init_gear_sets()
 	--sets.weapons.Failnot = {main="Perun +1",sub="Nusku Shield",range="Fail-Not"}
 	sets.weapons.Yoichi = {main="Perun +1",sub="Nusku Shield",range="Yoichinoyumi"}
 	sets.weapons.DualSavageWeapons = {main="Naegling",sub="Blurred Knife +1",range="Sparrowhawk +2"}	
-	sets.weapons.Trial = {main="Naegling",sub="Blurred Knife +1",range="Sparrowhawk"}
+	sets.weapons.Trial = {main="Naegling",sub="Blurred Knife +1",range="Astrild"}
 	sets.weapons.DualEviscerationWeapons = {main="Tauret",sub="Blurred Knife +1",range="Sparrowhawk +2"}
 	sets.weapons.DualMalevolence = {main="Malevolence",sub="Malevolence",range="Fomalhaut"}
 	sets.weapons.DualMagicWeapons = {main="Tauret",sub="Naegling",range="Fomalhaut"}
+	sets.weapons.YoichiMain ={range="Yoichinoyumi"}
 
 	--------------------------------------
 	-- Engaged sets
@@ -309,32 +311,32 @@ function init_gear_sets()
     sets.engaged = {
 		head="Adhemar Bonnet +1",neck="Combatant's Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Chirich Ring +1",ring2="Epona's Ring",
-		back="Lupine Cape",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
+		back=gear.RNG_TP,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
     
     sets.engaged.Acc = {
 		head="Malignance Chapeau",neck="Combatant's Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
-		back="Lupine Cape",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		back=gear.RNG_TP,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
     sets.engaged.DT = {
         head="Malignance Chapeau",neck="Combatant's Torque",ear1="Telos Earring",ear2="Sherida Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Epona's Ring",
-        back="Lupine Cape",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+        back=gear.RNG_TP,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.engaged.DW = {
 		head="Adhemar Bonnet +1",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Sherida Earring",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Chirich Ring +1",ring2="Epona's Ring",
-		back="Lupine Cape",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
+		back=gear.RNG_TP,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
 		
     sets.engaged.DW.DT = {
         head="Malignance Chapeau",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Sherida Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Epona's Ring",
-        back="Lupine Cape",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+        back=gear.RNG_TP,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
     
     sets.engaged.DW.Acc = {
 		head="Malignance Chapeau",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Cacoethic Ring +1",
-		back="Lupine Cape",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		back=gear.RNG_TP,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
 	--------------------------------------
 	-- Custom buff sets

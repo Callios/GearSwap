@@ -10,7 +10,7 @@ function user_job_setup()
 	--gear.magic_jse_back = {name="Intarabus's Cape",augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}
 
 	-- Adjust this if using the Terpander (new +song instrument)
-    info.ExtraSongInstrument = 'Blurred Harp'
+    info.ExtraSongInstrument = 'Daurdabla'
 	-- How many extra songs we can keep from Daurdabla/Terpander
     info.ExtraSongs = 1
 	
@@ -39,8 +39,8 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Dagger = {main="Skinflayer",sub="Genmei Shield"}
 	sets.weapons.DualWeapons = {main="Skinflayer",sub="Blurred Knife"}
-	sets.weapons.DualNaegling = {main="Kaja Sword",sub="Blurred Knife"}
-	sets.weapons.Naegling = {main="Kaja Sword",sub="Genmei Shield"}
+	sets.weapons.DualNaegling = {main="Naeglingd",sub="Blurred Knife"}
+	sets.weapons.Naegling = {main="Naegling",sub="Genmei Shield"}
 	sets.weapons.DualTauret = {main="Aija Dagger",sub="Blurred Knife"}
 	
 
@@ -71,15 +71,15 @@ function init_gear_sets()
 		back=gear.brd_jse_fc,waist="Embla Sash",legs="Aya. Cosciales +2",feet="Bihu Slippers +1"}
 
 	sets.precast.FC.SongDebuff = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
-	sets.precast.FC.SongDebuff.Resistant = set_combine(sets.precast.FC.BardSong,{range="Blurred Harp +1"})
+	sets.precast.FC.SongDebuff.Resistant = set_combine(sets.precast.FC.BardSong,{range="Daurdabla"})
 	sets.precast.FC.Lullaby = {range="Marsyas"}
-	sets.precast.FC.Lullaby.Resistant = {range="Blurred Harp"}
+	sets.precast.FC.Lullaby.Resistant = {range="Daurdabla"}
 	sets.precast.FC['Horde Lullaby'] = {range="Marsyas"}
-	sets.precast.FC['Horde Lullaby'].Resistant = {range="Blurred Harp"}
-	sets.precast.FC['Horde Lullaby'].AoE = {range="Blurred Harp"}
+	sets.precast.FC['Horde Lullaby'].Resistant = {range="Daurdabla"}
+	sets.precast.FC['Horde Lullaby'].AoE = {range="Daurdabla"}
 	sets.precast.FC['Horde Lullaby II'] = {range="Marsyas"}
-	sets.precast.FC['Horde Lullaby II'].Resistant = {range="Blurred Harp"}
-	sets.precast.FC['Horde Lullaby II'].AoE = {range="Blurred Harp"}
+	sets.precast.FC['Horde Lullaby II'].Resistant = {range="Daurdabla"}
+	sets.precast.FC['Horde Lullaby II'].AoE = {range="Daurdabla"}
 	
 		
 	sets.precast.FC.Mazurka = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
@@ -103,22 +103,22 @@ function init_gear_sets()
 	sets.precast.WS = {ammo="Aurgelmir Orb +1",
 		head="Aya. Zucchetto +2",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Mache Earring +1",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
-		back=gear.melee_jse_back,waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back=gear.brd_savage,waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
 	sets.precast.WS.Acc = {ammo="Aurgelmir Orb +1",
 		head="Aya. Zucchetto +2",neck="Combatant's Torque",ear1="Moonshade Earring",ear2="Mache Earring +1",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
-		back=gear.melee_jse_back,waist="Olseni Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back=gear.brd_savage,waist="Olseni Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
 	sets.precast.WS['Savage Blade'] = {ammo="Aurgelmir Orb +1",
-		head="Aya. Zucchetto +2",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
+		head="Nyame Helm",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Rufescent Ring",ring2="Ilabrat Ring",
-		back=gear.melee_jse_back,waist="Sailfi Belt +1",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back=gear.brd_savage,waist="Sailfi Belt +1",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
 	sets.precast.WS['Aeolian Edge'] = {ammo="Aurgelmir Orb +1",
 		head="Cath Palug Crown",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
 		body="Chironic Doublet",hands=gear.chironic_enfeeble_hands,ring1="Metamorph Ring +1",ring2="Shiva Ring +1",
-		back=gear.melee_jse_back,waist="Refoccilation Stone",legs="Gyve Trousers",feet=gear.chironic_nuke_feet}
+		back=gear.brd_savage,waist="Refoccilation Stone",legs="Gyve Trousers",feet=gear.chironic_nuke_feet}
 		
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Ishvara Earring",ear2="Telos Earring",}
@@ -138,13 +138,13 @@ function init_gear_sets()
 	-- Gear to enhance certain classes of songs
 	sets.midcast.Ballad = {legs="Inyanga Shalwar +2"}
 	sets.midcast.Lullaby = {range="Gjallarhorn"}
-	sets.midcast.Lullaby.Resistant = {range="Blurred Harp"}
+	sets.midcast.Lullaby.Resistant = {range="Daurdabla"}
 	sets.midcast['Horde Lullaby'] = {range="Gjallarhorn"}
-	sets.midcast['Horde Lullaby'].Resistant = {range="Blurred Harp"}
-	sets.midcast['Horde Lullaby'].AoE = {range="Blurred Harp"}
+	sets.midcast['Horde Lullaby'].Resistant = {range="Daurdabla"}
+	sets.midcast['Horde Lullaby'].AoE = {range="Daurdabla"}
 	sets.midcast['Horde Lullaby II'] = {range="Gjallarhorn"}
-	sets.midcast['Horde Lullaby II'].Resistant = {range="Blurred Harp"}
-	sets.midcast['Horde Lullaby II'].AoE = {range="Blurred Harp"}
+	sets.midcast['Horde Lullaby II'].Resistant = {range="Daurdabla"}
+	sets.midcast['Horde Lullaby II'].AoE = {range="Daurdabla"}
 	sets.midcast.Madrigal = {head="Fili Calot +1"}
 	sets.midcast.Paeon = {}
 	sets.midcast.March = {hands="Fili Manchettes +1"}
@@ -272,40 +272,40 @@ function init_gear_sets()
 	-- If you create a set with both offense and defense modes, the offense mode should be first.
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
-	sets.engaged = {main="Skinflayer",sub="Genmei Shield",ammo="Aurgelmir Orb +1",
-		head="Nyame Helm",neck="Lissome Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Apate Ring",
-		back="Solemnity Cape",waist="Sarissaphoroi belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+	sets.engaged = {main="Naegling",sub="Genmei Shield",ammo="Aurgelmir Orb +1",
+		head="Aya. Zucchetto +2",neck="Lissome Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+		body="Aya. Manopolas +2",hands="Aya. Manopolas +2",ring1="Defending Ring",ring2="Apate Ring",
+		back=gear.brd_tp,waist="Sarissaphoroi belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
-	sets.engaged.DT = {main="Aeneas",sub="Genmei Shield",ammo="Aurgelmir Orb +1",
+	sets.engaged.DT = {main="Naegling",sub="Genmei Shield",ammo="Aurgelmir Orb +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Petrov Ring",ring2="Ilabrat Ring",
-		back=gear.melee_jse_back,waist="Windbuffet Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		body="Nyame Mail",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
+		back=gear.brd_tp,waist="Windbuffet Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
-	sets.engaged.Acc = {main="Aeneas",sub="Genmei Shield",ammo="Aurgelmir Orb +1",
+	sets.engaged.Acc = {main="Naegling",sub="Genmei Shield",ammo="Aurgelmir Orb +1",
 		head="Aya. Zucchetto +2",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
-		back=gear.melee_jse_back,waist="Olseni Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		body="Aya. Manopolas +2",hands="Aya. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
+		back=gear.brd_tp,waist="Olseni Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
-	sets.engaged.DW = {main="Skinflayer",sub="Blurred Knife",ammo="Aurgelmir Orb +1",
-		head="Nyame Helm",neck="Lissome Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Apate Ring",
-		back="Solemnity Cape",waist="Reiki Yotai",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+	sets.engaged.DW = {main="Naegling",sub="Blurred Knife",ammo="Aurgelmir Orb +1",
+		head="Aya. Zucchetto +2",neck="Lissome Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Defending Ring",ring2="Apate Ring",
+		back=gear.brd_tp,waist="Reiki Yotai",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
-	sets.engaged.DW.DT = {main="Aeneas",sub="Blurred Knife +1",ammo="Aurgelmir Orb +1",
+	sets.engaged.DW.DT = {main="Naegling",sub="Blurred Knife",ammo="Aurgelmir Orb +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Brutal Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Ilabrat Ring",
-		back=gear.melee_jse_back,waist="Reiki Yotai",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.brd_tp,waist="Reiki Yotai",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.DW.Acc = {main="Aeneas",sub="Blurred Knife +1",ammo="Aurgelmir Orb +1",
 		head="Aya. Zucchetto +2",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Telos Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
-		back=gear.melee_jse_back,waist="Reiki Yotai",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back=gear.brd_tp,waist="Reiki Yotai",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
 	sets.engaged.DW.Acc.DT = {main="Aeneas",sub="Blurred Knife +1",ammo="Aurgelmir Orb +1",
 		head="Nyame Helm",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Telos Earring",
 		body="Ayanmo Corazza +2",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Ilabrat Ring",
-		back=gear.melee_jse_back,waist="Reiki Yotai",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.brd_tp,waist="Reiki Yotai",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 end
 
 -- Select default macro book on initial load or subjob change.

@@ -18,7 +18,7 @@ function user_job_setup()
 
 	-- Set up Jug Pet cycling and keybind Ctrl+F7
 	-- INPUT PREFERRED JUG PETS HERE
-	state.JugMode = M{['description']='Jug Mode','FatsoFargann','GenerousArthur','ScissorlegXerin','BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'}
+	state.JugMode = M{['description']='Jug Mode','FatsoFargann','GenerousArthur','ScissorlegXerin','BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar','None'}
 	send_command('bind ^f7 gs c cycle JugMode')
 
 	-- Set up Monster Correlation Modes and keybind Alt+F7
@@ -265,17 +265,17 @@ function init_gear_sets()
 
 	sets.idle.Pet = {ammo="Staunch Tathlum +1",
 		head="Gleti's Mask",neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
-		body="Gleti's Cuirass",hands="Gleti's Gloves",ring1="Defending Ring",ring2="C. Palug Ring",
+		body="Gleti's Cuirass",hands="Gleti's Gauntlets",ring1="Defending Ring",ring2="C. Palug Ring",
 		back=gear.BST_TP,waist="Isa Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
 
 	sets.idle.Pet.Engaged = {ammo="Staunch Tathlum +1",
 		head="Gleti's Mask",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
-		body="Gleti's Cuirass",hands="Gleti's Gloves",ring1="Defending Ring",ring2="C. Palug Ring",
+		body="Gleti's Cuirass",hands="Gleti's Gauntlets",ring1="Defending Ring",ring2="C. Palug Ring",
 		back=gear.BST_TP,waist="Isa Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
 
 	sets.idle.Pet.Engaged.DW = {ammo="Staunch Tathlum +1",
 	head="Gleti's Mask",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
-	body="Gleti's Cuirass",hands="Gleti's Gloves",ring1="Defending Ring",ring2="C. Palug Ring",
+	body="Gleti's Cuirass",hands="Gleti's Gauntlets",ring1="Defending Ring",ring2="C. Palug Ring",
 	back=gear.BST_TP,waist="Isa Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
 
 	-- DEFENSE SETS

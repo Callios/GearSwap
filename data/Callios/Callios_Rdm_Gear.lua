@@ -1,6 +1,6 @@
 function user_job_setup()
 	-- Options: Override default values
-    state.OffenseMode:options('Normal','Acc','FullAcc','CroceaEnspell','EnspellOnly')
+    state.OffenseMode:options('Normal','Acc','FullAcc','CroceaEnspell','CroceaEnspellDW','CroceaEnstoneDW','EnspellOnly')
     state.HybridMode:options('Normal','DT')
 	state.WeaponskillMode:options('Match','Proc')
 	state.AutoBuffMode:options('Off','Auto','AutoMelee')
@@ -9,7 +9,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT','NukeLock')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('None','Crocea','Naegling','Murgleis','Tauret','Club','DualWeapons','DualWeaponsMurg','MurgGleti','DualWeaponsCorcea','SanguineSpam','SanguineSpam2','SanguineSpam3','DualEvisceration','DualClubs','DualBlackHalo','DualAeolian','EnspellOnly')
+	state.Weapons:options('None','Crocea','Naegling','Murgleis','Tauret','Club','DualWeapons','DualWeaponsMurg','MurgGleti','DualWeaponsCorcea','SanguineSpam','SanguineSpam2','SanguineSpam3','DualEvisceration','DualClubs','DualBlackHalo','DualAeolian','EnspellOnly','LVL1Daggers')
 	
 	gear.obi_cure_back = "Tempered Cape +1"
 	gear.obi_cure_waist = "Witful Belt"
@@ -47,7 +47,7 @@ function user_job_setup()
 	send_command('bind @z gs c cycle UnlockWeapons')
 	send_command('wait 20; input /lockstyleset 074')
 	
-	send_command('bind @r gs c weapons EnspellOnly;gs c update')
+	send_command('bind @r gs c weapons LVL1Daggers;gs c update')
 	
 	select_default_macro_book()
 end
@@ -161,7 +161,7 @@ function init_gear_sets()
 		body="Amalric doublet +1",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring",
 		back=gear.RDMCape_MACC,waist="Orpheus's Sash",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 	
-	sets.midcast.FastRecast = {main="Colada",sub="Sacro Shield",ammo="Sapience Orb",
+	sets.midcast.FastRecast = {main="Crocea Mors",sub="Sacro Shield",ammo="Sapience Orb",
         head="Atrophy Chapeau +2",								-- 14%
 		neck="Voltsurge Torque",
 		ear1="Loquacious Earring",ear2="Malignance Earring",	--3% (2 + 1)
@@ -272,7 +272,10 @@ function init_gear_sets()
 	sets.midcast.Break = set_combine(sets.midcast.DurationOnlyEnfeebling,{waist="Obstinate Sash"})
 	sets.midcast.Break.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant,{waist="Obstinate Sash"})
 	
+	
 	sets.midcast.Dispel = sets.midcast['Enfeebling Magic'].Resistant
+
+	sets.midcast.Dispelga = set_combine(sets.midcast['Enfeebling Magic'],{Main="Daybreak"})
 	
 	sets.midcast.SkillBasedEnfeebling = set_combine(sets.midcast['Enfeebling Magic'], {
 		neck="Dls. Torque +2",ear1="Vor Earring",
@@ -467,6 +470,7 @@ function init_gear_sets()
 	sets.weapons.EnspellOnly = {main="Ceremonial Dagger",sub="Chicken Knife II",range="Ullr",ammo="none"}
 	sets.weapons.DualClubs = {main="Maxentius",sub="Daybreak",range="Ullr",ammo="none"}
 	sets.weapons.DualBlackHalo = {main="Maxentius",sub="Machaera +2",range="Ullr",ammo="none"}
+	sets.weapons.LVL1Daggers = {main="Ceremonial Dagger",sub="Chicken Knife II",range="Ullr",ammo="none"}
 	--sets.weapons.DualAlmace = {main="Almace",sub="Sequence"}
 	sets.weapons.DualBow = {main="Naegling",sub="Tauret",range="Ullr",ammo="none"}
 	sets.weapons.BowMacc = {range="Ullr",ammo=empty}
@@ -494,8 +498,9 @@ function init_gear_sets()
 		
 	sets.engaged.CroceaEnspell = {range="Ullr",
 		head="Umuthi Hat",neck="Dls. Torque +2",ear1="Suppanomimi",ear2="Digni. Earring",
-		body="Viti. Tabard +3",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
+		body="Malignance Tabard",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back="Ghostfyre Cape",waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}
+
 
 	sets.engaged.Acc = {ammo="Ginsen",
 		head="Malignance Chapeau",neck="Anu Torque",ear1="Cessance Earring",ear2="Telos Earring",
@@ -558,15 +563,41 @@ function init_gear_sets()
 		back=gear.RDMCape_DW,waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.DW.EnspellOnly = {
-		head="Malignance Chapeau",neck="Sanctity Necklace",ear1="Suppanomimi",ear2="Hollow Earring",
+		head="Malignance Chapeau",neck="Dls. Torque +2",ear1="Suppanomimi",ear2="Hollow Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back="Ghostfyre Cape",waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.EnspellOnly = {
-		head="Malignance Chapeau",neck="Sanctity Necklace",ear1="Suppanomimi",ear2="Hollow Earring",
+		head="Malignance Chapeau",neck="Dls. Torque +2",ear1="Suppanomimi",ear2="Hollow Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back="Ghostfyre Cape",waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}
-end
+
+		sets.engaged.DW.CroceaEnspell = {range="Ullr",
+		head="Umuthi Hat",neck="Dls. Torque +2",ear1="Suppanomimi",ear2="Digni. Earring",
+		body="Malignance Tabard",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
+		back="Ghostfyre Cape",waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}
+
+		sets.engaged.CroceaEnspellDW = {range="Ullr",
+		head="Umuthi Hat",neck="Dls. Torque +2",ear1="Suppanomimi",ear2="Hollow Earring",
+		body="Malignance Tabard",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
+		back=gear.RDMCape_DW,waist="Orpheus's Sash",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+
+		sets.engaged.DW.CroceaEnspellDW = {range="Ullr",
+		head="Umuthi Hat",neck="Dls. Torque +2",ear1="Suppanomimi",ear2="Hollow Earring",
+		body="Malignance Tabard",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
+		back=gear.RDMCape_DW,waist="Orpheus's Sash",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+
+		sets.engaged.CroceaEnstoneDW = {range="Ullr",
+		head="Umuthi Hat",neck="Quanpur Necklace",ear1="Suppanomimi",ear2="Hollow Earring",
+		body="Malignance Tabard",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
+		back=gear.RDMCape_DW,waist="Orpheus's Sash",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+
+		sets.engaged.DW.CroceaEnstoneDW = {range="Ullr",
+		head="Umuthi Hat",neck="Quanpur Necklace",ear1="Suppanomimi",ear2="Hollow Earring",
+		body="Malignance Tabard",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
+		back=gear.RDMCape_DW,waist="Orpheus's Sash",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+	end
+
 
 -- Select default macro book on initial load or subjob change.
 -- Default macro set/book

@@ -194,7 +194,7 @@ function init_gear_sets()
 	sets.midcast.FastRecast = set_combine(sets.precast.FC)
 
 	-- Gear to enhance certain classes of songs
-	sets.midcast.Ballad = {legs="Fili Rhingrave +1"}
+	sets.midcast.Ballad = {}
 	sets.midcast.Lullaby = {range="Marsyas", hands="Brioso Cuffs +2", body="Fili Hongreline +1"}
 	sets.midcast.Lullaby.Resistant = {range="Daurdabla", hands="Brioso Cuffs +2"}
 	sets.midcast['Horde Lullaby'] = {range="Marsyas",hands="Brioso Cuffs +2", body="Fili Hongreline +1"}
@@ -213,7 +213,8 @@ function init_gear_sets()
 	sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +1"}
 	sets.midcast['Magic Finale'] = set_combine(sets.midcast.SongDebuff, {hands="Bewegt Cuffs",legs="Fili Rhingrave +1",})
 	sets.midcast.Mazurka = {range="Marsyas"}
-	sets.midcast['Maiden']
+	sets.midcast.Dispelga = set_combine(sets.precast.FC, {main="Daybreak",sub="Genmei Shield"})
+	
 
 	-- For song buffs (duration and AF3 set bonus)
 	sets.midcast.SongEffect = {main="Carnwenhan",sub="Genmei shield",range="Gjallarhorn",
@@ -302,7 +303,7 @@ function init_gear_sets()
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Fili Cothurnes +1"}
 
-	sets.idle.DT = {main="Daybreak",sub="Genmei Shield",ammo="Staunch Tathlum +1",
+	sets.idle.DT = {main="Daybreak",sub="Genmei Shield",ammo="Nibiru Harp",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa earring +1",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}

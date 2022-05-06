@@ -438,17 +438,17 @@ sets.precast.WS['Namas Arrow'] = {ranged="Yoichinoyumi",ammo="Yoichi's Arrow",
         legs="Kendatsuba hakama +1",
         feet="Ryuo Sune-Ate +1"}
 
-        sets.engaged.Ejin = {ammo="Ginsen",
-        head="Flamma Zucchetto +2",
+        sets.engaged.Ejin = {ammo="Coiste Bodhar",
+        head="Nyame Helm",
         neck="Samurai's Nodowa +2",
         ear1="Brutal Earring",ear2="Dedition Earring",
-        body="Kendatsuba samue +1",
-        hands="Wakido Kote +3",
-        ring1="Niqmaddu Ring",ring2="Flamma Ring",
+        body="Nyame Mail",
+        hands="Nyame Gauntlets",
+        ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
         back=CapeSTP,
         waist="Ioskeha Belt +1",
-        legs="Kendatsuba hakama +1",
-        feet="Ryuo Sune-Ate +1"}
+        legs="Nyame Flanchard",
+        feet="Nyame Sollerets"}
    
    sets.engaged.Acc.PDT = {ammo="Staunch Tathlum +1",
         head="Flamma Zucchetto +2",

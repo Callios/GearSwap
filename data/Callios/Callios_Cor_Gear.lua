@@ -94,6 +94,8 @@ function init_gear_sets()
 
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {})
 
+    sets.precast.CorsairShot['Earth Shot'] = set_combine(sets.precast.CorsairShot, {feet="Chasseur's bottes +1"})
+
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
         head="Carmine Mask +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
