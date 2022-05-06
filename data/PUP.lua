@@ -509,7 +509,7 @@ function init_gear_sets()
 	
 	sets.master_accessories = {
 		ring1="Niqmaddu Ring",
-		ring2="Epona's Ring",
+		ring2="Gere Ring",
 		ear1="Mache Earring +1",
 		ear2="Telos Earring",
 		waist="Moonbow Belt +1",
@@ -527,7 +527,7 @@ function init_gear_sets()
 
     sets.pet_hybrid_accessories = {
 		ring1="Niqmaddu Ring",
-	   	ring2="Epona's Ring",
+	   	ring2="Gere Ring",
 	   	waist="Moonbow Belt +1",
 		ear1="Mache Earring +1",
 		ear2="Crep. Earring",
@@ -553,7 +553,7 @@ function init_gear_sets()
 		legs="Mpaca's Hose",
 		feet="Mpaca's Boots",
 		ring1="Niqmaddu Ring",
-		ring2="Epaminondas's Ring",
+		ring2="Gere Ring",
 		neck="Fotia Gorget",
 		ear1="Schere Earring",
 		ear2="Moonshade Earring",
@@ -569,6 +569,7 @@ function init_gear_sets()
 
     sets.precast.WS["Shijin Spiral"] = set_combine(sets.precast.WS, {
 		body = "Tali'ah Manteel +2",
+        ring2= "Regal Ring",
 		back = Visucius.WSDEX
 	})
 
@@ -609,7 +610,7 @@ function init_gear_sets()
 		neck="Shulmanu Collar",
 		waist="Moonbow Belt +1",
 		back=Visucius.PetandMasterTP,
-		ring1="Epona's Ring",
+		ring1="Gere Ring",
 		ring2="Niqmaddu Ring",
 		ear1="Mache Earring +1",
 		ear2="Telos Earring",
@@ -798,7 +799,7 @@ function init_gear_sets()
 			ear2="Enmerkar Earring",
 			waist="Koulskap Sash +1",
             neck="Shulmanu Collar",
-		    back=Visucius.PetandMasterTP,
+		    back="Dispersal Mantle",
 		    ring1="Thurandaut Ring",
 		    ring2="C. Palug Ring",
 		    waist="Klouskap Sash +1",
@@ -842,7 +843,7 @@ function init_gear_sets()
             -- Add your gear here that would be different from sets.midcast.Pet.WSNoFTP
             --head = Empy_Karagoz.Head_PTPBonus,
             head= Taeon_DAHead,
-            body= Taeon_DABody,
+            body= "Pitre Tobe +3",
             legs= Taeon_DALegs,
             hands= "Mpaca's gloves",
             ear1="Burana Earring",
@@ -867,8 +868,9 @@ function init_gear_sets()
         {
             -- Add your gear here that would be different from sets.midcast.Pet.WSFTP
             head = Empy_Karagoz.Head_PTPBonus,
-			hands="Karagoz Guanti +1",
+			hands="Mpaca's Gloves",
 			legs="Kara. Pantaloni +1",
+            back="Dispersal Mantle",
 			ear2="Kyrene's Earring"
         }
     )
