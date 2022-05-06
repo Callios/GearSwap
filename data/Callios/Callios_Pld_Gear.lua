@@ -17,7 +17,7 @@ function user_job_setup()
     state.MagicalDefenseMode:options('MDT_HP','MDT','MDT_Reraise')
 	state.ResistDefenseMode:options('MEVA','MEVA_HP')
 	state.IdleMode:options('Normal','Tank','Magic','PDT','MDT','Kiting')
-	state.Weapons:options('None','BurtgangOchain','BurtgangAegis','NaeglingOchain','NaeglingAegis','Cleave')
+	state.Weapons:options('None','BurtgangOchain','BurtgangAegis','BurtgangSrivatsa','NaeglingOchain','NaeglingAegis','NaeglingSrivatsa','Cleave')
 	state.AutoEmblem = M(false, 'Auto Emblem')
     state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP','Twilight'}
 	
@@ -290,7 +290,7 @@ function init_gear_sets()
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash"})
 
-    sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
+    sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {sub="Srivatsa",ring2="Sheltered Ring"})
     sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 	
 	sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {main="Sakpata's Sword",head=gear.odyssean_PhalanxHead,body=gear.odyssean_PhalanxBody,
@@ -373,9 +373,11 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.BurtgangOchain = {main="Burtgang",sub="Ochain"}
 	sets.weapons.BurtgangAegis = {main="Burtgang",sub="Aegis"}
+    sets.weapons.BurtgangSrivatsa ={main="Burtgang",sub="Srivatsa"}
 	sets.weapons.SakpataAegis = {main="Sakpata's Sword",sub="Aegis"}
 	sets.weapons.NaeglingOchain = {main="Naegling",sub="Ochain"}
 	sets.weapons.NaeglingAegis = {main="Naegling",sub="Aegis"}
+    sets.weapons.NaeglingSrivatsa = {main="Naegling",sub="Srivatsa"}
 	sets.weapons.SakpataOchain = {main="Sakpata's Sword",sub="Ochain"}
 	sets.weapons.DualWeapons = {main="Naegling",sub="Machaera +2"}
     sets.weapons.Cleave = {main="Malevolence", augments={'INT+10','Mag. Acc.+10','"Mag.Atk.Bns."+10','"Fast Cast"+5',},sub="Ochain"}
