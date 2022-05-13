@@ -63,7 +63,7 @@ function init_gear_sets()
     hands="Telchine Gloves", augments={'"Fast Cast"+4','Enh. Mag. eff. dur. +10',},
     legs="Telchine Braconi", augments={'"Fast Cast"+3','Pet: Damage taken -2%',},
     feet="Regal Pumps",
-    neck="Voltsurge Torque",
+    neck="Cleric's Torque",
     waist="Embla Sash",
     left_ear="Etiolation Earring",
     right_ear="Hearty Earring",
@@ -71,7 +71,7 @@ function init_gear_sets()
     right_ring="Lebeche Ring",
     back=gear.WHMFCCape,}
 		
-    sets.precast.FC.DT = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
+    sets.precast.FC.DT = {main="Gada",sub="Sors Shield",ammo="Impatiens",
 		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
 		body="Inyanga Jubbah +2",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Lebeche Ring",
 		back="Perimede Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Regal Pumps +1"}
@@ -88,7 +88,7 @@ function init_gear_sets()
     hands="Telchine Gloves", augments={'"Fast Cast"+4','Enh. Mag. eff. dur. +10',},
     legs="Telchine Braconi", augments={'"Fast Cast"+3','Pet: Damage taken -2%',},
     feet="Hygieia Clogs +1",
-    neck="Voltsurge Torque",
+    neck="Cleric's Torque",
     waist="Embla Sash",
     left_ear="Etiolation Earring",
     right_ear="Nourish. Earring",
@@ -106,7 +106,7 @@ function init_gear_sets()
 	hands="Telchine Gloves", augments={'"Fast Cast"+4','Enh. Mag. eff. dur. +10',},
 	legs="Doyen Pants",
 	feet="Hygieia Clogs +1",
-	neck="Voltsurge Torque",
+	neck="Cleric's Torque",
 	waist="Embla Sash",
 	left_ear="Etiolation Earring",
 	right_ear="Nourish. Earring",
@@ -200,7 +200,7 @@ function init_gear_sets()
     hands="Theo. Mitts +1",
     legs="Sifahir Slacks",
     feet="Regal Pumps",
-    neck="Voltsurge Torque",
+    neck="Cleric's Torque",
     waist="Embla Sash",
     left_ear="Gwati Earring",
     right_ear="Nourish. Earring",
@@ -216,7 +216,7 @@ function init_gear_sets()
     hands="Theo. Mitts +1",
     legs="Sifahir Slacks",
     feet="Regal Pumps",
-    neck="Voltsurge Torque",
+    neck="Cleric's Torque",
     waist="Embla Sash",
     left_ear="Gwati Earring",
     right_ear="Nourish. Earring",
@@ -252,7 +252,7 @@ function init_gear_sets()
     hands="Theo. Mitts +1",
     legs="Sifahir Slacks",
     feet="Regal Pumps",
-    neck="Voltsurge Torque",
+    neck="Cleric's Torque",
     waist="Embla Sash",
     left_ear="Gwati Earring",
     right_ear="Nourish. Earring",
@@ -271,7 +271,7 @@ function init_gear_sets()
 		back="Twilight Cape",waist="Hachirin-no-Obi",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
 
 	sets.midcast.Cure.DT = {main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum +1",
-		head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Nourish. Earring +1",ear2="Glorious Earring",
+		head="Nyame Helm",neck="Loricate Torque +1",ear1="Nourish. Earring +1",ear2="Glorious Earring",
 		body="Nyame Mail",hands="Theophany Mitts +3",ring1="Defending Ring",ring2="Janniston Ring",
 		back="Alaunus's Cape",waist="Luminary Sash",legs="Ebers Pant. +1",feet="Nyame Sollerets"}
 		
@@ -451,7 +451,7 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main="Bolelabunga",
-    sub="Sors Shield",
+    sub="Genmei Shield",
     ammo="Hydrocera",
     head="Befouled Crown",
     body="Annoint. Kalasiris",
@@ -466,32 +466,32 @@ function init_gear_sets()
     right_ring="Inyanga Ring",
     back="Disperser's Cape",}
 
-	sets.idle.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Homiliary",
+	sets.idle.PDT = {main="Bolelabunga",sub="Genmei Shield",ammo="Hydrocera",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Stikini Ring",
-		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Herald's Gaiters"}
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
+		back="Solemnity Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Herald's Gaiters"}
 		
 	sets.idle.MDT = {main="Daybreak",sub="Ammurapi Shield",ammo="Homiliary",
 		head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shadow Ring",
-		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
+		back="Solemnity Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     -- Defense sets
 
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
-		back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
+		back="Solemnity Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.defense.MDT = {main="Daybreak",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Archon Ring",
-		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back="Solemnity Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.defense.MEVA = {main="Daybreak",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Purity Ring",ring2="Vengeful Ring",
-		back="Aurist's Cape +1",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back="Solemnity",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 		-- Engaged sets
 

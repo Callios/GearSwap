@@ -5,7 +5,7 @@ function user_job_setup()
 	state.RangedMode:options('Normal','Acc','Fodder')
 	state.WeaponskillMode:options('Match','Normal','Acc')
 	state.IdleMode:options('Normal','PDT')
-	state.Weapons:options('Annihilator','Fomalhaut','Yoichi','YoichiMain','Trial','DualSavageWeapons','DualEviscerationWeapons','DualMagicWeapons','DualMalevolence','None')
+	state.Weapons:options('Annihilator','Fomalhaut','Yoichi','YoichiMain','Trial','Trial2','DualSavageWeapons','DualEviscerationWeapons','DualMagicWeapons','DualMalevolence','None')
 	
 	WeaponType =  {['Fail-Not'] = "Bow",
 	               ['Yoichinoyumi'] = "Bow",
@@ -298,6 +298,7 @@ function init_gear_sets()
 	sets.weapons.Yoichi = {main="Perun +1",sub="Nusku Shield",range="Yoichinoyumi"}
 	sets.weapons.DualSavageWeapons = {main="Naegling",sub="Blurred Knife +1",range="Sparrowhawk +2"}	
 	sets.weapons.Trial = {main="Naegling",sub="Blurred Knife +1",range="Astrild"}
+	sets.weapons.Trial2 = {main="Fermion Sword",sub="Chicken Knife II",range="Sparrowhawk"}
 	sets.weapons.DualEviscerationWeapons = {main="Tauret",sub="Blurred Knife +1",range="Sparrowhawk +2"}
 	sets.weapons.DualMalevolence = {main="Malevolence",sub="Malevolence",range="Fomalhaut"}
 	sets.weapons.DualMagicWeapons = {main="Tauret",sub="Naegling",range="Fomalhaut"}

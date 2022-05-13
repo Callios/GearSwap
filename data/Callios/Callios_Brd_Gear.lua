@@ -1,6 +1,6 @@
 function user_job_setup()
 	-- Options: Override default values
-    state.OffenseMode:options('Normal','Acc')
+    state.OffenseMode:options('Normal','Acc','Bumba')
 	state.HybridMode:options('Normal','DT')
     state.CastingMode:options('Normal','Resistant','AoE')
     state.IdleMode:options('Normal','NoRefresh','DT')
@@ -118,7 +118,7 @@ function init_gear_sets()
 	-- Precast sets to enhance JAs
 	
 	sets.precast.JA.Nightingale = {feet="Bihu Slippers +3"}
-	sets.precast.JA.Troubadour = {body="Bihu Jstcorps +3"}
+	sets.precast.JA.Troubadour = {body="Bihu Justaucorps +3"}
 	sets.precast.JA['Soul Voice'] = {legs="Bihu Cannions +3"}
 
 	-- Waltz set (chr and vit)
@@ -347,6 +347,16 @@ function init_gear_sets()
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Chirich ring +1",ring2="Chirich ring +1",
 		back=gear.BRD_MELEE,waist="Sailfi Belt +1",legs="Nyame flanchard",feet="Nyame Sollerets"}
 
+	sets.engaged.Bumba = {main="Naegling", range="linos",
+		head="Nyame Helm",neck="Warder's Charm +1",ear1="Telos Earring",ear2="Cessance Earring",
+		body="Ashera Harness",hands="Nyame Gauntlets",ring1="Chirich ring +1",ring2="Chirich ring +1",
+		back=gear.BRD_MELEE,waist="Carrier's Sash",legs="Nyame flanchard",feet="Nyame Sollerets"}
+
+	sets.engaged.Bumba.DW = {main="Naegling", range="linos",
+		head="Nyame Helm",neck="Warder's Charm +1",ear1="Telos Earring",ear2="Cessance Earring",
+		body="Ashera Harness",hands="Nyame Gauntlets",ring1="Chirich ring +1",ring2="Chirich ring +1",
+		back=gear.BRD_MELEE,waist="Carrier's Sash",legs="Nyame flanchard",feet="Nyame Sollerets"}
+	
 	sets.engaged.DW = {main="Naegling", sub="Fusetto +2", range="linos",
 		head="Nyame Helm",neck="Combatant's torque",ear1="Suppanomimi",ear2="Eabani Earring",
 		body="Ashera Harness",hands="Bunzi's Gloves",ring1="Chirich ring +1",ring2="Chirich ring +1",

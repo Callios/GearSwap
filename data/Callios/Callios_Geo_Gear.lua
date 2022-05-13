@@ -16,12 +16,12 @@ function user_job_setup()
 	gear.obi_cure_waist = "Witful Belt"
 
 	gear.obi_low_nuke_back = gear.nuke_jse_back
-	gear.obi_low_nuke_waist = "Sekhmet Corset"
+	gear.obi_low_nuke_waist = "Orpheus's Sash"
 
 	gear.obi_high_nuke_back = gear.nuke_jse_back
-	gear.obi_high_nuke_waist = "Refoccilation Stone"
+	gear.obi_high_nuke_waist = "Orpheus's Sash"
 	
-	autoindi = "Haste"
+	autoindi = "Fury"
 	autogeo = "Frailty"
 	
 	-- Additional local binds
@@ -62,16 +62,16 @@ function init_gear_sets()
 	
 	-- Fast cast sets for spells
 
-	sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
+	sets.precast.FC = {main="C. Palug Hammer",sub="Genmei Shield",ammo="Impatiens",
 		head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
 		body="Zendik Robe",hands="Volte Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
-		back="Perimede Cape",waist="Witful Belt",legs="Geo. Pants +1",feet="Regal Pumps +1"}
+		back="Fi Follet cape +1",waist="Witful Belt",legs="Geo. Pants +1",feet="Regal Pumps +1"}
 
 	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {range="Dunna",ammo=empty})
 	
     sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {ear2="Malignance Earring",hands="Bagua Mitaines +1"})
 
-	sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Serenity",sub="Clerisy Strap +1"})
+	sets.precast.FC.Cure = set_combine(sets.precast.FC,{legs="Doyen Pants",ear1="Mendicant's Earring"})
 		
 	sets.precast.FC.Curaga = sets.precast.FC.Cure
 	
@@ -99,22 +99,22 @@ function init_gear_sets()
 	-- Midcast sets
 	--------------------------------------
 
-    sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",
+    sets.midcast.FastRecast = {main="C. Palug Hammer",sub="Genmei Shield",
 		head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
 		body="Zendik Robe",hands="Volte Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
 		back="Lifestream Cape",waist="Witful Belt",legs="Geo. Pants +1",feet="Regal Pumps +1"}
 
 	sets.midcast.Geomancy = {main="Solstice",sub="Genmei Shield",range="Dunna",
-		head="Vanya Hood",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Malignance Earring",
-		body="Vedic Coat",hands="Geo. Mitaines +3",ring1="Defending Ring",ring2="Dark Ring",
+		head="Azimuth Hood +1",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Malignance Earring",
+		body="Bagua Tunic +1",hands="Geo. Mitaines +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Solemnity Cape",waist="Austerity Belt +1",legs="Vanya Slops",feet="Medium's Sabots"}
 
 
 	--Extra Indi duration as long as you can keep your 900 skill cap.
-	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {back=gear.idle_jse_back,legs="Bagua Pants +1",feet="Azimuth Gaiters +1"})
+	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {back="Lifestream Cape",legs="Bagua Pants +1",feet="Azimuth Gaiters +1"})
 		
-    sets.midcast.Cure = {main=gear.gada_healing_club,sub="Sors Shield",ammo="Hasty Pinion +1",
-        head="Amalric Coif +1",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Etiolation Earring",
+    sets.midcast.Cure = {main="Daybreak",sub="Sors Shield",ammo="Hasty Pinion +1",
+        head="Amalric Coif +1",neck="Incanter's Torque",ear1="Mendicant's earring",ear2="Etiolation Earring",
         body="Zendik Robe",hands="Telchine Gloves",ring1="Janniston Ring",ring2="Menelaus's Ring",
         back="Tempered Cape +1",waist="Witful Belt",legs="Geo. Pants +1",feet="Vanya Clogs"}
 		

@@ -26,7 +26,7 @@ end
 
 -- Setup vars that are user-dependent.
 function user_setup()
-    state.OffenseMode:options('Normal', 'Acc', 'PDT','PDT2', 'Hybrid', 'Hybrid2', 'Ejin', 'MEAV','MEAVFEET')
+    state.OffenseMode:options('Normal', 'Acc', 'PDT','Mpaca', 'Hybrid', 'Hybrid2', 'Ejin', 'MEAV','MEAVFEET')
     state.HybridMode:options('Normal', 'PDT', 'Reraise')
     state.WeaponskillMode:options('Normal', 'Acc', 'Mod')
     state.PhysicalDefenseMode:options('PDT', 'Reraise')
@@ -291,12 +291,12 @@ sets.precast.WS['Namas Arrow'] = {ranged="Yoichinoyumi",ammo="Yoichi's Arrow",
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
     sets.idle.Town = {ammo="Staunch Tathlum +1",
         head="Valorous Mask",neck="Bathy Choker +1",ear1="Infused Earring",ear2="Etiolation Earring",
-        body="Wakido Domaru +3",hands="Wakido Kote +3",ring1="Gelatinous ring +1",ring2="Defending Ring",
+        body="Wakido Domaru +3",hands="Nyame Gauntlets",ring1="Gelatinous ring +1",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Flanchard",feet="Danzo Sune-Ate"}
     
     sets.idle.Field = {ammo="Staunch Tathlum +1",
         head="Valorous Mask",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Etiolation Earring",
-        body="Wakido Domaru +3",hands="Wakido Kote +3",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+        body="Wakido Domaru +3",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Flanchard",feet="Danzo Sune-Ate"}
 
     sets.idle.Weak = {ammo="Staunch Tathlum +1",
@@ -378,7 +378,7 @@ sets.precast.WS['Namas Arrow'] = {ranged="Yoichinoyumi",ammo="Yoichi's Arrow",
 		legs="Ryuo Hakama +1",
 		feet="Flamma Gambieras +2"}
 
-        sets.engaged.PDT2 = {ammo="Staunch Tathlum +1",
+        sets.engaged.Mpaca = {ammo="Staunch Tathlum +1",
         head="Mpaca's Cap",
         neck="Samurai's Nodowa +2",
         ear1="Telos Earring",ear2="Dedition Earring",
