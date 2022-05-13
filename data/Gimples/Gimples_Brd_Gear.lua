@@ -233,7 +233,7 @@ function init_gear_sets()
 		body="Inyanga Jubbah +2",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
 		back="Umbra Cape",waist="Flume belt",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 	
-	sets.idle = {main=gear.kali_refresh,sub="Ammurapi shield",ammo="Staunch Tathlum +1",
+	sets.idle = {main=gear.kali_refresh,sub="Genmei shield",ammo="Staunch Tathlum +1",
 		head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
 		body="Inyanga Jubbah +2",hands="Inyanga dastanas +2",ring1="Defending Ring",ring2="Inyanga Ring",
 		back="Solemnity Cape",waist="Carrier's Sash",legs="Assiduity Pants",feet="Fili Cothurnes +1"}
