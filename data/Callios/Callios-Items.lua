@@ -123,6 +123,10 @@ gear.taeon_pet_feet =  { name="Taeon Boots", augments={'Pet: Attack+25 Pet: Rng.
     gear.HercHeadFC = {name="Herculean Helm", augments={'"Fast Cast"+3','INT+4','Mag. Acc.+3','"Mag.Atk.Bns."+6',}}
     gear.HercFeetTP = {name="Herculean Boots", augments={'Accuracy+14 Attack+14','"Triple Atk."+3','Accuracy+15',}}
 
+--- Merlinic ---
+
+    gear.Merlinic_burst_feet =  {name="Merlinic Crackows", augments={'Mag. Acc.+30','Magic burst dmg.+8%','VIT+3','"Mag.Atk.Bns."+14',}}
+    gear.Merlinic_legs_macc =   {name="Merlinic Shalwar", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Drain" and "Aspir" potency +5','Mag. Acc.+14','"Mag.Atk.Bns."+12',}}
 
 gear.valorous_wsd_legs = { name="Valorous Hose", augments={'"Subtle Blow"+3','Magic Damage +3','Weapon skill damage +9%','Accuracy+17 Attack+17',}}
 gear.valorous_magical_wsd_head = {name="Valorous Mask",augments={'"Mag.Atk.Bns."+17','Weapon skill damage +5%','Attack+10',}}
