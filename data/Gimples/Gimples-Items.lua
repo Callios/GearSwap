@@ -13,7 +13,9 @@ sets.precast.Item['Holy Water'] = {}
 
 gear.chironic_legs_FC = {name="Chironic Hose", augments={'Mag. Acc.+28','"Fast Cast"+5','INT+7','"Mag.Atk.Bns."+9'}}
 
+-- Geo Stuff
 
+gear.geo_idle_back = {name="Nantosuelta's Cape", augments={'INT+20','Eva.+20 /Mag. Eva.+20','INT+10','Pet: "Regen"+10','Pet: "Regen"+5',}}
 
 --- Telchine 
 gear.telchine_enh_hands = {name="Telchine Gloves", augments={'"Fast Cast"+4','Enh. Mag. eff. dur. +10',}}

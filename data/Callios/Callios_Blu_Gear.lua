@@ -456,20 +456,20 @@ function init_gear_sets()
 	-- Resting sets
 	sets.resting = {main="Bolelabunga",sub="Genmei Shield",ammo="Falcon Eye",
 			      head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Genmei Earring",
-			      body="Jhakri Robe +2",hands=gear.herculean_refresh_hands,ring1="Defending Ring",ring2="Sheltered Ring",
+			      body="Shamash Robe",hands=gear.herculean_refresh_hands,ring1="Defending Ring",ring2="Sheltered Ring",
 			      back="Bleating Mantle",waist="Flume belt +1",legs="Lengo Pants",feet=gear.herculean_refresh_feet}
 
 	-- Idle sets
 	sets.idle = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 			      head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Genmei Earring",
-			      body="Jhakri Robe +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+			      body="Shamash Robe",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 			      back="Moonbeam Cape",waist="Flume belt +1",legs="Lengo Pants",feet="Malignance Boots"}
 
 	sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
 	sets.idle.PDT = {main="Sakpata's Sword",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 				head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Genmei Earring",
-		        body="Jhakri Robe +2",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		        body="Shamash Robe",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 				back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	
 	sets.idle.Gleti = {main="Sakpata's Sword",sub="Genmei Shield",ammo="Staunch Tathlum +1",
@@ -477,7 +477,7 @@ function init_gear_sets()
 		        body="Gleti's Cuirass",hands="Gleti's Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 				back="Moonbeam Cape",waist="Flume belt +1",legs="Gleti's Breeches",feet="Gleti's Boots"}
 
-	sets.idle.DTHippo = set_combine(sets.idle.PDT, {body="Nyame Mail",legs="Carmine Cuisses +1",feet="Nyame Sollerets"})
+	sets.idle.DTHippo = set_combine(sets.idle.PDT, {body="Shamash Robe",legs="Carmine Cuisses +1",feet="Nyame Sollerets"})
 
 	-- Defense sets
 	sets.defense.PDT = {main="Sakpata's Sword",sub="Genmei Shield",ammo="Staunch Tathlum +1",

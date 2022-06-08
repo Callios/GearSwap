@@ -66,6 +66,7 @@ function init_gear_sets()
     sets.weapons.TauretCento = {main="Tauret",sub="Fusetto +2"}
     sets.weapons.TauretGleti = {main="Tauret",sub="Gleti's Knife"}
     sets.weapons.NaeglingBK = {main="Naegling",sub="Blurred Knife +1"}
+
 	
     -- Actions we want to use to tag TH.
     sets.precast.Step = {ammo="C. Palug Stone",

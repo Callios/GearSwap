@@ -539,7 +539,7 @@ function init_gear_sets()
 	   	ring2="Thurandaut Ring",
         neck="Shepherd's Chain",
 	   	waist="Isa Belt",
-		ear1="Handler's Earring",
+		ear1="Handler's Earring +1",
 		ear2="Enmerkar Earring",
 		back=Visucius.PetandMasterTP,
 	}
@@ -586,7 +586,7 @@ function init_gear_sets()
 	sets.precast.WS["Aeolian Edge"] = set_combine(sets.precast.WS, {
 		body="Cohort Cloak +1",
 		neck="Baetyl Pendant",
-		hands={name="Nyame Gauntlets"},
+		hands="Nyame Gauntlets",
 		legs="Nyame Flanchard",
 		feet="Nyame Sollerets",
 		waist="Eschan Stone",
@@ -654,6 +654,7 @@ function init_gear_sets()
 	sets.engaged.Rao = set_combine(RAO_SET, {
 		ear1="Rimeice Earring",
 		ear2="Enmerkar Earring",
+        neck="Shulmanu Collar",
 		ring1="C. Palug Ring",
 		ring2="Thurandaut Ring",
 		back=Visucius.PetandMasterTP

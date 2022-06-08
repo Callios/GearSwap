@@ -4,7 +4,7 @@ sets.Sheltered = {ring2="Sheltered Ring"}
 sets.Capacity = {back="Mecisto. Mantle"}
 
 sets.buff.Doom = {neck="Nicander's Necklace",waist="Gishdubar Sash",ring1="Eshmun's Ring",ring2="Eshmun's Ring"}
-sets.TreasureHunter = {head="Wh. Rarab Cap +1",waist="Chaac Belt",ammo="Perfect Lucky Egg"}
+sets.TreasureHunter = {head="Volte cap",waist="Chaac Belt",ammo="Perfect Lucky Egg"}
 
 sets.precast.Item['Hallowed Water'] = {}
 sets.precast.Item['Holy Water'] = {}
@@ -44,7 +44,16 @@ gear.taeon_pet_feet =  { name="Taeon Boots", augments={'Pet: Attack+25 Pet: Rng.
     gear.telchine_ehn_head ={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
     gear.telchine_enh_body ={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}}
     gear.telchine_enh_hands ={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +10',}}
-    gear.telchine_enh_legs ={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}}
+    gear.telchine_enh_legs = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}}
+    gear.telchine_ehn_feet = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +9',}}
+
+
+--- Telchine Pet Stuff
+    
+    gear.telchine_pet_body  =    {name="Telchine Chas.", augments={'DEF+16','Pet: "Regen"+3','Pet: Damage taken -4%',}}
+    gear.telchine_pet_hands  =    {name="Telchine Gloves", augments={'DEF+20','Pet: "Regen"+3','Pet: Damage taken -4%',}}
+    gear.telchine_pet_legs =    {name="Telchine Braconi", augments={'DEF+16','Pet: "Regen"+3','Pet: Damage taken -3%',}}
+
 
 --gear.telchine_ehn_head
 ---gear.telchine_enh_body
@@ -70,6 +79,11 @@ gear.taeon_pet_feet =  { name="Taeon Boots", augments={'Pet: Attack+25 Pet: Rng.
     gear.THFCape_TP    = {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+5','"Store TP"+10'}}
     gear.THFCape_DEXWS = {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%'}}
 
+
+--- DNC Stuff
+
+    gear.DNC_TP = {name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
+    gear.DNC_WS = { name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}}
 
 --- PLD Stuff --- 
 
@@ -118,7 +132,7 @@ gear.taeon_pet_feet =  { name="Taeon Boots", augments={'Pet: Attack+25 Pet: Rng.
     
 --- HERC Stuff
 
-    gear.Herculean_HercFeetFC = {name="Herculean Boots", augments={'"Mag.Atk.Bns."+12','"Fast Cast"+6','Mag. Acc.+1',}}
+    gear.HercHeadFC = {name="Herculean Boots", augments={'"Mag.Atk.Bns."+12','"Fast Cast"+6','Mag. Acc.+1',}}
     gear.HercLegsFC = {name="Herculean Trousers", augments={'"Fast Cast"+5','MND+5',}}
     gear.HercHeadFC = {name="Herculean Helm", augments={'"Fast Cast"+3','INT+4','Mag. Acc.+3','"Mag.Atk.Bns."+6',}}
     gear.HercFeetTP = {name="Herculean Boots", augments={'Accuracy+14 Attack+14','"Triple Atk."+3','Accuracy+15',}}
