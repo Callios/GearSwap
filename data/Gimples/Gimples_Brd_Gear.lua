@@ -161,7 +161,7 @@ function init_gear_sets()
 	sets.midcast.SongEffect = {main=gear.kali_macc,sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
 		head="Fili Calot +1",neck="Moonbow Whistle",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body="Fili Hongreline +1",hands="Inyan. Dastanas +2",ring1="Defending Ring",ring2="Stikini Ring",
-		back=gear.brd_jse_macc,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Brioso Slippers +2"}
+		back=gear.brd_jse_macc,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3"}
 		
 	sets.midcast.SongEffect.DW = {main=gear.kali_macc,sub=gear.kali_refresh}
 
@@ -169,7 +169,7 @@ function init_gear_sets()
 	sets.midcast.SongDebuff = {main=gear.kali_macc,sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
 		head="Inyanga Tiara +2",neck="Moonbow Whistle",ear1="Regal Earring",ear2="Digni. Earring",
 		body="Fili Hongreline +1",hands="Inyan. Dastanas +2",ring1="Defending Ring",ring2="Metamorph Ring +1",
-		back=gear.brd_jse_macc,waist="Eschan Stone",legs="Inyanga Shalwar +2",feet="Brioso Slippers +2"}
+		back=gear.brd_jse_macc,waist="Eschan Stone",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3"}
 		
 	sets.midcast.SongDebuff.DW = {main="Kali",sub="Kali"}
 
@@ -177,7 +177,7 @@ function init_gear_sets()
 	sets.midcast.SongDebuff.Resistant = {main="Daybreak",sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
 		head="Inyanga Tiara +2",neck="Moonbow Whistle",ear1="Regal Earring",ear2="Digni. Earring",
 		body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2",ring1="Defending Ring",ring2="Metamorph Ring +1",
-		back=gear.brd_jse_macc,waist="Eschan Stone",legs="Inyanga Shalwar +2",feet="Brioso Slippers +2"}
+		back=gear.brd_jse_macc,waist="Eschan Stone",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3"}
 
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",range="Gjallarhorn",ammo=empty,

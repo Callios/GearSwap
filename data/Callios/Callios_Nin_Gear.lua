@@ -118,9 +118,9 @@ function init_gear_sets()
     sets.precast.WS['Blade: Ten'].Fodder = set_combine(sets.precast.WS['Blade: Ten'], {})
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Ghastly Tathlum +1",
-        head="Dampening Tam",neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Crematio Earring",
-        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Shiva Ring +1",ring2="Metamor. Ring +1",
-        back="Toro Cape",waist="Chaac Belt",legs="Nyame Flanchard",feet="Malignance Boots"}
+        head="Nyame Helm",neck="Sibyl Scarf",ear1="Friomisi Earring",ear2="Crematio Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1='Epaminondas\'s Ring',ring2="Metamor. Ring +1",
+        back="Toro Cape",waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Lugra Earring",ear2="Lugra Earring +1",}
@@ -181,14 +181,14 @@ function init_gear_sets()
     sets.idle = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonbeam Cape",waist="Flume belt +1 +1",legs="Malignance Tights",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
     sets.defense.PDT = {ammo="Togakushi Shuriken",
         head="Dampening Tam",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         body="Emet Harness +1",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonbeam Cape",waist="Flume belt +1 +1",legs="Nyame Flanchard",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Flanchard",feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo="Togakushi Shuriken",
         head="Dampening Tam",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
@@ -292,10 +292,11 @@ function init_gear_sets()
 	sets.Skillchain = {legs="Ryuo Hakama"}
 
 	-- Weapons sets
-	sets.weapons.Heishi = {main="Heishi Shorinken",sub="Kanaria"}
-	sets.weapons.Savage = {main="Naegling",sub="Kanaria"}
-	sets.weapons.Evisceration = {main="Tauret",sub="Kanaria"}
-	sets.weapons.LowBuff = {main="Heishi Shorinken",sub="Blurred Knife +1"}
+	sets.weapons.Heishi = {main="Heishi Shorinken",sub="Uzura +2"}
+	sets.weapons.Savage = {main="Naegling",sub="Uzura +2"}
+	sets.weapons.Evisceration = {main="Tauret",sub="Uzura +2"}
+	sets.weapons.LowBuff = {main="Heishi Shorinken",sub="Kunimitus"}
+    sets.weapons.Cleave = {main=gear.MalevolenceA,sub=gear.MalevolenceB}
 	sets.weapons.ProcDagger = {main="Chicken Knife II",sub=empty}
 	sets.weapons.ProcSword = {main="Ark Sword",sub=empty}
 	sets.weapons.ProcGreatSword = {main="Lament",sub=empty}

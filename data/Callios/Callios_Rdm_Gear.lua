@@ -144,8 +144,8 @@ function init_gear_sets()
 		back=gear.RDMCape_MAGWS,waist="Sacro Cord",legs="Jhakri Slops +2",feet="Vitiation Boots +3"}
 		
 	sets.precast.WS['Aeolian Edge'] = {
-		head="Nyame Helm",neck="Baetyl Pendant",ear1="Regal Earring",ear2="Malignance Earring",
-		body="Nyame Mail",hands="Jhakri Cuffs +2",ring1='Epaminondas\'s Ring',ring2="Freke Ring",
+		head="Nyame Helm",neck="Sibyl Scarf",ear1="Regal Earring",ear2="Malignance Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1='Epaminondas\'s Ring',ring2="Freke Ring",
 		back=gear.RDMCape_MAGWS,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	-- Midcast Sets
@@ -461,7 +461,7 @@ function init_gear_sets()
 	sets.weapons.MurgGleti = {main="Murgleis",sub='Gleti\'s Knife',range="Ullr",ammo="none"}
 	sets.weapons.DualWeaponsCorcea = {main="Crocea Mors",sub="Machaera +2",range="Ullr",ammo="none"}
 	sets.weapons.SanguineSpam = {main="Crocea Mors",sub="Daybreak",range="Ullr",ammo="none"}
-	sets.weapons.SanguineSpam2 = {main="Crocea Mors",sub='Gleti\'s Knife',range="Ullr",ammo="none"}
+	sets.weapons.SanguineSpam2 = {main="Crocea Mors",sub='Gleti\'s Knife',range="none",ammo="Sroda Tathlum"}
 	sets.weapons.SanguineSpam3 = {main="Crocea Mors",sub='Tauret',range="Ullr",ammo="none"}
 	sets.weapons.DualWeaponsAcc = {main="Naegling",sub='Gleti\'s Knife',range="Ullr",ammo="none"}
 	sets.weapons.DualEvisceration = {main="Tauret",sub='Gleti\'s Knife',range="Ullr",ammo="none"}
@@ -496,7 +496,7 @@ function init_gear_sets()
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Ilabrat Ring",ring2="Chirich Ring +1",
 		back=gear.RDMCape_TP,waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
-	sets.engaged.CroceaEnspell = {range="Ullr",
+	sets.engaged.CroceaEnspell = {ammo="Sroda Tathlum",
 		head="Umuthi Hat",neck="Dls. Torque +2",ear1="Suppanomimi",ear2="Digni. Earring",
 		body="Malignance Tabard",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back="Ghostfyre Cape",waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}
@@ -557,12 +557,12 @@ function init_gear_sets()
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Chirich Ring +1",
 		back="Moonbeam Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 		
-	sets.engaged.DW.Enspell = {
+	sets.engaged.DW.Enspell = {ammo="Sroda Tathlum",
 		head="Malignance Chapeau",neck="Dls. Torque +2",ear1="Digni. Earring",ear2="Telos Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back=gear.RDMCape_DW,waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}
 
-	sets.engaged.DW.EnspellOnly = {
+	sets.engaged.DW.EnspellOnly = {ammo="Sroda Tathlum",
 		head="Malignance Chapeau",neck="Dls. Torque +2",ear1="Suppanomimi",ear2="Hollow Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back="Ghostfyre Cape",waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}

@@ -19,6 +19,11 @@ gear.geo_idle_back = {name="Nantosuelta's Cape", augments={'INT+20','Eva.+20 /Ma
 
 --- Telchine 
 gear.telchine_enh_hands = {name="Telchine Gloves", augments={'"Fast Cast"+4','Enh. Mag. eff. dur. +10',}}
+gear.telchine_enh_head =  { name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
+gear.telchine_enh_body =   { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}}
+gear.telchine_enh_legs =   { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}}
+gear.telchine_enh_feet =   { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}}
+   
 
 ---BARD GEAR
 
@@ -28,3 +33,8 @@ gear.brd_tp = {name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+2
 gear.brd_savage = {name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 gear.kali_macc = {name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10'}}
 gear.kali_refresh = {name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1'}}
+
+
+--- SCH Stuff
+
+gear.sch_fc_back = {name="Lugh's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}}

@@ -227,7 +227,7 @@ function init_gear_sets()
     sets.midcast.Utsusemi = sets.Enmity
     sets.midcast.Flash = sets.Enmity
     sets.midcast['Enhancing Magic'] = sets.Enmity
-    sets.midcast.Reprisal = sets.Enmity
+    sets.midcast.Reprisal = set_combine(sets.Enmity, {body="Shabti cuirass"})
     sets.midcast.Crusade = sets.Enmity
     sets.midcast.Enlight = sets.Enmity
     sets.midcast['Blue Magic'] = sets.Enmity
@@ -451,7 +451,7 @@ function init_gear_sets()
 	}
  
     sets.idle.Cleaving = {
-		Main="Malevolence",
+		Main="Sakpata's sword",
 		ammo="Eluder's Sachet",
 		head="Sakpata's Helm",
 		neck="Unmoving Collar +1",

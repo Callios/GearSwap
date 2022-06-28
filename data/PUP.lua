@@ -43,7 +43,7 @@ function user_setup()
         Used when you are Engaged with Pet
         Used when you are Idle and Pet is Engaged
     ]]
-    state.HybridMode:options("Master", "Pet")
+    state.HybridMode:options("Master", "DualTP", "Pet")
 
     --[[
         Alt-F12 - Turns off any emergency mode
@@ -241,7 +241,7 @@ function init_gear_sets()
 	
     Animators = {}
     Animators.Range = "Animator P II"
-    Animators.Melee = "Animator P"
+    Animators.Melee = "Animator P +1"
 
     --Adjust to your reforge level
     --Sets up a Key, Value Pair
@@ -257,7 +257,7 @@ function init_gear_sets()
     Relic_Pitre.Body_PTP = "Pitre Tobe +3" --Enhances Overdrive
     Relic_Pitre.Hands_WSD = "Pitre Dastanas +2" --Enhances Fine-Tuning
     Relic_Pitre.Legs_PMagic = "Pitre Churidars +3" --Enhances Ventriloquy
-    Relic_Pitre.Feet_PMagic = "Pitre Babouches +3" --Role Reversal
+    Relic_Pitre.Feet_PMagic = "Pitre Babouches" --Role Reversal
 
     Empy_Karagoz = {}
     Empy_Karagoz.Head_PTPBonus = "Karagoz Capello +1"
@@ -351,7 +351,7 @@ function init_gear_sets()
     ring1="Thurandaut ring",
     ring2="Cath Palug ring",
     waist="Isa belt",
-    ear1="Handler's Earring",
+    ear1="Handler's Earring +1",
     ear2="Rimiece Earring",
     back=Visucius.PetandMasterTP
 
@@ -479,6 +479,7 @@ function init_gear_sets()
 		legs="Rao Haidate +1",
 		feet="Rao Sune-Ate +1",
         ear1="Guignol Earring",
+        ear2="Pratik Earring",
         ammo = "Automat. Oil +3",
         feet = Artifact_Foire.Feet_Repair_PMagic
     }
@@ -629,7 +630,14 @@ function init_gear_sets()
         Hybrid Mode = Pet
     ]]
 	
-    sets.engaged.Mpaca.Pet = set_combine(sets.engaged.Mpaca, sets.pet_hybrid_accessories)
+    sets.engaged.Mpaca.Pet = set_combine(sets.engaged.Mpaca, sets.pet_accessories)
+
+     --[[
+        Offense Mode = Mpaca
+        Hybrid Mode = DualTP
+    ]]
+
+    sets.engaged.Mpaca.DualTP = set_combine(sets.engaged.Mpaca, sets.pet_hybrid_accessories)
 	
 	-------------------------------------
     --[[
@@ -662,6 +670,7 @@ function init_gear_sets()
 	
     sets.engaged.Rao.Master = set_combine(sets.engaged.Rao, sets.master_accessories)
 	sets.engaged.Rao.Pet = set_combine(sets.engaged.Rao, sets.pet_accessories)
+    sets.engaged.Rao.DualTP = set_combine(sets.engaged.Rao,sets.pet_hybrid_accessories)
 	
 	-------------------------------------
     --[[
@@ -770,9 +779,9 @@ function init_gear_sets()
 	
 	sets.idle.PetTP = sets.engaged.PetTP
 	
-	sets.idle.Rao  = sets.engaged.Rao
+	sets.idle.Rao  = set_combine(sets.engaged.Rao, sets.pet_tank_accessories)
 
-    sets.idle.PetTank = sets.engaged.PetTank
+    sets.idle.PetTank = set_combine(sets.engaged.PetTank, sets.pet_tank_accessories)
 
     -------------------------------------Enmity
     sets.pet = {} -- Not Used

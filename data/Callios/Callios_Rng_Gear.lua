@@ -29,7 +29,7 @@ function user_job_setup()
 					
 		['Gun']  = {['Default'] = "Chrono Bullet",
 					['WS'] = "Chrono Bullet",
-					['Acc'] = "Chrono Bullet",
+					['Acc'] = "Eradicating Bullet",
 					['Magic'] = "Devastating Bullet",
 					['MagicAcc'] = "Devastating Bullet",
 					['Unlimited'] = "Hauksbok Bullet",
@@ -147,8 +147,8 @@ function init_gear_sets()
 
     sets.precast.WS['Last Stand'] = {
         head="Orion Beret +3",neck="Scout's Gorget +2",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Nyame Mail",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Epaminondas's Ring",
-        back=gear.RNG_RAWSD,waist="Fotia Belt",legs="Arcadian Braccae +3",feet="Nyame Sollerets"}		
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Epaminondas's Ring",
+        back=gear.RNG_RAWSD,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}		
 
     sets.precast.WS['Hot Shot'] = {
         head="Nyame Helm",neck="Scout's Gorget +2",ear1="Moonshade Earring",ear2="Friomisi Earring",
@@ -180,8 +180,8 @@ function init_gear_sets()
 		body="Nyame Mail",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Metamorph Ring +1",
 		back=gear.RNG_SAVAGE,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}	
 		
-	sets.precast.WS['Aeolian Edge'] = {
-        head="Nyame Helm",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
+	sets.precast.WS['Aeolian Edge'] = {ammo="Hauksbok Arrow",
+        head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Dingir Ring",
         back=gear.RNG_RAWSD,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}	
 		
@@ -300,7 +300,7 @@ function init_gear_sets()
 	sets.weapons.Trial = {main="Naegling",sub="Blurred Knife +1",range="Astrild"}
 	sets.weapons.Trial2 = {main="Fermion Sword",sub="Chicken Knife II",range="Sparrowhawk"}
 	sets.weapons.DualEviscerationWeapons = {main="Tauret",sub="Blurred Knife +1",range="Sparrowhawk +2"}
-	sets.weapons.DualMalevolence = {main="Malevolence",sub="Malevolence",range="Fomalhaut"}
+	sets.weapons.DualMalevolence = {main="Malevolence",sub="Malevolence",range="Yoichinoyumi"}
 	sets.weapons.DualMagicWeapons = {main="Tauret",sub="Naegling",range="Fomalhaut"}
 	sets.weapons.YoichiMain ={range="Yoichinoyumi"}
 

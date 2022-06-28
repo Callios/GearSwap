@@ -12,8 +12,8 @@ function user_job_setup()
 
     gear.RAbullet = "Chrono Bullet"
     gear.WSbullet = "Chrono Bullet"
-    gear.MAbullet = "Orichalc. Bullet" --For MAB WS, do not put single-use bullets here.
-    gear.QDbullet = "Animikii Bullet"
+    gear.MAbullet = "Living Bullet" --For MAB WS, do not put single-use bullets here.
+    gear.QDbullet = "Hauksbok Bullet"
     options.ammo_warning_limit = 15
 
 	gear.tp_ranger_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}}
@@ -61,10 +61,21 @@ function init_gear_sets()
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +3"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants +1"}
 
-    sets.precast.CorsairRoll = {main="Rostam",range="Compensator",
-        head="Lanun Tricorne +1",neck="Regal Necklace",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Lanun Frac +3",hands="Chasseur's Gants +1",ring1="Defending Ring",ring2="Dark Ring",
-        back=gear.tp_jse_back,waist="Flume Belt +1",legs="Desultor Tassets",feet="Malignance Boots"}
+    sets.precast.CorsairRoll = {
+		main={ name="Rostam", augments={'Path: C',}},
+		range="Compensator",
+		head="Lanun Tricorne +1",
+		neck="Regal Necklace",
+		ear1="Infused Earring",
+		ear2="Sanare Earring",
+		body="Malignance Tabard",
+		hands="Chasseur's Gants +1",
+		ring1="Defending Ring",
+		back=gear.CamMantleDA,
+		waist="Flume Belt +1",
+		legs="Malignance Tights",
+		feet="Lanun Bottes +3",
+		}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
@@ -271,10 +282,21 @@ function init_gear_sets()
 	sets.BulletPouch = {waist="Chr. Bul. Pouch"}
 
     -- Idle sets
-    sets.idle = {ammo=gear.RAbullet,
-        head="Nyame Helm",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shadow Ring",
-        back="Moonbeam Cape",waist="Carrier's Sash",legs="Carmine Cuisses +1",feet="Nyame Sollerets"}
+    sets.idle =  {
+        ammo=gear.RAbullet,
+        head="Nyame Helm",
+		neck="Warder's Charm +1",
+		ear1="Eabani Earring",
+		ear2="Sanare Earring",
+        body="Nyame Mail",
+		hands="Nyame Gauntlets",
+		ring1="Defending Ring",
+		ring2="Shneddick Ring",
+        back=gear.CamMantleDA,
+		waist="Carrier's Sash",
+		legs="Nyame Flanchard",
+		feet="Nyame Sollerets"
+        }
 		
     sets.idle.PDT = {ammo=gear.RAbullet,
         head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",

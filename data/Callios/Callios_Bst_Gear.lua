@@ -188,7 +188,7 @@ function init_gear_sets()
 		back=gear.BST_WS,waist="Fotia Belt",legs="Gleti's Breeches",feet="Gleti's Boots"}
 
 	sets.precast.WS['Aeolian Edge'] = {ammo="Coiste Bodhar",
-		head="Nyame Helm",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
+		head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Friomisi Earring",
 		body="Nyame Mail",hands="Nyame Guantlets",ring1="Epaminondas's Ring",ring2="Metamorph Ring +1",
 		back=gear.BST_WS,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
@@ -323,8 +323,8 @@ function init_gear_sets()
 
 	sets.engaged.SomeAcc = {ammo="Falcon Eye",
 		head="Malignance Chapeau",neck="Shulmanu Collar",ear1="Brutal Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-		back=gear.BST_TP,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Epona's Ring",
+		back=gear.BST_TP,waist="Sailfi belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.Acc = {ammo="Falcon Eye",
 		head="Malignance Chapeau",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Brutal Earring",
@@ -375,7 +375,7 @@ function init_gear_sets()
 
 	sets.engaged.DW.SomeAcc = {ammo="Coiste Bodhar",
 	head="Malignance Chapeau",neck="Anu Torque",ear1="Eabani Earring",ear2="Sherida Earring",
-	body="Gleti's Cuirass",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
+	body="Gleti's Cuirass",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Epona's Ring",
 	back=gear.BST_TP,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.DW.Acc = {ammo="Coiste Bodhar",
@@ -442,7 +442,7 @@ function init_gear_sets()
 	sets.weapons.SavageBladeSW = {main="Naegling", sub="Sacro Bulwark"}
 	sets.weapons.SavageBladeDW = {main="Naegling", sub="Agwu's Axe"}
 	sets.weapons.Evisceration = {main="Tauret", sub="Agwu's Axe"}
-	sets.weapons.Cleave = {main="Malevolence", sub="Malevolence"}
+	sets.weapons.Cleave = {main=gear.MalevolenceA, sub=gear.MalevolenceB}
 	sets.weapons.ClubDW = {main="Eosuchus Club", sub="Agwu's Axe"}
 	sets.weapons.ClubSW = {main="Eosuchus Club", sub="Sacro Bulwark"}
 

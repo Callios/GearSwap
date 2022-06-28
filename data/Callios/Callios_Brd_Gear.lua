@@ -155,9 +155,9 @@ function init_gear_sets()
 
 	sets.precast.WS['Aeolian Edge'] = {
 
-		ammo="Pemphredo tathlum",
+		ammo="Ghastly Tathlum +1",
 		head="Nyame Helm",
-		neck="Sanctity Necklace",
+		neck="Sybil Scarf",
 		ear1="Moonshade Earring",
 		ear2="Friomisi Earring",
 		body="Nyame Mail",
@@ -168,7 +168,7 @@ function init_gear_sets()
 		waist="Orpheus's Sash",
 		legs="Nyame Flanchard",
 		feet="Nyame Sollerets",
-		ammo="Ghastly Tathlum +1"
+		
 	}
 
 	sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {

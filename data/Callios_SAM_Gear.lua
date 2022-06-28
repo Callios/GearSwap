@@ -93,12 +93,12 @@ function init_gear_sets()
         head="Mpaca's Cap",
 		neck="Samurai's Nodowa +2",
 		ear1="Ishvara Earring",ear2="Moonshade Earring",
-        body="Sakonji Domaru +3",
+        body="Nyame Mail",
 		hands="Nyame Gauntlets",
 		ring1="Epaminondas's Ring",ring2="Regal Ring",
         back=CapeWSD,
 		waist="Fotia Belt",
-		legs="Wakido haidate +3",
+		legs="Nyame Flancahrd",
 		feet="Nyame Sollerets"
 		}
     
@@ -110,12 +110,12 @@ function init_gear_sets()
         head="Mpaca's Cap",
 		neck="Samurai's Nodowa +2",
 		ear1="Thrud Earring",ear2="Moonshade Earring",
-        body="Sakonji Domaru +3",
+        body="Nyame Mail",
 		hands="Nyame Gauntlets",
 		ring1="Epaminondas's Ring",ring2="Regal Ring",
         back=CapeWSD,
 		waist="Sailfi Belt +1",
-		legs="Wakido haidate +3",
+		legs="Nyame Flanchard",
 		feet="Nyame Sollerets"
 		})
 		
@@ -129,12 +129,12 @@ function init_gear_sets()
         head="Mpaca's Cap",
 		neck="Samurai's Nodowa +2",
 		ear1="Thrud Earring",ear2="Moonshade Earring",
-        body="Sakonji Domaru +3",
+        body="Nyame Mail",
 		hands="Nyame Gauntlets",
-		ring1="Epaminondas's Ring",ring2="Regal Ring",
+		ring1="Epaminondas's Ring",ring2="Niqmaddu Ring",
         back=CapeWSD,
 		waist="Sailfi Belt +1",
-		legs="Wakido haidate +3",
+		legs="Nyame Flanchard",
 		feet="Nyame Sollerets"
 		})
     
@@ -148,12 +148,12 @@ function init_gear_sets()
         head="Mpaca's Cap",
         neck="Samurai's Nodowa +2",
         ear1="Thrud Earring",ear2="Moonshade Earring",
-        body="Sakonji Domaru +3",
+        body="Nyame Mail",
         hands="Nyame gauntlets",
         ring1="Epaminondas's Ring",ring2="Regal Ring",
         back=CapeWSD,
         waist="Sailfi Belt +1",
-        legs="Wakido haidate +3",
+        legs="Nyame Flanchard",
         feet="Nyame Sollerets"
         })
     
