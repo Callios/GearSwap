@@ -464,8 +464,8 @@ function init_gear_sets()
 		-- ring2="Gelatinous Ring +1",
 		back="Moonlight Cape",
 		waist="Flume Belt",
-		legs="Sakpata's Cuisses",
-		feet="Sakpata's Leggings"
+		legs="Carmine cuisses +1",
+		feet="Hippo. Socks +1"
 	}
 
     sets.idle.Eva = {

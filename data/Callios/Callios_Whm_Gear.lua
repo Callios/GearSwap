@@ -6,7 +6,7 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('None','DualWeapons','MeleeWeapons')
+	state.Weapons:options('None','DualWeapons','MeleeWeapons','Staff')
 	state.WeaponskillMode:options('Normal','Fodder')
 
 	gear.obi_cure_waist = "Austerity Belt +1"
@@ -45,6 +45,7 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.MeleeWeapons = {main="C. Palug Hammer",sub="Ammurapi Shield"}
 	sets.weapons.DualWeapons = {main="C. Palug Hammer",sub="Izcalli"}
+	sets.weapons.Staff = {main ="Malignance Pole", sub="Niobid strap"}
 	
     sets.buff.Sublimation = {waist="Embla Sash"}
     sets.buff.DTSublimation = {waist="Embla Sash"}
@@ -106,7 +107,17 @@ function init_gear_sets()
 		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Etiolation Earring",ear2="Moonshade Earring",
 		body="Kaykaus Bliaut",hands="Regal Cuffs",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
 		back="Aurist's Cape +1",waist="Fotia Belt",legs="Nyame Flanchard",feet="Theo. Duckbills +3"}
+
+	sets.precast.WS['Earth Crusher'] = {ammo="Ghastly Tathlum +1",
+	head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Malignance Earring",
+	body="Nyame Mail",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",Ring2="Metamor. Ring +1",
+	back="Moonbeam Cape",waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
+	sets.precast.WS['Catacylysm'] = {ammo="Ghastly Tathlum +1",
+	head="Pixie hairpin +1",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Malignance Earring",
+	body="Nyame Mail",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",Ring2="Archon ring",
+	back="Moonbeam Cape",waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
 	sets.MaxTP = {ear1="Cessance Earring",ear2="Brutal Earring"}
 	sets.MaxTP.Dagan = {ear1="Etiolation Earring",ear2="Evans Earring"}
 
@@ -250,7 +261,7 @@ function init_gear_sets()
 	sets.midcast['Enhancing Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
 		head=gear.telchine_ehn_head,neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
 		body=gear.telchine_enh_body,hands=gear.telchine_enh_hands,ring1="Stikini Ring",ring2="Stikini Ring",
-		back="Fi Follet Cape +1",waist="Embla Sash",legs=gear.telchine_enh_legs,feet="Kaykaus boots +1"}
+		back="Fi Follet Cape +1",waist="Embla Sash",legs=gear.telchine_enh_legs,feet=gear.telchine_ehn_feet}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
 
@@ -406,8 +417,8 @@ function init_gear_sets()
     -- Basic set for if no TP weapon is defined.
     sets.engaged = {ammo="Staunch Tathlum +1",
         head="Aya. Zucchetto +2",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",Ring2="Ilabrat Ring",
-        back="Moonbeam Cape",waist="Windbuffet Belt +1",legs="Aya. Cosciales +2",feet="Battlecast Gaiters"}
+		body="Ayanmo Corazza +2",hands="Bunzi's Gloves",ring1="Chirich Ring +1",Ring2="Chirich Ring +1",
+        back="Moonbeam Cape",waist="Windbuffet Belt +1",legs="Aya. Cosciales +2",feet="Nyame Sollerets"}
 
     sets.engaged.Acc = {ammo="Hasty Pinion +1",
         head="Aya. Zucchetto +2",neck="Combatant's Torque",ear1="Telos Earring",ear2="Brutal Earring",
