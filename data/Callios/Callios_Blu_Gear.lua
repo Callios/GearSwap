@@ -193,7 +193,7 @@ function init_gear_sets()
 	sets.precast.WS['Expiacion'].Fodder = set_combine(sets.precast.WS['Expiacion'], {})
 
 	sets.precast.WS['Sanguine Blade'] = {ammo="Ghastly Tathlum +1",
-			         head="Pixie Hairpin +1",neck="Baetyl Pendant",ear1="Regal Earring",ear2="Friomisi Earring",
+			         head="Pixie Hairpin +1",neck="Sibyl Scarf",ear1="Regal Earring",ear2="Friomisi Earring",
 		             body="Amalric Doublet +1",hands="Jhakri Cuffs +2",ring1="Metamor. Ring +1",ring2="Archon Ring",
 			         back=gear.BLUNUKE,waist="Orpheus's Sash",legs="Luhlaza Shalwar +3",feet="Amalric Nails +1"}
 					 
@@ -283,13 +283,13 @@ function init_gear_sets()
 	-- Magical Spells --
 
 	sets.midcast['Blue Magic'].Magical = {main="Maxentius",sub="Bunzi's Rod",ammo="Ghastly Tathlum +1",
-		 head="Jhakri Coronal +2",neck="Baetyl Pendant",ear1="Regal Earring",ear2="Friomisi Earring",
+		 head="Jhakri Coronal +2",neck="Sibyl Scarf",ear1="Regal Earring",ear2="Friomisi Earring",
 		 body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Metamor. Ring +1",ring2="Shiva Ring",
 		 back=gear.BLUNUKE,waist=gear.ElementalObi,legs="Amalric slops +1",feet="Amalric Nails +1"}
 		 
 	sets.midcast['Blue Magic'].Magical.SIRD = {main="Maxentius",sub="Sakpata's Sword",ammo="Staunch Tathlum +1",
 		 head="Jhakri Coronal +2",neck="Loricate Torque +1",ear1="Regal Earring",ear2="Friomisi Earring",
-		 body="Amalric Doublet +1",hands="Rawhide Gloves",ring1="Defending Ring",ring2="Metamor. Ring +1",
+		 body="Amalric Doublet +1",hands="Nyame gauntlets",ring1="Defending Ring",ring2="Metamor. Ring +1",
 		 back=gear.BLUNUKE,waist="Luminary Sash",legs="Carmine Cuisses +1",feet="Amalric Nails +1"}
 		 
 	sets.midcast['Blue Magic'].Subduction = {main="Maxentius",sub="Bunzi's Rod",ammo="Ghastly Tathlum +1",
@@ -306,7 +306,7 @@ function init_gear_sets()
 		{neck="Mirage Stole",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",waist="Orpheus's Sash",feet="Jhakri Pigaches +2"})
 
 	sets.midcast['Blue Magic'].Magical.DT = {main="Sakpata's Sword",sub="Bunzi's Rod",ammo="Mavi Tathlum",
-		head="Nyame Helm",neck="Mirage Stole",ear1="Regal Earring",ear2="Friomisi Earring",
+		head="Nyame Helm",neck="Sibyl Scarf",ear1="Regal Earring",ear2="Friomisi Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Jhakri Ring",ring2="Defending Ring",
 		back=gear.BLUNUKE,waist=gear.ElementalObi,legs="Nyame Flanchard",feet="Nyame Sollerets"}
 

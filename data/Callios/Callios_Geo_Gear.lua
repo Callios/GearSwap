@@ -275,7 +275,7 @@ function init_gear_sets()
 
 	-- .Pet sets are for when Luopan is present.
 	sets.idle.Pet = {main="Solstice",sub="Genmei Shield",range="Dunna",
-		head="Azimuth Hood +1",neck="Bagua charm +2",ear1="Handler's Earring",ear2="Handler's Earring +1",
+		head="Azimuth Hood +1",neck="Bagua charm +2",ear1="Genmei Earring",ear2="Handler's Earring +1",
 		body=gear.telchine_pet_body,hands="Geo. Mitaines +2",ring1="Defending Ring",ring2="Dark Ring",
 		back=gear.idle_jse_back,waist="Isa Belt",legs=gear.telchine_pet_legs,feet="Bagua Sandals +1"}
 

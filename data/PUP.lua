@@ -65,7 +65,7 @@ function user_setup()
         
         Will automatically set IdleMode to Idle when Pet becomes Engaged and you are Idle
     ]]
-    state.IdleMode:options("Mpaca", "Malignance", "PetTP", "PetDA", "PetTank", "PetEnmity", "Rao")
+    state.IdleMode:options("Malignance","Mpaca","PetTP", "PetDA", "PetTank", "PetEnmity", "Rao")
 
     --Various Cycles for the different types of PetModes
     state.PetStyleCycleTank = M {"NORMAL", "DD", "MAGIC", "SPAM"}
@@ -257,7 +257,7 @@ function init_gear_sets()
     Relic_Pitre.Body_PTP = "Pitre Tobe +3" --Enhances Overdrive
     Relic_Pitre.Hands_WSD = "Pitre Dastanas +2" --Enhances Fine-Tuning
     Relic_Pitre.Legs_PMagic = "Pitre Churidars +3" --Enhances Ventriloquy
-    Relic_Pitre.Feet_PMagic = "Pitre Babouches" --Role Reversal
+    Relic_Pitre.Feet_PMagic = "Pitre Babouches +1" --Role Reversal
 
     Empy_Karagoz = {}
     Empy_Karagoz.Head_PTPBonus = "Karagoz Capello +1"
@@ -384,7 +384,7 @@ function init_gear_sets()
 		legs="Malignance Tights",
 		feet="Malignance Boots",
 		ring1="Cath Palug Ring",
-		ring2="Thurandaut Ring",
+		ring2="Defending Ring",
 		ear1="Enmerkar Earring",
 		ear2="Eabani Earring",
 		waist="Moonbow Belt +1",
@@ -669,7 +669,7 @@ function init_gear_sets()
 	})
 	
     sets.engaged.Rao.Master = set_combine(sets.engaged.Rao, sets.master_accessories)
-	sets.engaged.Rao.Pet = set_combine(sets.engaged.Rao, sets.pet_accessories)
+	sets.engaged.Rao.Pet = set_combine(sets.engaged.Rao, sets.pet_tank_accessories)
     sets.engaged.Rao.DualTP = set_combine(sets.engaged.Rao,sets.pet_hybrid_accessories)
 	
 	-------------------------------------
@@ -769,10 +769,11 @@ function init_gear_sets()
         Idle Mode = Idle
     ]]
 	
-	sets.idle.Mpaca = set_combine(sets.engaged.Mpaca, {ring1="Defending Ring", ring2="Gelatinous Ring +1", neck="Bathy Choker +1",ear1="Eabani earring", ear2="Etiolation Earring", back="Moonbeam Cape"})
 	
 	sets.idle.Malignance = set_combine(sets.engaged.Malignance, {ear1="Eabani Earring", ear2="Genmei earring", waist="Moonbow Belt +1",})
 	
+    sets.idle.Mpaca = set_combine(sets.engaged.Mpaca, {ring1="Defending Ring", ring2="Gelatinous Ring +1", neck="Bathy Choker +1",ear1="Eabani earring", ear2="Etiolation Earring", back="Moonbeam Cape"})
+
     sets.idle.PetDA = sets.engaged.PetDA
 	
 	sets.idle.PetEnmity = sets.engaged.PetEnmity
