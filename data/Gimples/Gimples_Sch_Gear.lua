@@ -288,9 +288,9 @@ function init_gear_sets()
         back="Solemnity Cape",waist="Carrier's Sash",legs="Assiduity Pants",feet="Nyame Sollerets"}
 
     sets.idle.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum",
-        head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
-        body="Vrikodara Jupon",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
-        back="Umbra Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet=gear.chironic_refresh_feet}
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
+        body="Volte Doublet",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Dark Ring",
+        back="Solemnity Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	sets.idle.Hippo = set_combine(sets.idle.PDT, {feet="Hippo. Socks +1"})
 

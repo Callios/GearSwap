@@ -319,7 +319,7 @@ function init_gear_sets()
         body="Gendewitha Bliaut",hands="Gendewitha Gages",ring1="Defending Ring",ring2="Shadow Ring",
         back="Engulfer Cape",waist="Flume Belt",legs="Bihu Cannions +3",feet="Gendewitha Galoshes"}
 
-    sets.Kiting = {feet="Aoidos' Cothurnes +2"}
+    sets.Kiting = {feet="Fili Cothurnes +1"}
 
     sets.latent_refresh = {waist="Fucho-no-obi"}
 

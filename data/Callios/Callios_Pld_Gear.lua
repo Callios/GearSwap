@@ -108,7 +108,7 @@ function init_gear_sets()
 		body="Rev. Surcoat +3",hands="Cab. Gauntlets +1",ring1="Eihwaz Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Luminary Sash",legs="Nyame Flanchard",feet="Carmine Greaves +1"}
 
-	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {hands="Cab. Gauntlets +1", ear2="Knightly Earring"})		
+	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {hands="Cab. Gauntlets +2", ear2="Knightly Earring"})		
     sets.precast.JA['Provoke'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Warcry'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Palisade'] = set_combine(sets.Enmity, {})
@@ -439,12 +439,10 @@ function init_gear_sets()
 
 -- --Burtgang AM3
 
-sets.engaged.Burtgang.MythicAM3 = set_combine(sets.engaged.Burtgang, {ammo="Ginsen",
+sets.engaged.MythicAM3 = set_combine(sets.engaged.Burtgang, {ammo="Coiste Bodhar",
     head="Hjarrandi Helm",neck="Combatant's Torque",ear1="Telos Earring",ear2="Dedition Earring",
-    body="Hjarrandi breastplate",hands="Flamma Manopolas +2",ring1="Flamma Ring",ring2="Chirich Ring +1",
+    body="Hjarrandi breastplate",hands="Sakpata's Gauntlets",ring1="Flamma Ring",ring2="Chirich Ring +1",
     back=gear.PLDTP,waist="Tempus Fugit +1",legs="Sakpata's cuisses",feet="Flamma Gambieras +2"})
-
-
 
     sets.engaged.Acc = {main="Burtgang",sub="Ochain",ammo="Staunch Tathlum +1",
         head="Sakpata's Helm",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
@@ -461,12 +459,13 @@ sets.engaged.Burtgang.MythicAM3 = set_combine(sets.engaged.Burtgang, {ammo="Gins
         body="Sakpata's breastplate",hands="Sakpata's gauntlets",ring1="Chirich Ring +1",ring2="Defending Ring",
         back=gear.PLDTP,waist="Carrier's Sash",legs="Sakpata's cuisses",feet="Sakpata's Leggings"}
 
-sets.engaged.Sakpata.MythicAM3 = {main="Burtgang",sub="Ochain",ammo="Staunch Tathlum +1",
+    sets.engaged.Sakpata.MythicAM3 = {main="Burtgang",sub="Ochain",ammo="Staunch Tathlum +1",
         head="Sakpata's Helm",neck="Combatant's Torque",ear1="Telos Earring",ear2="Dedition Earring",
         body="Sakpata's breastplate",hands="Sakpata's gauntlets",ring1="Chirich Ring +1",ring2="Defending Ring",
         back=gear.PLDTP,waist="Sailfi belt +1",legs="Sakpata's cuisses",feet="Sakpata's Leggings"}
 
-        sets.engaged.Cleave = {main="Malevolence", augments={'INT+10','Mag. Acc.+10','"Mag.Atk.Bns."+10','"Fast Cast"+5',}, sub="Ochain",ammo="Staunch Tathlum +1",
+
+    sets.engaged.Cleave = {main="Malevolence", augments={'INT+10','Mag. Acc.+10','"Mag.Atk.Bns."+10','"Fast Cast"+5',}, sub="Ochain",ammo="Staunch Tathlum +1",
         head="Sakpata's Helm",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
         body="Sakpata's breastplate",hands="Sakpata's gauntlets",ring1="Chirich Ring +1",ring2="Defending Ring",
         back=gear.PLDTP,waist="Flume belt +1",legs="Sakpata's cuisses",feet="Sakpata's Leggings"}
@@ -508,7 +507,7 @@ sets.engaged.DW = sets.engaged
     sets.buff.MythicAM3 = {ammo="Ginsen",
     head="Hjarrandi Helm",neck="Combatant's Torque",ear1="Telos Earring",ear2="Dedition Earring",
     body="Hjarrandi breastplate",hands="Sakpata's Gauntlets",ring1="Flamma Ring",ring2="Chirich Ring +1",
-    back=gear.RudianosTP,waist="Tempus Fugit +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
+    back=gear.PLDTP,waist="Tempus Fugit +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 end
 
 -- Select default macro book on initial load or subjob change.

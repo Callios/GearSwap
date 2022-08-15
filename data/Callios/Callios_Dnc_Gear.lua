@@ -168,7 +168,7 @@ function init_gear_sets()
 	sets.precast.WS['Pyrrhic Kleos'].Fodder = set_combine(sets.precast.WS['Pyrrhic Kleos'], {})
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Ghastly tathlum +1",
-        head="Nyame Helm",neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Moonshade Earring",
+        head="Nyame Helm",neck="Sibyl scarf",ear1="Friomisi Earring",ear2="Moonshade Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Metamor. Ring +1",ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
@@ -190,6 +190,14 @@ function init_gear_sets()
         
     -- Specific spells
 	sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {back="Mujin Mantle"})
+
+    sets.midcast['Phalanx'] = set_combine(sets.EnhancingSkill, {
+		head=gear.taeon_phalanx_head,
+		body=gear.taeon_phalanx_body,
+		hands=gear.taeon_phalanx_hands,
+		legs=gear.taeon_phalanx_legs,
+		feet=gear.taeon_phalanx_feet,
+	})
 
     
     -- Sets to return to when not performing an action.
@@ -243,17 +251,17 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {ammo="Yamarang",
-        head="Adhemar Bonnet +1",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
+        head="Adhemar Bonnet +1",neck="Anu Torque",ear1="Cessance Earring",ear2="Sherida Earring",
         body="Horos Casaque +3",hands="Adhemar Wrist. +1",ring1="Gere Ring",ring2="Epona's Ring",
         back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Horos T. Shoes +3"}
 		
     sets.engaged.DTLite = {ammo="Yamarang",
-        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Gere Ring",ring2="Moonbeam Ring",
         back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
     sets.engaged.SomeAcc = {ammo="Yamarang",
-        head="Dampening Tam",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Sherida Earring",
+        head="Dampening Tam",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Sherida Earring",
         body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Gere Ring",ring2="Epona's Ring",
         back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.HercFeetTP}
     

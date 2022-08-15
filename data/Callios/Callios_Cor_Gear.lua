@@ -1,13 +1,13 @@
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_job_setup()
     state.OffenseMode:options('Normal','Acc')
-    state.RangedMode:options('Normal', 'Acc')
+    state.RangedMode:options('Normal', 'Acc','Trial')
     state.WeaponskillMode:options('Match','Normal', 'Acc','Proc')
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'Refresh')
 	state.HybridMode:options('Normal','DT')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'}
-	state.Weapons:options('Default','Ranged','Savage','Evisceration','DualWeapons','DualSavageWeapons','DualEvisceration','DualLeadenRanged','DualLeadenMelee','DualAeolian','DualLeadenMeleeAcc','DualRanged','None')
+	state.Weapons:options('Default','Trial','Ranged','Savage','Evisceration','DualWeapons','DualSavageWeapons','DualSavageWeapons2','DualEvisceration','DualLeadenRanged','DualLeadenMelee','DualAeolian','DualLeadenMeleeAcc','DualRanged','None')
 	state.CompensatorMode:options('Never','Always','300','1000')
 
     gear.RAbullet = "Chrono Bullet"
@@ -313,19 +313,21 @@ sets.precast.WS = {
                   hands="Floral Gauntlets",waist="Reiki Yotai",feet=gear.taeon_DW_feet}
 
 	-- Weapons sets
-	sets.weapons.Default = {main="Naegling",sub="Nusku Shield",range="Fomalhaut"}
-    --sets.weapons.Trial = {main="Fermion Sword",sub="Blurred Knife +1",range="Anarchy +1"}
+	sets.weapons.Default = {main="Naegling",sub="Nusku Shield",range="Death Penalty"}
+    sets.weapons.Trial = {main="Fermion Sword",sub="Chicken Knife II",range="Death Penalty"}
 	sets.weapons.Ranged = {main="Rostam",sub="Nusku Shield",range="Fomalhaut"}
 	sets.weapons.Evisceration = {main="Tauret",sub="Nusku Shield",range="Anarchy +2"}
 	sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Fomalhaut"}
 	sets.weapons.DualSavageWeapons = {main="Naegling",sub="Rostam",range="Anarchy +2"}
-	sets.weapons.DualEvisceration = {main="Tauret",sub="Blurred Knife +1",range="Anarchy +2"}
+    sets.weapons.DualSavageWeapons2 = {main="Naegling",sub="Gleti's Knife",range="Anarchy +2"}
+	sets.weapons.DualEvisceration = {main="Tauret",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
-	sets.weapons.DualLeadenRanged = {main="Rostam",sub="Tauret",range="Fomalhaut"}
-	sets.weapons.DualLeadenMelee = {main="Naegling",sub="Rostam",range="Fomalhaut"}
+	sets.weapons.DualLeadenRanged = {main="Rostam",sub="Tauret",range="Death Penalty"}
+	sets.weapons.DualLeadenMelee = {main="Naegling",sub="Tauret",range="Death Penalty"}
 	sets.weapons.DualAeolian = {main="Rostam",sub="Tauret",range="Anarchy +2"}
-	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Rostam",range="Fomalhaut"}
+	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Rostam",range="Death Penalty"}
 	sets.weapons.DualRanged = {main="Rostam",sub="Kustawi +1",range="Fomalhaut"}
+   
 	
     -- Engaged sets
 

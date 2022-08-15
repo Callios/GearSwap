@@ -252,6 +252,10 @@ function update_melee_groups()
 	if (player.equipment.main == "Liberator" and buffactive['Aftermath: Lv.3']) then
 			classes.CustomMeleeGroups:append('AM')
 	end
+
+	if (player.equipment.main == "Apocalypse" and buffactive['Aftermath']) then
+		classes.CustomMeleeGroups:append('AM')
+	end
 	
 end
 

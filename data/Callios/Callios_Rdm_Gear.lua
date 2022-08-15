@@ -465,7 +465,7 @@ function init_gear_sets()
 	sets.weapons.SanguineSpam3 = {main="Crocea Mors",sub='Tauret',range="Ullr",ammo="none"}
 	sets.weapons.DualWeaponsAcc = {main="Naegling",sub='Gleti\'s Knife',range="Ullr",ammo="none"}
 	sets.weapons.DualEvisceration = {main="Tauret",sub='Gleti\'s Knife',range="Ullr",ammo="none"}
-	sets.weapons.DualAeolian = {main="Tauret",sub="Daybreak",range="Ullr",ammo="none"}
+	sets.weapons.DualAeolian = {main="Tauret",sub="Daybreak",range="none",ammo="Sroda Tathlum"}
 	sets.weapons.DualProcDaggers = {main="Tauret",sub="Atoyac"}
 	sets.weapons.EnspellOnly = {main="Ceremonial Dagger",sub="Chicken Knife II",range="Ullr",ammo="none"}
 	sets.weapons.DualClubs = {main="Maxentius",sub="Daybreak",range="Ullr",ammo="none"}
@@ -486,12 +486,12 @@ function init_gear_sets()
 	-- EG: sets.Dagger.Accuracy.Evasion
 	
 	-- Normal melee group
---	sets.engaged = {ammo="Ginsen",
+--	sets.engaged = {ammo="Coiste Bodhar",
 --		head="Aya. Zucchetto +2",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
 --		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
 --		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
-	sets.engaged = {ammo="Ginsen",
+	sets.engaged = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Anu Torque",ear1="Sherida Earring",ear2="Telos Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Ilabrat Ring",ring2="Chirich Ring +1",
 		back=gear.RDMCape_TP,waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
@@ -502,12 +502,12 @@ function init_gear_sets()
 		back="Ghostfyre Cape",waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}
 
 
-	sets.engaged.Acc = {ammo="Ginsen",
+	sets.engaged.Acc = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Anu Torque",ear1="Cessance Earring",ear2="Telos Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back=gear.RDMCape_TP,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Malignance Boots"}	
 		
-	sets.engaged.FullAcc = {ammo="Ginsen",
+	sets.engaged.FullAcc = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Sanctity Necklace",ear1="Dignitary's Earring",ear2="Telos Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back=gear.RDMCape_TP,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
@@ -527,7 +527,7 @@ function init_gear_sets()
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Ilabrat Ring",ring2="Chirich Ring +1",
 		back=gear.RDMCape_TP,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
-	sets.engaged.DW = {ammo="Ginsen",
+	sets.engaged.DW = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Anu Torque",ear1="Sherida Earring",ear2="Telos Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Ilabrat Ring",ring2="Chirich Ring +1",
 		back=gear.RDMCape_DW,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}

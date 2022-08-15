@@ -89,6 +89,11 @@ gear.taeon_pet_feet =  { name="Taeon Boots", augments={'Pet: Attack+25 Pet: Rng.
     gear.DNC_TP = {name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
     gear.DNC_WS = { name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}}
 
+
+--- DRK Stuff
+
+    gear.DRKSTRWS = { name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
+    gear.DRKTPDA  = {name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
 --- PLD Stuff --- 
 
 	gear.Weard = { name="Weard Mantle", augments={'VIT+1','DEX+3','Enmity+5','Phalanx +3'}}

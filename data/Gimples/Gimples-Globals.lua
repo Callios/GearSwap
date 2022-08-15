@@ -76,6 +76,7 @@ send_command('bind ^t gs c cycle treasuremode') --Toggles hitting htings with yo
 send_command('bind !t input /target <bt>') --Targets the battle target.
 send_command('bind ^o fillmode') --Lets you see through walls.
 send_command('bind @m gs c mount Byakko')
+send_command('bind @z gs c cycle UnlockWeapons')
 
 NotifyBuffs = S{'doom','petrification'}
 

@@ -319,7 +319,7 @@ function init_gear_sets()
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 
 	-- Normal melee sets
-	sets.engaged = {ammo="Ginsen",
+	sets.engaged = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",
 		neck="Moonbeam Nodowa",
 		ear1="Sherida Earring",ear2="Schere Earring",
@@ -331,7 +331,7 @@ function init_gear_sets()
 		legs="Mpaca's Hose",
 		feet="Kendatsuba Sune-Ate +1"}
 		
-	sets.engaged.SomeAcc = {ammo="Ginsen",
+	sets.engaged.SomeAcc = {ammo="Coiste Bodhar",
 		head="Kendatsuba Jinpachi +1",
 		neck="Moonbeam Nodowa",
 		ear1="Sherida Earring",ear2="Schere Earring",
@@ -367,7 +367,7 @@ function init_gear_sets()
 		legs="Kendatsuba Hakama +1",
 		feet="Kendatsuba Sune-Ate +1"}
 	
-	sets.engaged.Fodder = {ammo="Ginsen",
+	sets.engaged.Fodder = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",
 		neck="Moonbeam Nodowa",
 		ear1="Sherida Earring",ear2="Schere Earring",
@@ -380,7 +380,7 @@ function init_gear_sets()
 		feet="Anchorite's Gaiters +3"}
 
 	-- Defensive melee hybrid sets
-	sets.engaged.PDT = {ammo="Ginsen",
+	sets.engaged.PDT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",
 		neck="Moonbeam Nodowa",
 		ear1="Sherida Earring",
@@ -394,7 +394,7 @@ function init_gear_sets()
 		legs="Malignance Tights",
 		feet="Malignance Boots"}
 		
-	sets.engaged.SomeAcc.PDT = {ammo="Ginsen",
+	sets.engaged.SomeAcc.PDT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",
 		neck="Moonbeam Nodowa",
 		ear1="Sherida Earring",
@@ -422,7 +422,7 @@ function init_gear_sets()
 		legs="Malignance Tights",
 		feet="Malignance Boots"}
 	
-	sets.engaged.FullAcc.PDT = {ammo="Ginsen",
+	sets.engaged.FullAcc.PDT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",
 		neck="Moonbeam Nodowa",
 		ear1="Sherida Earring",
@@ -436,7 +436,7 @@ function init_gear_sets()
 		legs="Malignance Tights",
 		feet="Malignance Boots"}
 	
-	sets.engaged.Fodder.PDT = {ammo="Ginsen",
+	sets.engaged.Fodder.PDT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",
 		neck="Moonbeam Nodowa",
 		ear1="Sherida Earring",
@@ -451,7 +451,7 @@ function init_gear_sets()
 		feet="Malignance Boots"}
 	
 -- MEVA engaged sets	
-	sets.engaged.MEVA = {ammo="Ginsen",
+	sets.engaged.MEVA = {ammo="Coiste Bodhar",
 		head="Kendatsuba Jinpachi +1",
 		neck="Moonbeam Nodowa",
 		ear1="Sherida Earring",

@@ -87,6 +87,8 @@ function init_gear_sets()
 
 	sets.precast.FC.Daurdabla = set_combine(sets.precast.FC.BardSong, {range=info.ExtraSongInstrument})
 	sets.precast.DaurdablaDummy = sets.precast.FC.Daurdabla
+	sets.precast.FC["Shining Fantasia"] = sets.precast.FC.DaurdablaDummy
+	sets.precast.FC["Scop's Operetta"] = sets.precast.FC.DaurdablaDummy
 		
 	
 	-- Precast sets to enhance JAs
@@ -193,10 +195,13 @@ function init_gear_sets()
 	-- Dummy song with Daurdabla; minimize duration to make it easy to overwrite.
     sets.midcast.DaurdablaDummy = set_combine(sets.midcast.SongRecast, {range=info.ExtraSongInstrument})
 
+	sets.midcast["Shining Fantasia"] = set_combine(sets.midcast.SongRecast, {range=info.ExtraSongInstrument})
+	sets.midcast["Scop's Operetta"] = set_combine(sets.midcast.SongRecast, {range=info.ExtraSongInstrument})
+
 	-- Other general spells and classes.
 	sets.midcast.Cure = {main="Serenity",sub="Curatio Grip",ammo="Pemphredo Tathlum",
         head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Mendi. Earring",
-        body="Kaykaus Bliaut",hands="Kaykaus Cuffs",ring1="Janniston Ring",ring2="Menelaus's Ring",
+        body="Bunzi's Robe",hands="Kaykaus Cuffs",ring1="Janniston Ring",ring2="Menelaus's Ring",
         back="Tempered Cape +1",waist="Luminary Sash",legs="Carmine Cuisses +1",feet="Kaykaus Boots"}
 		
 	sets.midcast.Curaga = sets.midcast.Cure

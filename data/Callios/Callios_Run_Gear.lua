@@ -8,7 +8,7 @@ function user_job_setup()
 	state.MagicalDefenseMode:options('MDT_HP','MDT')
 	state.ResistDefenseMode:options('MEVA','MEVA_HP')
 	state.IdleMode:options('Tank','KiteTank') --,'Normal','Sphere'
-	state.Weapons:options('None','Aettir','Lionheart','DualWeapons')
+	state.Weapons:options('None','Zantetsuken','Aettir','Lionheart','DualWeapons')
 	
 	state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP'}
 
@@ -137,8 +137,8 @@ function init_gear_sets()
 		
 	-- Fast cast sets for spells
     sets.precast.FC = {main="Malignance Sword",sub="Chanter's Shield",ammo="Impatiens",
-            head="Rune. Bandeau +3",neck="Voltsurge Torque",ear1="Etiolation Earring",ear2="Loquac. Earring",
-            body="Dread Jupon",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Kishar Ring",
+            head=gear.HercHeadFC,neck="Baetyl pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
+            body="Adhemar Jacket",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Kishar Ring",
             back="Moonbeam Cape",waist="Carrier's Sash",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 			
 	sets.precast.FC.DT = {main="Malignance Sword",sub="Chanter's Shield",ammo="Impatiens",
@@ -213,7 +213,7 @@ function init_gear_sets()
 	
 	sets.midcast['Enhancing Magic'].SIRD = set_combine(sets.midcast.FastRecast.SIRD,{})
 	
-    sets.midcast['Phalanx'] = set_combine(sets.midcast['Enhancing Magic'],{main="Deacon Sword",sub="Chanter's Shield",head="Futhark Bandeau +1",body=gear.taeon_phalanx_body,hands=gear.herculean_phalanx_hands,legs="Carmine Cuisses +1",feet=gear.herculean_nuke_feet})
+    sets.midcast['Phalanx'] = set_combine(sets.midcast['Enhancing Magic'],{main="Deacon Sword",sub="Chanter's Shield",head=gear.taeon_phalanx_head,body=gear.taeon_phalanx_body,hands=gear.taeon_phalanx_hands,legs=gear.taeon_phalanx_legs,feet=gear.taeon_phalanx_feet})
 	
 	sets.midcast['Phalanx'].SIRD = set_combine(sets.midcast.FastRecast.SIRD,{main="Deacon Sword",sub="Chanter's Shield",head="Futhark Bandeau +1",back="Moonbeam Cape",})
 	
@@ -253,22 +253,22 @@ function init_gear_sets()
 
 	sets.resting = {}
 
-    sets.idle = {main="Aettir",sub="Utu Grip",ammo="Homiliary",
-		head="Rawhide Mask",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
-		body="Runeist's Coat +3",hands="Regal Gauntlets",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back="Moonbeam Cape",waist="Flume belt +1 +1",legs="Rawhide Trousers",feet=gear.herculean_refresh_feet}
+    sets.idle = {main="Zantetsuken X",sub="Utu Grip",ammo="Homiliary",
+		head="Nyame Helm",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Moonbeam Ring",
+		back="Moonbeam Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet="Nyame Sollerets"}
 		
     sets.idle.Sphere = set_combine(sets.idle,{body="Mekosu. Harness"})
 			
-	sets.idle.Tank = {main="Aettir",sub="Utu Grip",ammo="Staunch Tathlum +1",
+	sets.idle.Tank = {main="Zantetsuken X",sub="Utu Grip",ammo="Staunch Tathlum +1",
         head="Nyame Helm",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Moonlight Ring",
-        back="Shadow Mantle",waist="Flume belt +1 +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Moonbeam Ring",ring2="Defending Ring",
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
-	sets.idle.KiteTank = {main="Aettir",sub="Utu Grip",ammo="Staunch Tathlum +1",
+	sets.idle.KiteTank = {main="Zantetsuken X",sub="Utu Grip",ammo="Staunch Tathlum +1",
         head="Nyame Helm",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Moonlight Ring",
-        back="Moonbeam Cape",waist="Flume belt +1 +1",legs="Carmine Cuisses +1",feet="Hippo. Socks +1"}
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet="Hippo. Socks +1"}
 
 	sets.Kiting = {legs="Carmine Cuisses +1"}
 	
@@ -284,6 +284,7 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.Aettir = {main="Aettir",sub="Utu Grip"}
+	sets.weapons.Zantetsuken = {main="Zantetsuken X",sub="Utu Grip"}
 	sets.weapons.Lionheart = {main="Lionheart",sub="Utu Grip"}
 	sets.weapons.DualWeapons = {main="Firangi",sub="Reikiko"}
 	
@@ -322,39 +323,39 @@ function init_gear_sets()
 	-- Engaged sets
 	--------------------------------------
 
-    sets.engaged = {main="Lionheart",sub="Utu Grip",ammo="Yamarang",
+    sets.engaged = {main="Zantetsuken X",sub="Utu Grip",ammo="Yamarang",
             head="Dampening Tam",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
             body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Epona's Ring",
             back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
-	sets.engaged.Acc = {main="Lionheart",sub="Utu Grip",ammo="Yamarang",
+	sets.engaged.Acc = {main="Zantetsuken X",sub="Utu Grip",ammo="Yamarang",
             head="Dampening Tam",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Ilabrat Ring",
             back=gear.stp_jse_back,waist="Grunfeld Rope",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet}
-	sets.engaged.FullAcc = {main="Lionheart",sub="Utu Grip",ammo="C. Palug Stone",
+	sets.engaged.FullAcc = {main="Zantetsuken X",sub="Utu Grip",ammo="C. Palug Stone",
             head="Carmine Mask +1",neck="Combatant's Torque",ear1="Telos Earring",ear2="Mache Earring +1",
             body="Ayanmo Corazza +2",hands="Meg. Gloves +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
             back=gear.stp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet=gear.herculean_acc_feet}
 			
-    sets.engaged.DTLite = {main="Lionheart",sub="Utu Grip",ammo="Yamarang",
+    sets.engaged.DTLite = {main="Zantetsuken X",sub="Utu Grip",ammo="Yamarang",
             head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Epona's Ring",
             back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Nyame Sollerets"}
-    sets.engaged.Acc.DTLite = {main="Lionheart",sub="Utu Grip",ammo="C. Palug Stone",
+    sets.engaged.Acc.DTLite = {main="Zantetsuken X",sub="Utu Grip",ammo="C. Palug Stone",
             head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Ilabrat Ring",
             back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Nyame Sollerets"}
-	sets.engaged.FullAcc.DTLite = {main="Lionheart",sub="Utu Grip",ammo="C. Palug Stone",
+	sets.engaged.FullAcc.DTLite = {main="Zantetsuken X",sub="Utu Grip",ammo="C. Palug Stone",
             head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Telos Earring",ear2="Mache Earring +1",
             body="Ayanmo Corazza +2",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Ramuh Ring +1",
             back=gear.stp_jse_back,waist="Olseni Belt",legs="Meg. Chausses +2",feet="Nyame Sollerets"}
 
-    sets.engaged.Tank = {main="Aettir",sub="Utu Grip",ammo="Staunch Tathlum +1",
+    sets.engaged.Tank = {main="Zantetsuken X",sub="Utu Grip",ammo="Staunch Tathlum +1",
             head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
-            body="Nyame Mail",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Shadow Ring",
+            body="Nyame Mail",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
             back="Shadow Mantle",waist="Engraved Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
-	sets.engaged.Tank_HP = {main="Aettir",sub="Utu Grip",ammo="Staunch Tathlum +1",
+	sets.engaged.Tank_HP = {main="Zantetsuken X",sub="Utu Grip",ammo="Staunch Tathlum +1",
 			head="Nyame Helm",neck="Unmoving Collar +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
-			body="Nyame Mail",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Moonlight Ring",
+			body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Moonbeam Ring",
 			back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.Acc.Tank = sets.engaged.Tank
