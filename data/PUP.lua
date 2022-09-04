@@ -229,7 +229,7 @@ function init_gear_sets()
 	
 	-- Used by strobes and such
 	gear.Pet.Enmity = {
-		head="Heyoka Cap",
+		head="Heyoka Cap +1",
 		body="Heyoka Harness",
        	hands="Heyoka Mittens",
 	   	legs="Heyoka Subligar",
@@ -646,7 +646,7 @@ function init_gear_sets()
     ]]
 	
 	sets.engaged.PetEnmity = set_combine(sets.engaged.Mpaca.Master, {
-		head="Heyoka Cap",
+		head="Heyoka Cap +1",
 		body="Heyoka Harness",
        	hands="Heyoka Mittens",
 	   	legs="Heyoka Subligar",

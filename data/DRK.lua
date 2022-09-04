@@ -62,7 +62,7 @@ function job_setup()
 	state.Stance = M{['description']='Stance','Hasso','Seigan','None'}
 	state.DrainSwapWeaponMode = M{'Never','300','1000','Always'}
 	
-	autows = 'Resolution'
+	autows = 'Catastrophe'
 	autofood = 'Soy Ramen'
 	
 	update_melee_groups()
@@ -254,6 +254,10 @@ function update_melee_groups()
 	end
 
 	if (player.equipment.main == "Apocalypse" and buffactive['Aftermath']) then
+		classes.CustomMeleeGroups:append('AM')
+	end
+
+	if (player.equipment.main == "Caladbolg" and buffactive['Aftermath: Lv.3']) then
 		classes.CustomMeleeGroups:append('AM')
 	end
 	

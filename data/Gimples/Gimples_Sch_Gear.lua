@@ -278,13 +278,13 @@ function init_gear_sets()
     sets.resting = {main="Chatoyant Staff",sub="Oneiros Grip",ammo="Homiliary",
 		head="Befouled Crown",neck="Chrys. Torque",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Amalric Doublet +1",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-		back="Umbra Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+		back="Umbra Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Nyame Sollerets"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
-        body="Volte Doublet",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
+        body="Volte Doublet",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shneddick Ring",
         back="Solemnity Cape",waist="Carrier's Sash",legs="Assiduity Pants",feet="Nyame Sollerets"}
 
     sets.idle.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum",
@@ -297,7 +297,7 @@ function init_gear_sets()
     sets.idle.Weak = {main="Bolelabunga",sub="Genmei Shield",ammo="Homiliary",
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
         body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-        back="Umbra Cape",waist="Carrier's Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+        back="Umbra Cape",waist="Carrier's Sash",legs="Assid. Pants +1",feet="Nyame Sollerets"}
 		
     -- Defense sets
 
@@ -309,14 +309,14 @@ function init_gear_sets()
     sets.defense.MDT = {main="Gada",sub="Genmei Shield",ammo="Staunch Tathlum",
         head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
         body="Mallquis Saio +2",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
-        back="Umbra Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Battlecast Gaiters"}
+        back="Umbra Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
     sets.defense.MEVA = {main="Gada",sub="Genmei Shield",ammo="Staunch Tathlum",
         head=gear.merlinic_nuke_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Hearty Earring",
         body=gear.merlinic_nuke_body,hands="Gende. Gages +1",ring1="Vengeful Ring",ring2="Purity Ring",
-        back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Merlinic Shalwar",feet="Amalric Nails +1"}
+        back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Merlinic Shalwar",feet="Nyame Sollerets"}
 		
-    sets.Kiting = {feet="Herald's Gaiters"}
+    sets.Kiting = {feet="Shneddick Ring"}
     sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.latent_refresh_grip = {sub="Oneiros Grip"}
 	sets.TPEat = {neck="Chrys. Torque"}

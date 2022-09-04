@@ -163,7 +163,7 @@ function init_gear_sets()
 	sets.precast.WS['Chant du Cygne'].Fodder = set_combine(sets.precast.WS['Chant du Cygne'], {})
 
 	sets.precast.WS['Savage Blade'] = {ammo="Coiste Bodhar",
-									head="Nyame Helm",neck="Fotia Gorget",ear1="Ishvara Earring",ear2="Moonshade Earring",
+									head="Nyame Helm",neck="Republican platinum medal",ear1="Ishvara Earring",ear2="Moonshade Earring",
 									body="Nyame Mail",hands="Nyame Gauntlets",ring1="Metamorph Ring +1",ring2="Epaminondas's ring",
 									back=gear.BLUSTRWS,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
@@ -430,7 +430,7 @@ function init_gear_sets()
 	sets.NonElementalCure = {back="Tempered Cape +1",waist="Luminary Sash"}
 
 	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Mavi Tathlum",
-		head="Luh. Keffiyeh +3",neck="Mirage Stole",ear1="Gifted Earring",ear2="Njordr Earring",
+		head="Luh. Keffiyeh +3",neck="Mirage Stole",ear1="Gifted Earring",ear2="Hashishin Earring",
 		body="Assim. Jubbah +3",hands="Rawhide Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +1",feet="Luhlaza Charuqs +1"}
 
@@ -561,9 +561,9 @@ function init_gear_sets()
 			    back=gear.BLUTP,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.DT = {ammo="Coiste Bodhar",
-			    head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Brutal Earring",
-			    body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Petrov Ring",
-			    back="Moonbeam Cape",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+			    head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Dedition Earring",ear2="Suppanomimi",
+			    body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Defending Ring",
+			    back=gear.BLUTP,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.DT.AM = {ammo="Coiste Bodhar",
 			    head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",

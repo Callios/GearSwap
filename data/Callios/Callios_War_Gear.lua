@@ -1244,11 +1244,11 @@ function init_gear_sets()
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Retaliation = {}
 	sets.buff.Restraint = {}
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
+	sets.TreasureHunter = set_combine(sets.TreasureHunter, {body="Valorous Mail"})
 	
 	-- Weapons sets
 	sets.weapons.Chango = {main="Chango",sub="Utu Grip"}
-	sets.weapons.Naegling = {main="Naegling", sub=""}
+	sets.weapons.Naegling = {main="Naegling", sub="Blurred Shield +1"}
 	sets.weapons.DualWeapons = {main="Firangi",sub="Reikiko"}
 	sets.weapons.Greatsword = {main="Montante +1",sub="Utu Grip"}
 	sets.weapons.ProcDagger = {main="Chicken Knife II",sub=empty}

@@ -312,7 +312,7 @@ function init_gear_sets()
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
     sets.buff['Saber Dance'] = {legs="Horos Tights +3"} --legs="Horos Tights"
-    sets.buff['Climactic Flourish'] = {head="Maculele Tiara +1",ammo="Charis Feather",body="Meg. Cuirie +2"} --head="Charis Tiara +2"
+    sets.buff['Climactic Flourish'] = {head="Maculele Tiara +2",ammo="Charis Feather",body="Meg. Cuirie +2"} --head="Charis Tiara +2"
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {head="Frenzy Sallet"}
 end

@@ -41,8 +41,8 @@ function init_gear_sets()
     -- Special sets (required by rules)
     --------------------------------------
 
-	sets.TreasureHunter = {hands="Plunderer's Armlets",waist="Chaac Belt",feet="Skulk. Poulaines +1"}
-    sets.Kiting = {feet="Skd. Jambeaux +1"}
+	sets.TreasureHunter = {hands="Plunderer's Armlets",waist="Chaac Belt",feet="Skulk. Poulaines +1",range="None",ammo="Perfect Lucky Egg"}
+    sets.Kiting = {feet="Shneddick Ring"}
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {}
@@ -244,8 +244,8 @@ function init_gear_sets()
 
     sets.idle = {ammo="Staunch Tathlum +1",
         head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
-        back="Solemnity Cape",waist="Flume belt",legs="Nyame Flanchard",feet="Trotter Boots"}
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shneddick Ring",
+        back="Solemnity Cape",waist="Flume belt",legs="Nyame Flanchard",feet="Nyame sollerets"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 

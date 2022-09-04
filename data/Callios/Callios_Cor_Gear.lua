@@ -12,7 +12,7 @@ function user_job_setup()
 
     gear.RAbullet = "Chrono Bullet"
     gear.WSbullet = "Chrono Bullet"
-    gear.MAbullet = "Orichalc. Bullet" --For MAB WS, do not put single-use bullets here.
+    gear.MAbullet = "Living Bullet" --For MAB WS, do not put single-use bullets here.
     gear.QDbullet = "Animikii Bullet"
     gear.Trialbullet = "Bronze Bullet"
     options.ammo_warning_limit = 15
@@ -59,18 +59,18 @@ function init_gear_sets()
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +3"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants +1"}
 
-    sets.precast.CorsairRoll = {main="Rostam",range="Compensator",
+    sets.precast.CorsairRoll = {main={ name="Rostam", augments={'Path: C',}},range="Compensator",
         head="Lanun Tricorne",neck="Regal Necklace",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Lanun Frac +3",hands="Chasseur's Gants",ring1="Defending Ring",ring2="Dark Ring",
+        body="Lanun Frac +3",hands="Chasseur's Gants +2",ring1="Defending Ring",ring2="Dark Ring",
         back=gear.COR_TP,waist="Flume belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +1"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chass. Bottes +1"})
-    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne"})
+    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
-    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants"})
+    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1"})
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Nyame Helm",neck="Iskur Gorget",ear1="Novio Earring",ear2="Friomisi Earring",
@@ -315,18 +315,19 @@ sets.precast.WS = {
 	-- Weapons sets
 	sets.weapons.Default = {main="Naegling",sub="Nusku Shield",range="Death Penalty"}
     sets.weapons.Trial = {main="Fermion Sword",sub="Chicken Knife II",range="Death Penalty"}
-	sets.weapons.Ranged = {main="Rostam",sub="Nusku Shield",range="Fomalhaut"}
+	sets.weapons.Ranged = {main={ name="Rostam", augments={'Path: A',}},sub="Nusku Shield",range="Fomalhaut"}
 	sets.weapons.Evisceration = {main="Tauret",sub="Nusku Shield",range="Anarchy +2"}
 	sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Fomalhaut"}
-	sets.weapons.DualSavageWeapons = {main="Naegling",sub="Rostam",range="Anarchy +2"}
+	sets.weapons.DualSavageWeapons = {main="Naegling",sub={ name="Rostam", augments={'Path: A',}},range="Anarchy +2"}
     sets.weapons.DualSavageWeapons2 = {main="Naegling",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.DualEvisceration = {main="Tauret",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
-	sets.weapons.DualLeadenRanged = {main="Rostam",sub="Tauret",range="Death Penalty"}
+	--sets.weapons.DualLeadenRanged = {main={ name="Rostam", augments={'Path: C',}},sub="Tauret",range="Death Penalty"}
+    sets.weapons.DualLeadenRanged = {main={ name="Rostam", augments={'Path: C',}},sub="Tauret",range="Death Penalty"}
 	sets.weapons.DualLeadenMelee = {main="Naegling",sub="Tauret",range="Death Penalty"}
-	sets.weapons.DualAeolian = {main="Rostam",sub="Tauret",range="Anarchy +2"}
-	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Rostam",range="Death Penalty"}
-	sets.weapons.DualRanged = {main="Rostam",sub="Kustawi +1",range="Fomalhaut"}
+	sets.weapons.DualAeolian = {main={ name="Rostam", augments={'Path: A',}},sub="Tauret",range="Anarchy +2"}
+	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub={ name="Rostam", augments={'Path: A',}},range="Death Penalty"}
+	sets.weapons.DualRanged = {main={ name="Rostam", augments={'Path: A',}},sub="Kustawi +1",range="Fomalhaut"}
    
 	
     -- Engaged sets

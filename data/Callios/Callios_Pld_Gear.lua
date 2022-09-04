@@ -373,7 +373,7 @@ function init_gear_sets()
 	sets.passive.AbsorbMP = {head="Chev. Armet +1",neck="Coatl Gorget +1",ear2="Ethereal Earring",waist="Flume belt +1 +1",feet="Rev. Leggings +3"}
     sets.MP_Knockback = {}
     sets.Twilight = {head="Twilight Helm", body="Twilight Mail"}
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
+	sets.TreasureHunter = set_combine(sets.TreasureHunter, {body="Valorous Mail"})
 	
 	-- Weapons sets
 	sets.weapons.BurtgangOchain = {main="Burtgang",sub="Ochain"}

@@ -39,7 +39,7 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Dagger = {main="Skinflayer",sub="Genmei Shield"}
 	sets.weapons.DualWeapons = {main="Skinflayer",sub="Blurred Knife"}
-	sets.weapons.DualNaegling = {main="Naeglingd",sub="Blurred Knife"}
+	sets.weapons.DualNaegling = {main="Naegling",sub="Blurred Knife"}
 	sets.weapons.Naegling = {main="Naegling",sub="Genmei Shield"}
 	sets.weapons.DualTauret = {main="Aija Dagger",sub="Blurred Knife"}
 	
@@ -51,14 +51,14 @@ function init_gear_sets()
 
 	-- Fast cast sets for spells
 	sets.precast.FC = {main=gear.kali_macc,sub="Ammurapi Shield",ammo="Impatiens",
-		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Etiolation Earring",ear2="Enchntr. Earring +1",
+		head="Bunzi's hat",neck="Voltsurge Torque",ear1="Etiolation Earring",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands=gear.telchine_enh_hands,ring1="Kishar Ring",ring2="Lebeche Ring",
-		back=gear.brd_jse_fc,waist="Embla Sash",legs="Aya. Cosciales +2",feet="Bihu Slippers +1"}
+		back=gear.brd_jse_fc,waist="Embla Sash",legs="Aya. Cosciales +2",feet="Fili cothurnes +2"}
 		
 	sets.precast.FC.DT = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
-		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Etiolation Earring",ear2="Enchntr. Earring +1",
+		head="Bunzi's hat",neck="Voltsurge Torque",ear1="Etiolation Earring",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands=gear.telchine_enh_hands,ring1="Kishar Ring",ring2="Lebeche Ring",
-		back=gear.brd_jse_fc,waist="Embla Sash",legs="Aya. Cosciales +2",feet="Bihu Slippers +1"}
+		back=gear.brd_jse_fc,waist="Embla Sash",legs="Aya. Cosciales +2",feet="Fili cothurnes +2"}
 
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {feet="Vanya Clogs"})
 
@@ -68,7 +68,7 @@ function init_gear_sets()
 	sets.precast.FC.BardSong = {main=gear.kali_macc,sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
 		head="Fili calot +1",neck="Voltsurge Torque",ear1="Etiolation Earring",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands=gear.telchine_enh_hands,ring1="Kishar Ring",ring2="Lebeche Ring",
-		back=gear.brd_jse_fc,waist="Embla Sash",legs="Aya. Cosciales +2",feet="Bihu Slippers +1"}
+		back=gear.brd_jse_fc,waist="Embla Sash",legs="Aya. Cosciales +2",feet="Fili cothurnes +2"}
 
 	sets.precast.FC.SongDebuff = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
 	sets.precast.FC.SongDebuff.Resistant = set_combine(sets.precast.FC.BardSong,{range="Daurdabla"})
@@ -151,34 +151,34 @@ function init_gear_sets()
 	sets.midcast.Paeon = {}
 	sets.midcast.March = {hands="Fili Manchettes +1"}
 	sets.midcast['Honor March'] = set_combine(sets.midcast.March,{range="Marsyas"})
-	sets.midcast.Minuet = {body="Fili Hongreline +1"}
+	sets.midcast.Minuet = {body="Fili Hongreline +2"}
 	sets.midcast.Minne = {}
 	sets.midcast.Carol = {}
-	sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +1"}
+	sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +2"}
 	sets.midcast['Magic Finale'] = {range="Gjallarhorn"}
 	sets.midcast.Mazurka = {range="Gjallarhorn"}
 	
 
 	-- For song buffs (duration and AF3 set bonus)
 	sets.midcast.SongEffect = {main=gear.kali_macc,sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
-		head="Fili Calot +1",neck="Moonbow Whistle",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Fili Hongreline +1",hands="Inyan. Dastanas +2",ring1="Defending Ring",ring2="Stikini Ring",
+		head="Fili Calot +1",neck="Moonbow Whistle +1",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
+		body="Fili Hongreline +2",hands="Inyan. Dastanas +2",ring1="Defending Ring",ring2="Stikini Ring",
 		back=gear.brd_jse_macc,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3"}
 		
 	sets.midcast.SongEffect.DW = {main=gear.kali_macc,sub=gear.kali_refresh}
 
 	-- For song defbuffs (duration primary, accuracy secondary)
 	sets.midcast.SongDebuff = {main=gear.kali_macc,sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
-		head="Inyanga Tiara +2",neck="Moonbow Whistle",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Fili Hongreline +1",hands="Inyan. Dastanas +2",ring1="Defending Ring",ring2="Metamorph Ring +1",
+		head="Inyanga Tiara +2",neck="Moonbow Whistle +1",ear1="Regal Earring",ear2="Digni. Earring",
+		body="Fili Hongreline +2",hands="Inyan. Dastanas +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.brd_jse_macc,waist="Eschan Stone",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3"}
 		
 	sets.midcast.SongDebuff.DW = {main="Kali",sub="Kali"}
 
 	-- For song defbuffs (accuracy primary, duration secondary)
 	sets.midcast.SongDebuff.Resistant = {main="Daybreak",sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
-		head="Inyanga Tiara +2",neck="Moonbow Whistle",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2",ring1="Defending Ring",ring2="Metamorph Ring +1",
+		head="Inyanga Tiara +2",neck="Moonbow Whistle +1",ear1="Regal Earring",ear2="Digni. Earring",
+		body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.brd_jse_macc,waist="Eschan Stone",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3"}
 
 	-- Song-specific recast reduction
@@ -212,7 +212,7 @@ function init_gear_sets()
 		
 	sets.midcast['Enhancing Magic'] = {main="Serenity",sub="Fulcio Grip",ammo="Hasty Pinion +1",
 		head="Telchine Cap",neck="Voltsurge Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
-		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
+		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.magic_jse_back,waist="Embla Sash",legs="Telchine Braconi",feet="Telchine Pigaches"}
 		
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
@@ -240,17 +240,17 @@ function init_gear_sets()
 	
 	sets.idle = {main=gear.kali_refresh,sub="Genmei shield",ammo="Staunch Tathlum +1",
 		head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
-		body="Inyanga Jubbah +2",hands="Inyanga dastanas +2",ring1="Defending Ring",ring2="Inyanga Ring",
-		back="Solemnity Cape",waist="Carrier's Sash",legs="Assiduity Pants",feet="Fili Cothurnes +1"}
+		body="Ashera Harness",hands="Inyanga dastanas +2",ring1="Defending Ring",ring2="Inyanga Ring",
+		back="Solemnity Cape",waist="Carrier's Sash",legs="Assiduity Pants",feet="Fili Cothurnes +2"}
 		
 	sets.idle.NoRefresh = {main=gear.kali_refresh,sub="Genmei Shield",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
-		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Fili Cothurnes +1"}
+		body="Ashera Harness",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
+		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Fili Cothurnes +2"}
 
 	sets.idle.DT = {main=gear.kali_refresh,sub="Genmei Shield",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
+		body="Ashera Harness",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
 		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	
 	-- Defense sets
@@ -265,7 +265,7 @@ function init_gear_sets()
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
 		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
-	sets.Kiting = {feet="Fili Cothurnes +1"}
+	sets.Kiting = {feet="Fili Cothurnes +2"}
 	sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.latent_refresh_grip = {sub="Oneiros Grip"}
 	sets.TPEat = {neck="Chrys. Torque"}
@@ -278,38 +278,38 @@ function init_gear_sets()
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
 	sets.engaged = {main="Naegling",sub="Genmei Shield",ammo="Aurgelmir Orb +1",
-		head="Aya. Zucchetto +2",neck="Lissome Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Defending Ring",ring2="Apate Ring",
+		head="Aya. Zucchetto +2",neck="Bard's Charm +1",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+		body="Ashera Harness",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back=gear.brd_tp,waist="Sarissaphoroi belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
 	sets.engaged.DT = {main="Naegling",sub="Genmei Shield",ammo="Aurgelmir Orb +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-		body="Nyame Mail",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
+		body="Ashera Harness",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back=gear.brd_tp,waist="Windbuffet Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.Acc = {main="Naegling",sub="Genmei Shield",ammo="Aurgelmir Orb +1",
-		head="Aya. Zucchetto +2",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
-		body="Ayanmo Corazza +22",hands="Aya. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
+		head="Aya. Zucchetto +2",neck="Bard's Charm +1",ear1="Digni. Earring",ear2="Telos Earring",
+		body="Ashera Harness",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back=gear.brd_tp,waist="Olseni Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
 	sets.engaged.DW = {main="Naegling",sub="Blurred Knife",ammo="Aurgelmir Orb +1",
-		head="Aya. Zucchetto +2",neck="Lissome Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Defending Ring",ring2="Apate Ring",
+		head="Aya. Zucchetto +2",neck="Bard's Charm +1",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
+		body="Ashera Harness",hands="Aya. Manopolas +2",ring1="Defending Ring",ring2="Chirich Ring +1",
 		back=gear.brd_tp,waist="Reiki Yotai",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
 	sets.engaged.DW.DT = {main="Naegling",sub="Blurred Knife",ammo="Aurgelmir Orb +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Brutal Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Ilabrat Ring",
+		body="Ashera Harness",hands="Nyame Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back=gear.brd_tp,waist="Reiki Yotai",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.DW.Acc = {main="Aeneas",sub="Blurred Knife +1",ammo="Aurgelmir Orb +1",
-		head="Aya. Zucchetto +2",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Telos Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
+		head="Aya. Zucchetto +2",neck="Bard's Charm +1",ear1="Suppanomimi",ear2="Telos Earring",
+		body="Ashera Harness",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back=gear.brd_tp,waist="Reiki Yotai",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
 	sets.engaged.DW.Acc.DT = {main="Aeneas",sub="Blurred Knife +1",ammo="Aurgelmir Orb +1",
-		head="Nyame Helm",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Telos Earring",
-		body="Ayanmo Corazza +2",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Ilabrat Ring",
+		head="Nyame Helm",neck="Bard's Charm +1",ear1="Suppanomimi",ear2="Telos Earring",
+		body="Ashera Harness",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Chirich Ring +1",
 		back=gear.brd_tp,waist="Reiki Yotai",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 end
 

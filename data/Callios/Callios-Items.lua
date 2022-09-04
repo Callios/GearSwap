@@ -89,11 +89,15 @@ gear.taeon_pet_feet =  { name="Taeon Boots", augments={'Pet: Attack+25 Pet: Rng.
     gear.DNC_TP = {name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
     gear.DNC_WS = { name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}}
 
+-- GEO Stuff 
 
+    gear.GEO_Nuke    = {name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%'}}
+    gear.GEO_PetIdle = {name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+20','Pet: "Regen"+10','Pet: "Regen"+5'}}
 --- DRK Stuff
 
     gear.DRKSTRWS = { name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
     gear.DRKTPDA  = {name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+    gear.DRKVITWS = { name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%',}}
 --- PLD Stuff --- 
 
 	gear.Weard = { name="Weard Mantle", augments={'VIT+1','DEX+3','Enmity+5','Phalanx +3'}}
@@ -117,6 +121,8 @@ gear.taeon_pet_feet =  { name="Taeon Boots", augments={'Pet: Attack+25 Pet: Rng.
     gear.COR_TP = { name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}} -- Callios needs to edit this when cape is done
     gear.COR_RNG = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+5','"Store TP"+10',}}
     gear.COR_SNAP = { name="Camulus's Mantle", augments={'Snapshot +10'}}
+    --gear.rostamA = { name="Rostam", augments={'Path: B'}}
+    --gear.rostamC = { name="Rostam", augments={'Path: C'}}
 
 --- RNG Stuff
     
