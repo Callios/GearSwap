@@ -195,23 +195,23 @@ function init_gear_sets()
 
 	-- Gear to enhance certain classes of songs
 	sets.midcast.Ballad = {}
-	sets.midcast.Lullaby = {range="Marsyas", hands="Brioso Cuffs +2", body="Fili Hongreline +1"}
+	sets.midcast.Lullaby = {range="Marsyas", hands="Brioso Cuffs +2", body="Fili Hongreline +2"}
 	sets.midcast.Lullaby.Resistant = {range="Daurdabla", hands="Brioso Cuffs +2"}
-	sets.midcast['Horde Lullaby'] = {range="Marsyas",hands="Brioso Cuffs +2", body="Fili Hongreline +1"}
+	sets.midcast['Horde Lullaby'] = {range="Marsyas",hands="Brioso Cuffs +2", body="Fili Hongreline +2"}
 	sets.midcast['Horde Lullaby'].Resistant = {range="Daurdabla",hands="Brioso Cuffs +2"}
-	sets.midcast['Horde Lullaby'].AoE = {range="Daurdabla",hands="Brioso Cuffs +2", body="Fili Hongreline +1"}
-	sets.midcast['Horde Lullaby II'] = {range="Marsyas",hands="Brioso Cuffs +2", body="Fili Hongreline +1"}
+	sets.midcast['Horde Lullaby'].AoE = {range="Daurdabla",hands="Brioso Cuffs +2", body="Fili Hongreline +2"}
+	sets.midcast['Horde Lullaby II'] = {range="Marsyas",hands="Brioso Cuffs +2", body="Fili Hongreline +2"}
 	sets.midcast['Horde Lullaby II'].Resistant = {range="Daurdabla",hands="Brioso Cuffs +2"}
-	sets.midcast['Horde Lullaby II'].AoE = {range="Daurdabla",hands="Brioso Cuffs +2", body="Fili Hongreline +1"}
-	sets.midcast.Madrigal = {head="Fili Calot +1", back=gear.BRD_MACC_FC}
+	sets.midcast['Horde Lullaby II'].AoE = {range="Daurdabla",hands="Brioso Cuffs +2", body="Fili Hongreline +2"}
+	sets.midcast.Madrigal = {head="Fili Calot", back=gear.BRD_MACC_FC}
 	sets.midcast.Paeon = {head="Brioso roundlet +2"}
 	sets.midcast.March = {hands="Fili Manchettes"}
 	sets.midcast['Honor March'] = set_combine(sets.midcast.March,{range="Marsyas"})
-	sets.midcast.Minuet = {body="Fili Hongreline +1"}
+	sets.midcast.Minuet = {body="Fili Hongreline +2"}
 	sets.midcast.Minne = {}
 	sets.midcast.Carol = {}
-	sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +1"}
-	sets.midcast['Magic Finale'] = set_combine(sets.midcast.SongDebuff, {hands="Bewegt Cuffs",legs="Fili Rhingrave +1",})
+	sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +2"}
+	sets.midcast['Magic Finale'] = set_combine(sets.midcast.SongDebuff, {hands="Bewegt Cuffs",legs="Fili Rhingrave +2",})
 	sets.midcast.Mazurka = {range="Marsyas"}
 	sets.midcast.Dispelga = set_combine(sets.precast.FC, {main="Daybreak",sub="Genmei Shield"})
 	
@@ -219,7 +219,7 @@ function init_gear_sets()
 	-- For song buffs (duration and AF3 set bonus)
 	sets.midcast.SongEffect = {main="Carnwenhan",sub="Genmei shield",range="Gjallarhorn",
 		head="Fili calot",neck="Moonbow Whistle +1",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
-		body="Fili hongreline +1",hands="Fili Manchettes",ring1="Defending ring",ring2="Inyanga ring",
+		body="Fili hongreline +2",hands="Fili Manchettes",ring1="Defending ring",ring2="Inyanga ring",
 		back=gear.BRD_MACC_FC,waist="Flume belt +1",legs="Inyanga shalwar +2",feet="Brioso Slippers +3"}
 		
 	sets.midcast.SongEffect.DW = {main="Carnwenhan",sub="Tauret"}
@@ -296,12 +296,12 @@ function init_gear_sets()
 	sets.idle = {main="Carnwenhan",sub="Genmei shield",range="Nibiru Harp",
 		head="Bunzi's Hat",neck="Bathy choker +1",ear1="Infused earring",ear2="Odnowa earring +1",
 		body="Inyanga jubbah +2",hands="Inyanga dastanas +2",ring1="Defending ring",ring2="Inyanga ring",
-		back="Solemnity cape",waist="Fucho-no-obi",legs="Assiduity pants +1",feet="Fili cothurnes +1"}
+		back="Solemnity cape",waist="Fucho-no-obi",legs="Assiduity pants +1",feet="Fili cothurnes +2"}
 		
 	sets.idle.NoRefresh = {main="Daybreak",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa earring +1",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Moonbeam Ring",
-		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Fili Cothurnes +1"}
+		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Fili Cothurnes +2"}
 
 	sets.idle.DT = {main="Daybreak",sub="Genmei Shield",ammo="Nibiru Harp",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa earring +1",
@@ -320,7 +320,7 @@ function init_gear_sets()
 		body="Inyanga jubbah +2",hands="Inyanga dastanas +2",ring1="Defending ring",ring2="Dark ring",
 		back="Solemnity cape",waist="Carrier's sash",legs="Brioso cannions +3",feet="Nyame Sollerets"}
 
-	sets.Kiting = {feet="Fili Cothurnes +1"}
+	sets.Kiting = {feet="Fili Cothurnes +2"}
 	sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.latent_refresh_grip = {sub="Oneiros Grip"}
 	sets.TPEat = {neck="Chrys. Torque"}

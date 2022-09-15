@@ -67,7 +67,7 @@ function init_gear_sets()
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +1"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chass. Bottes +1"})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chass. Bottes +2"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1"})
@@ -94,7 +94,7 @@ function init_gear_sets()
 
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {})
 
-    sets.precast.CorsairShot['Earth Shot'] = set_combine(sets.precast.CorsairShot, {feet="Chasseur's bottes +1"})
+    sets.precast.CorsairShot['Earth Shot'] = set_combine(sets.precast.CorsairShot, {feet="Chasseur's bottes +2"})
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
@@ -323,7 +323,7 @@ sets.precast.WS = {
 	sets.weapons.DualEvisceration = {main="Tauret",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
 	--sets.weapons.DualLeadenRanged = {main={ name="Rostam", augments={'Path: C',}},sub="Tauret",range="Death Penalty"}
-    sets.weapons.DualLeadenRanged = {main={ name="Rostam", augments={'Path: C',}},sub="Tauret",range="Death Penalty"}
+    sets.weapons.DualLeadenRanged = {main={ name="Rostam", augments={'Path: A',}},sub="Tauret",range="Death Penalty"}
 	sets.weapons.DualLeadenMelee = {main="Naegling",sub="Tauret",range="Death Penalty"}
 	sets.weapons.DualAeolian = {main={ name="Rostam", augments={'Path: A',}},sub="Tauret",range="Anarchy +2"}
 	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub={ name="Rostam", augments={'Path: A',}},range="Death Penalty"}

@@ -245,13 +245,13 @@ function init_gear_sets()
 		
 	sets.idle.NoRefresh = {main=gear.kali_refresh,sub="Genmei Shield",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
-		body="Ashera Harness",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
-		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Fili Cothurnes +2"}
+		body="Ashera Harness",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shneddick Ring",
+		back="Solemnity Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.idle.DT = {main=gear.kali_refresh,sub="Genmei Shield",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
-		body="Ashera Harness",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
-		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		body="Ashera Harness",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shneddick Ring",
+		back="Solemnity Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	
 	-- Defense sets
 

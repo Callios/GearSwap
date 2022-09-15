@@ -260,7 +260,7 @@ function init_gear_sets()
     Relic_Pitre.Feet_PMagic = "Pitre Babouches +1" --Role Reversal
 
     Empy_Karagoz = {}
-    Empy_Karagoz.Head_PTPBonus = "Karagoz Capello +1"
+    Empy_Karagoz.Head_PTPBonus = "Karagoz Capello +2"
     Empy_Karagoz.Body_Overload = "Karagoz Farsetto +1"
     Empy_Karagoz.Hands = "Karagoz guanti +1"
     Empy_Karagoz.Legs_Combat = "Karagoz pantaloni +1"
@@ -389,6 +389,7 @@ function init_gear_sets()
 		ear2="Eabani Earring",
 		waist="Moonbow Belt +1",
 		neck="Shulmanu Collar",
+        back="Moonbeam Cape"
     }
 	
 	-- Used when doing skillchains and you have bonecrusher setup
@@ -801,7 +802,7 @@ function init_gear_sets()
     ]]
     sets.midcast.Pet.WSNoFTP = {
 
-            head= "Karagoz Capello +1",
+            head= "Karagoz Capello +2",
             body= "Pitre Tobe +3",
             legs= "Kara. Pantaloni +1",
             hands="Mpaca's gloves",
