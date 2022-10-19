@@ -5,7 +5,7 @@ function user_job_setup()
 	state.RangedMode:options('Normal','Acc','Fodder')
 	state.WeaponskillMode:options('Match','Normal','Acc')
 	state.IdleMode:options('Normal','PDT')
-	state.Weapons:options('Annihilator','Fomalhaut','Yoichi','YoichiMain','Trial','Trial2','DualSavageWeapons','DualEviscerationWeapons','DualMagicWeapons','DualMalevolence','None')
+	state.Weapons:options('Annihilator','AnnihilatorD','Fomalhaut','Yoichi','YoichiD','DualMalevolenceBow','YoichiMain','Trial','Trial2','DualSavageWeapons','DualEviscerationWeapons','DualMagicWeapons','DualMalevolence','None')
 	
 	WeaponType =  {['Fail-Not'] = "Bow",
 	               ['Yoichinoyumi'] = "Bow",
@@ -71,8 +71,7 @@ function init_gear_sets()
 	
 	
 	-- Precast sets to enhance JAs
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {
-	    head="White Rarab Cap +1",
+	sets.TreasureHunter = set_combine(sets.TreasureHunterRNG, {
 		waist="Chaac Belt"})
 	sets.precast.JA['Bounty Shot'] = set_combine(sets.TreasureHunter, {hands="Amini Glove. +1"})
 	sets.precast.JA['Camouflage'] = {body="Orion Jerkin +2"}
@@ -206,17 +205,17 @@ function init_gear_sets()
 	-- Ranged sets
 
     sets.midcast.RA = {
-        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring",ear2="Crepuscular Earring",
+        head="Malignance Chapeau",neck="Scout's Gorget +2",ear1="Telos Earring",ear2="Crepuscular Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Regal Ring",ring2="Crepuscular Ring",
         back=gear.RNG_RATP,waist="Kwahu Kachina Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 	
     sets.midcast.RA.Acc = {
-        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring",ear2="Crepuscular Earring",
+        head="Malignance Chapeau",neck="Scout's Gorget +2",ear1="Telos Earring",ear2="Crepuscular Earring",
         body="Malignance Tabard",hands="Orion Bracers +2",ring1="Regal Ring",ring2="Cacoethic Ring +1",
         back=gear.RNG_RATP,waist="Kwahu Kachina Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
     sets.midcast.RA.Fodder = {
-        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring",ear2="Crepuscular Earring",
+        head="Malignance Chapeau",neck="Scout's Gorget +2",ear1="Telos Earring",ear2="Crepuscular Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Dingir Ring",
         back=gear.RNG_RATP,waist="Kwahu Kachina Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
@@ -235,7 +234,7 @@ function init_gear_sets()
 		back=gear.RNG_RATP,feet="Oshosi Leggings"}
 	sets.buff['Double Shot'].Acc = {}
 	
-	sets.buff.Barrage = {head="Orion Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Crepuscular Earring",
+	sets.buff.Barrage = {head="Orion Beret +3",neck="Scout's Gorget +2",ear1="Telos Earring",ear2="Crepuscular Earring",
         body="Orion Jerkin +2",hands="Orion Bracers +2",ring1="Regal Ring",ring2="Cacoethic Ring +1",
         back=gear.RNG_RATP,waist="Kwahu Kachina Belt +1",legs="Malignance Tights",feet="Orion Socks +1"}
 	
@@ -256,9 +255,9 @@ function init_gear_sets()
 
 	-- Idle sets
     sets.idle = {
-        head="Meghanada Visor +2",neck="Bathy Choker +1",ear1="Infused Earring",ear2="Odnowa Earring +1",
-        body="Meghanada Cuirie +2",hands="Meghanada Gloves +2",ring1="Defending Ring",ring2="Chirich Ring +1",
-        back="Moonbeam Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet="Meghanada Jambeaux +2"}
+        head="Malignance Chapeau",neck="Bathy Choker +1",ear1="Infused Earring",ear2="Odnowa Earring +1",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Chirich Ring +1",
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
 	sets.idle.Town = {
         head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Infused Earring",ear2="Odnowa Earring +1",
@@ -292,15 +291,18 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.Annihilator = {main="Perun +1",sub="Nusku Shield",range="Annihilator"}
+	sets.weapons.AnnihilatorD = {main="Perun +1",sub="Gleti's Knife",range="Annihilator"}
 	sets.weapons.Fomalhaut = {main="Perun +1",sub="Nusku Shield",range="Fomalhaut"}
 	--sets.weapons.Armageddon = {main="Perun +1",sub="Nusku Shield",range="Armageddon"}
 	--sets.weapons.Failnot = {main="Perun +1",sub="Nusku Shield",range="Fail-Not"}
 	sets.weapons.Yoichi = {main="Perun +1",sub="Nusku Shield",range="Yoichinoyumi"}
+	sets.weapons.YoichiD = {main="Perun +1",sub="Gleti's Knife",range="Yoichinoyumi"}
 	sets.weapons.DualSavageWeapons = {main="Naegling",sub="Blurred Knife +1",range="Sparrowhawk +2"}	
 	sets.weapons.Trial = {main="Naegling",sub="Blurred Knife +1",range="Astrild"}
 	sets.weapons.Trial2 = {main="Fermion Sword",sub="Chicken Knife II",range="Sparrowhawk"}
 	sets.weapons.DualEviscerationWeapons = {main="Tauret",sub="Blurred Knife +1",range="Sparrowhawk +2"}
-	sets.weapons.DualMalevolence = {main="Malevolence",sub="Malevolence",range="Yoichinoyumi"}
+	sets.weapons.DualMalevolence = {main="Malevolence",sub="Malevolence",range="Fomalhaut"}
+	sets.weapons.DualMalevolenceBow = {main="Malevolence",sub="Malevolence",range="Yoichinoyumi"}
 	sets.weapons.DualMagicWeapons = {main="Tauret",sub="Naegling",range="Fomalhaut"}
 	sets.weapons.YoichiMain ={range="Yoichinoyumi"}
 

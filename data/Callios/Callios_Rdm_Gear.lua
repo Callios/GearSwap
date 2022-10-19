@@ -109,7 +109,7 @@ function init_gear_sets()
 	sets.precast.WS['Requiescat'] = {
 		head="Jhakri Coronal +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
 		body="Jhakri Robe +2",hands="Atrophy Gloves +3",ring1="Rufescent Ring",ring2="Ilabrat Ring",
-		back=gear.RDMCape_MAGWS,waist="Fotia Belt",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
+		back=gear.RDMCape_MAGWS,waist="Fotia Belt",legs="Jhakri Slops +2",feet="Lethargy houseaux +3"}
 	
 	sets.precast.WS['Chant Du Cygne'] = {
 		head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
@@ -121,32 +121,32 @@ function init_gear_sets()
 	sets.precast.WS['Savage Blade'] = {
 		head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Regal Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Metamorph Ring +1",ring2='Epaminondas\'s Ring',
-		back=gear.RDMCape_STRWS,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.RDMCape_STRWS,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Lethargy houseaux +3"}
 		
 	sets.precast.WS['Black Halo'] = {
 			head="Nyame Helm",neck="Duelist Torque +2",ear1="Sherida Earring",ear2="Regal Earring",
 			body="Nyame Mail",hands="Nyame Gauntlets",ring1="Metamorph Ring +1",ring2='Epaminondas\'s Ring',
-			back=gear.RDMCape_STRWS,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+			back=gear.RDMCape_STRWS,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Lethargy houseaux +3"}
 
 	sets.precast.WS['Death Blossom'] = {
 		head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Regal Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Metamorph Ring +1",ring2='Epaminondas\'s Ring',
-		back=gear.RDMCape_STRWS,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.RDMCape_STRWS,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Lethargy houseaux +3"}
 
 	sets.precast.WS['Sanguine Blade'] = {
 		head="Pixie Hairpin +1",neck="Sibyl Scarf",ear1="Regal Earring",ear2="Malignance Earring",
 		body="Nyame Mail",hands="Jhakri Cuffs +2",ring1="Archon Ring",ring2="Metamorph Ring +1",
-		back=gear.RDMCape_MAGWS,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.RDMCape_MAGWS,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Lethargy houseaux +3"}
 		
 	sets.precast.WS['Seraph Blade'] = {
 		head="Nyame Helm",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Malignance Earring",
 		body="Nyame Mail",hands="Jhakri Cuffs +2",ring1="Metamorph Ring +1",ring2="Freke Ring",
-		back=gear.RDMCape_MAGWS,waist="Sacro Cord",legs="Jhakri Slops +2",feet="Vitiation Boots +3"}
+		back=gear.RDMCape_MAGWS,waist="Sacro Cord",legs="Jhakri Slops +2",feet="Lethargy houseaux +3"}
 		
 	sets.precast.WS['Aeolian Edge'] = {
-		head="Nyame Helm",neck="Sibyl Scarf",ear1="Regal Earring",ear2="Malignance Earring",
+		head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Malignance Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1='Epaminondas\'s Ring',ring2="Freke Ring",
-		back=gear.RDMCape_MAGWS,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.RDMCape_MAGWS,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Lethargy houseaux +3"}
 
 	-- Midcast Sets
 
@@ -156,10 +156,10 @@ function init_gear_sets()
 	sets.RecoverMP = {body="Seidr Cotehardie"}
 	
 	-- Gear for Magic Burst mode.
-    sets.MagicBurst = {main="Daybreak",sub="Ammurapi Shield", ammo="Ghastly Tathlum +1",
-		head="Leth. Chappel +2",neck="Sibyl Scarf",ear1="Friomisi Earring",ear2="Malignance Earring",
-		body="Amalric doublet +1",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring",
-		back=gear.RDMCape_MACC,waist="Orpheus's Sash",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+    sets.MagicBurst = {main="Bunzi's Rod",sub="Ammurapi Shield", ammo="Ghastly Tathlum +1",
+		head="Leth. Chappel +2",neck="Sibyl Scarf",ear1="Regal Earring",ear2="Malignance Earring",
+		body="Amalric doublet +1",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Freke Ring",
+		back=gear.RDMCape_MACC,waist="Sacro Cord",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 	
 	sets.midcast.FastRecast = {main="Crocea Mors",sub="Sacro Shield",ammo="Sapience Orb",
         head="Atrophy Chapeau +2",								-- 14%
@@ -209,7 +209,7 @@ function init_gear_sets()
 		back="Ghostfyre Cape",
 		waist="Embla Sash",
 		legs=gear.telchine_enh_legs,
-		feet="Lethargy Houseaux +2"}
+		feet="Lethargy Houseaux +3"}
 
 	--Atrophy Gloves are better than Lethargy for me despite the set bonus for duration on others.		
 	sets.buff.ComposureOther = {
@@ -217,7 +217,7 @@ function init_gear_sets()
         body="Lethargy Sayon +2",
         hands="Atrophy Gloves +3",
         legs="Leth. Fuseau +2",
-        feet="Leth. Houseaux +2"}
+        feet="Leth. Houseaux +3"}
 		
 	--Red Mage enhancing sets are handled in a different way from most, layered on due to the way Composure works
 	--Don't set combine a full set with these spells, they should layer on Enhancing Set > Composure (If Applicable) > Spell
@@ -225,7 +225,7 @@ function init_gear_sets()
 	sets.EnhancingSkill = {main="Pukulatmuj +1",
 		head="Befouled Crown",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Mimir Earring",
 		body="Vitiation Tabard +3",hands="Viti. Gloves +3",ring1="Stikini Ring",ring2="Stikini Ring",
-		back="Ghostfyre Cape",waist="Olympus Sash",legs="Atrophy Tights +3",feet="Lethargy Houseaux +2"}
+		back="Ghostfyre Cape",waist="Olympus Sash",legs="Atrophy Tights +3",feet="Lethargy Houseaux +3"}
 		
 	sets.midcast.Refresh = {head="Amalric Coif +1",body="Atrophy Tabard +2",legs="Leth. Fuseau +2"}
 	sets.midcast.Aquaveil = {head="Amalric Coif +1",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"}
@@ -501,6 +501,10 @@ function init_gear_sets()
 		body="Malignance Tabard",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
 		back="Ghostfyre Cape",waist="Orpheus's Sash",legs="Malignance Tights",feet="Malignance Boots"}
 
+	sets.engaged.Enspell = {ammo="Sroda Tathlum",
+		head="Umuthi Hat",neck="Dls. Torque +2",ear1="Digni. Earring",ear2="Hollow Earring",
+		body="Malignance Tabard",hands="Aya. Manopolas +2",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
+		back="Ghostfyre Cape",waist="Orpheus's Sash",legs="Vitiation tights +3",feet="Malignance Boots"}
 
 	sets.engaged.Acc = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Anu Torque",ear1="Cessance Earring",ear2="Telos Earring",

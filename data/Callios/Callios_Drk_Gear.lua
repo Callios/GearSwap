@@ -31,7 +31,7 @@ function init_gear_sets()
 	sets.precast.JA['Arcane Circle'] = {}
 	sets.precast.JA['Souleater'] = {}
 	sets.precast.JA['Weapon Bash'] = {}
-	sets.precast.JA['Nether Void'] = {legs="Heath. Flanchard +1"}
+	sets.precast.JA['Nether Void'] = {legs="Heath. Flanchard +2"}
 	sets.precast.JA['Blood Weapon'] = {}
 	sets.precast.JA['Dark Seal'] = {}
 	sets.precast.JA['Last Resort'] = {back="Ankou's Mantle"}
@@ -75,7 +75,7 @@ function init_gear_sets()
 		   
 	sets.midcast['Dread Spikes'] = {main="Crepuscular scythe",ammo="Crepuscular Pebble",
 		head="Ratri Sallet",neck="Sanctity Necklace",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
-		body="Heath. Cuirass +2",hands="Nyame Gauntlets",ring1="Moonbeam Ring",ring2="Gelatinous Ring +1",
+		body="Heath. Cuirass +2",hands="Ratri Gadlings",ring1="Moonbeam Ring",ring2="Gelatinous Ring +1",
 		back="Moonbeam Cape",waist="Eschan Stone",legs="Ratri Cuisses",feet="Ratri sollerets +1"}
 
 	sets.midcast['Elemental Magic'] = {ammo="Ghastly Tathlum +1",
@@ -105,7 +105,9 @@ function init_gear_sets()
 	sets.midcast['Endark'] = {ammo="Pemphredo Tathlum",
 	head="Carmine Mask +1",neck="Erra Pendant",ear1="Digni. Earring",ear2="Malignance Earring",
 	body="Carmine Scale Mail +1",hands="Nyame Guantlets",ring1="Stikini Ring",ring2="Evanescence Ring",
-	back="Niht Mantle",waist="Eschan Stone",legs="Heath. Flanchard +1",feet="Ratri Sollerets +1"}
+	back="Niht Mantle",waist="Eschan Stone",legs="Heath. Flanchard +2",feet="Ratri Sollerets +1"}
+
+	sets.midcast['Absorb-TP'] = set_combine(sets.midcast.Absorb,{hands="Heath. Gauntlets +2"}) 
                    
 	sets.midcast.Aspir = sets.midcast.Drain
 	

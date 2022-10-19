@@ -5,6 +5,7 @@ sets.Capacity = {back="Mecisto. Mantle"}
 
 sets.buff.Doom = {neck="Nicander's Necklace",waist="Gishdubar Sash",ring1="Eshmun's Ring",ring2="Eshmun's Ring"}
 sets.TreasureHunter = {head="Volte cap",waist="Chaac Belt",ammo="Perfect Lucky Egg"}
+sets.TreasureHunterRNG = {head="Volte cap",waist="Chaac Belt"}
 
 sets.precast.Item['Hallowed Water'] = {}
 sets.precast.Item['Holy Water'] = {}
