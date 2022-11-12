@@ -299,12 +299,12 @@ function init_gear_sets()
 		back="Solemnity cape",waist="Fucho-no-obi",legs="Assiduity pants +1",feet="Fili cothurnes +2"}
 		
 	sets.idle.NoRefresh = {main="Daybreak",sub="Genmei Shield",ammo="Staunch Tathlum +1",
-		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa earring +1",
+		head="Nyame Helm",neck="Bard's Charm +2",ear1="Etiolation Earring",ear2="Odnowa earring +1",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Fili Cothurnes +2"}
 
 	sets.idle.DT = {main="Daybreak",sub="Genmei Shield",ammo="Nibiru Harp",
-		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa earring +1",
+		head="Nyame Helm",neck="Bard's Charm +2",ear1="Etiolation Earring",ear2="Odnowa earring +1",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	
@@ -333,17 +333,17 @@ function init_gear_sets()
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
 	sets.engaged = {main="Naegling", range="linos",
-		head="Nyame Helm",neck="Combatant's torque",ear1="Telos Earring",ear2="Cessance Earring",
+		head="Nyame Helm",neck="Bard's Charm +2",ear1="Telos Earring",ear2="Cessance Earring",
 		body="Ashera Harness",hands="Nyame Gauntlets",ring1="Chirich ring +1",ring2="Chirich ring +1",
 		back=gear.BRD_MELEE,waist="Sailfi Belt +1",legs="Nyame flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.DT = {main="Naegling", range="linos",
-		head="Nyame Helm",neck="Combatant's torque",ear1="Telos Earring",ear2="Cessance Earring",
+		head="Nyame Helm",neck="Bard's Charm +2",ear1="Telos Earring",ear2="Cessance Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Chirich ring +1",ring2="Chirich ring +1",
 		back=gear.BRD_MELEE,waist="Sailfi Belt +1",legs="Nyame flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.Acc = {main="Naegling", range="linos",
-		head="Nyame Helm",neck="Combatant's torque",ear1="Telos Earring",ear2="Cessance Earring",
+		head="Nyame Helm",neck="Bard's Charm +2",ear1="Telos Earring",ear2="Cessance Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Chirich ring +1",ring2="Chirich ring +1",
 		back=gear.BRD_MELEE,waist="Sailfi Belt +1",legs="Nyame flanchard",feet="Nyame Sollerets"}
 
@@ -358,22 +358,22 @@ function init_gear_sets()
 		back=gear.BRD_MELEE,waist="Carrier's Sash",legs="Nyame flanchard",feet="Nyame Sollerets"}
 	
 	sets.engaged.DW = {main="Naegling", sub="Fusetto +2", range="linos",
-		head="Nyame Helm",neck="Combatant's torque",ear1="Suppanomimi",ear2="Eabani Earring",
+		head="Nyame Helm",neck="Bard's Charm +2",ear1="Suppanomimi",ear2="Eabani Earring",
 		body="Ashera Harness",hands="Bunzi's Gloves",ring1="Chirich ring +1",ring2="Chirich ring +1",
 		back=gear.BRD_MELEE,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.DW.DT = {main="Naegling", sub="Fusetto +2", range="linos",
-		head="Nyame Helm",neck="Combatant's torque",ear1="Suppanomimi",ear2="Eabani Earring",
+		head="Nyame Helm",neck="Bard's Charm +2",ear1="Suppanomimi",ear2="Eabani Earring",
 		body="Nyame Mail",hands="Bunzi's Gloves",ring1="Chirich ring +1",ring2="Chirich ring +1",
 		back=gear.BRD_MELEE,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.DW.Acc = {main="Naegling", sub="Gleti's Knife", range="linos",
-		head="Nyame Helm",neck="Combatant's torque",ear1="Suppanomimi",ear2="Eabani Earring",
+		head="Nyame Helm",neck="Bard's Charm +2",ear1="Suppanomimi",ear2="Eabani Earring",
 		body="Ayanmo Corazza +2",hands="Bunzi's Gloves",ring1="Chirich ring +1",ring2="Chirich ring +1",
 		back=gear.BRD_MELEE,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.DW.Acc.DT = {main="Naegling",sub="Gleti's Knife",ammo="Aurgelmir Orb +1",
-		head="Nyame Helm",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Telos Earring",
+		head="Nyame Helm",neck="Bard's Charm +2",ear1="Suppanomimi",ear2="Telos Earring",
 		body="Ayanmo Corazza +2",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Ilabrat Ring",
 		back=gear.BRD_MELEE,waist="Reiki Yotai",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 end

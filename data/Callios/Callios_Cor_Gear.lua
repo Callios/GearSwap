@@ -38,7 +38,7 @@ function user_job_setup()
 	send_command('bind @q gs c weapons DualKustawi;gs c update')
 	send_command('bind !q gs c weapons DualLeadenRanged;gs c update')
 	send_command('bind @pause roller roll')
-    send_command('bind @z gs c toggle CompensatorMode')
+    send_command('bind @x gs c toggle CompensatorMode')
 
     select_default_macro_book()
 end
@@ -325,7 +325,7 @@ sets.precast.WS = {
 	sets.weapons.DualEvisceration = {main="Tauret",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
 	--sets.weapons.DualLeadenRanged = {main={ name="Rostam", augments={'Path: C',}},sub="Tauret",range="Death Penalty"}
-    sets.weapons.DualLeadenRanged = {main={ name="Rostam", augments={'Path: A',}},sub="Tauret",range="Death Penalty"}
+    sets.weapons.DualLeadenRanged = {main={name="Rostam", augments={'Path: A',}},sub="Tauret",range="Death Penalty"}
 	sets.weapons.DualLeadenMelee = {main="Naegling",sub="Tauret",range="Death Penalty"}
 	sets.weapons.DualAeolian = {main={ name="Rostam", augments={'Path: A',}},sub="Tauret",range="Anarchy +2"}
 	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub={ name="Rostam", augments={'Path: A',}},range="Death Penalty"}

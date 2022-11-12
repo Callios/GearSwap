@@ -138,24 +138,24 @@ function init_gear_sets()
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast)
 	
     sets.midcast['Elemental Magic'] = {main="Bunzi's Rod",sub="Ammurapi Shield",ammo="Ghastly Tathlum +1",
-        head="Merlinic Hood",neck="Saevus Pendant +1",ear1="Barkarole Earring",ear2="Friomisi Earring",
+        head="Merlinic Hood",neck="Saevus Pendant +1",ear1="Regal Earring",ear2="Malignance Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Metamorph Ring +1",ring2="Freke Ring",
-        back=gear.GEO_Nuke,waist="Orpheus's Sash",legs="Agwu's Slops",feet="Agwu's Pigaches"}
+        back=gear.GEO_Nuke,waist="Sacro Cord",legs="Agwu's Slops",feet="Agwu's Pigaches"}
 
     sets.midcast['Elemental Magic'].Resistant = {main="Bunzi's Rod",sub="Ammurapi Shield",ammo="Ghastly Tathlum +1",
-	head="Merlinic Hood",neck="Sanctity Necklace",ear1="Barkarole Earring",ear2="Friomisi Earring",
+	head="Merlinic Hood",neck="Sanctity Necklace",ear1="Barkarole Earring",ear2="Malignance Earring",
 	body="Amalric Doublet +1",hands="Agwu's Gages",ring1="Metamorph Ring +1",ring2="Freke Ring",
 	back=gear.GEO_Nuke,waist="Sacro Cord",legs="Agwu's Slops",feet="Agwu's Pigaches"}
 		
     sets.midcast['Elemental Magic'].Proc = {main=empty,sub=empty,ammo="Impatiens",
         head="Nahtirah Hat",neck="Loricate Torque +1",ear1="Gifted Earring",ear2="Loquac. Earring",
         body="Seidr Cotehardie",hands="Regal Cuffs",ring1="Kishar Ring",ring2="Prolix Ring",
-        back=gear.GEO_Nuke,waist="Witful Belt",legs="Assid. Pants +1",feet="Regal Pumps +1"}
+        back=gear.GEO_Nuke,waist="Sacro Cord",legs="Assid. Pants +1",feet="Regal Pumps +1"}
 		
     sets.midcast['Elemental Magic'].Fodder = {main="Idris",sub="Ammurapi Shield",ammo="Ghastly Tathlum +1",
 	head="Merlinic Hood",neck="Sanctity Necklace",ear1="Barkarole Earring",ear2="Friomisi Earring",
 	body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Metamorph Ring +1",ring2="Freke Ring",
-	back=gear.GEO_Nuke,waist="Orpheus's Sash",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+	back=gear.GEO_Nuke,waist="Sacro Cord",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
     sets.midcast['Elemental Magic'].HighTierNuke = {main="Idris",sub="Ammurapi Shield",ammo="Ghastly Tathlum +1",
 	head="Merlinic Hood",neck="Sanctity Necklace",ear1="Barkarole Earring",ear2="Friomisi Earring",
@@ -165,12 +165,12 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'].HighTierNuke.Resistant = {main="Idris",sub="Ammurapi Shield",ammo="Ghastly Tathlum +1",
 	head="Merlinic Hood",neck="Sanctity Necklace",ear1="Barkarole Earring",ear2="Friomisi Earring",
 	body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Metamorph Ring +1",ring2="Freke Ring",
-	back=gear.GEO_Nuke,waist="Orpheus's Sash",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+	back=gear.GEO_Nuke,waist="Sacro Cord",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 
 	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = {main="Idris",sub="Ammurapi Shield",ammo="Ghastly Tathlum +1",
 	head="Merlinic Hood",neck="Sanctity Necklace",ear1="Barkarole Earring",ear2="Friomisi Earring",
 	body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Metamorph Ring +1",ring2="Freke Ring",
-	back=gear.GEO_Nuke,waist="Orpheus's Sash",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+	back=gear.GEO_Nuke,waist="Sacro Cord",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
     sets.midcast['Dark Magic'] = {main="Idris",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
         head=gear.merlinic_nuke_head,neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
@@ -206,7 +206,7 @@ function init_gear_sets()
 
 	sets.midcast.Dispelga = set_combine(sets.midcast.Dispel, {main="Daybreak",sub="Ammurapi Shield"})
 		
-	sets.midcast['Enfeebling Magic'] = {main="Idris",sub="Enki Strap",ammo="Pemphredo Tathlum",
+	sets.midcast['Enfeebling Magic'] = {main="Idris",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head=empty,neck="Erra Pendant",ear1="Regal Earring",ear2="Vor Earring",
 		body="Cohort cloak +1",hands="Azimuth gloves +1",ring1="Kishar Ring",ring2="Stikini Ring",
 		back=gear.GEO_Nuke,waist="Luminary Sash",legs="Psycloth Lappas",feet="Skaoi Boots"}
@@ -231,11 +231,11 @@ function init_gear_sets()
 	sets.midcast.Bio = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast['Bio II'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	
-	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'], {ring1="Stikini Ring +1"})
+	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'], {ring1="Stikini Ring"})
 		
 	sets.midcast['Enhancing Magic'] = {main=gear.gada_enhancing_club,sub="Ammurapi Shield",ammo="Hasty Pinion +1",
 		head=gear.telchine_ehn_head,neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
-		body=gear.telchine_enh_body,hands=gear.telchine_enh_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
+		body=gear.telchine_enh_body,hands=gear.telchine_enh_hands,ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Fi Follet Cape +1",waist="Embla Sash",legs=gear.telchine_enh_legs,feet=gear.telchine_ehn_feet}
 		
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
@@ -360,8 +360,8 @@ function init_gear_sets()
 	sets.RecoverMP = {body="Seidr Cotehardie"}
 	
 	-- Gear for Magic Burst mode.
-    sets.MagicBurst = {main="Bunzi's Rod",neck="Mizu. Kubikazari",ring1="Mujin Band"}
-	sets.ResistantMagicBurst = {main=gear.grioavolr_nuke_staff,sub="Enki Strap",head="Ea Hat",neck="Mizu. Kubikazari",body="Ea Houppelande",ring1="Mujin Band",legs="Ea Slops",feet="Jhakri Pigaches +2"}
+    sets.MagicBurst = {main="Bunzi's Rod",body="Ea Houppelande +1",head="Ea Hat +1",legs="Ea Slops +1",feet="Agwu's Pigaches",neck="Mizu. Kubikazari",ring1="Mujin Band"}
+	sets.ResistantMagicBurst = {main=gear.grioavolr_nuke_staff,sub="Enki Strap",head="Ea Hat +1",neck="Mizu. Kubikazari",body="Ea Houppelande +1",ring1="Mujin Band",legs="Ea Slops +1"}
 	
 	sets.buff.Sublimation = {waist="Embla Sash"}
     sets.buff.DTSublimation = {waist="Embla Sash"}

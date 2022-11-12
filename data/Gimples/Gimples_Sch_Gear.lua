@@ -125,7 +125,7 @@ function init_gear_sets()
 
 	sets.midcast['Enhancing Magic'] = {main="Pedagogy Staff",sub="Clerisy Strap",ammo="Savant's Treatise",
 		head=gear.telchine_enh_head,neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
-		body=gear.telchine_enh_body,hands=gear.telchine_enh_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
+		body=gear.telchine_enh_body,hands=gear.telchine_enh_hands,ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.sch_fc_back,waist="Embla Sash",legs=gear.telchine_enh_legs,feet=gear.telchine_enh_feet}
 
     sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {main="Pedagogy Staff",sub="Clerisy Strap",back=gear.sch_fc_back})
@@ -289,7 +289,7 @@ function init_gear_sets()
 
     sets.idle.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum",
         head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
-        body="Volte Doublet",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Dark Ring",
+        body="Volte Doublet",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shneddick Ring",
         back="Solemnity Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	sets.idle.Hippo = set_combine(sets.idle.PDT, {feet="Hippo. Socks +1"})
@@ -316,7 +316,7 @@ function init_gear_sets()
         body=gear.merlinic_nuke_body,hands="Gende. Gages +1",ring1="Vengeful Ring",ring2="Purity Ring",
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Merlinic Shalwar",feet="Nyame Sollerets"}
 		
-    sets.Kiting = {feet="Shneddick Ring"}
+    sets.Kiting = {ring2="Shneddick Ring"}
     sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.latent_refresh_grip = {sub="Oneiros Grip"}
 	sets.TPEat = {neck="Chrys. Torque"}

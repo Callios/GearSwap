@@ -38,3 +38,8 @@ gear.kali_refresh = {name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1'
 --- SCH Stuff
 
 gear.sch_fc_back = {name="Lugh's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}}
+
+--- COR Gear 
+
+gear.cor_tp_back = {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10',}}
+gear.cor_strws_back = {name="Camulus's Mantle", augments={'STR+7','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}

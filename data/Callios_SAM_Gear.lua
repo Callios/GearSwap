@@ -290,17 +290,17 @@ sets.precast.WS['Namas Arrow'] = {ranged="Yoichinoyumi",ammo="Yoichi's Arrow",
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
     sets.idle.Town = {ammo="Staunch Tathlum +1",
-        head="Valorous Mask",neck="Bathy Choker +1",ear1="Infused Earring",ear2="Etiolation Earring",
+        head="Nyame Helm",neck="Bathy Choker +1",ear1="Infused Earring",ear2="Etiolation Earring",
         body="Wakido Domaru +3",hands="Nyame Gauntlets",ring1="Gelatinous ring +1",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Flanchard",feet="Danzo Sune-Ate"}
     
     sets.idle.Field = {ammo="Staunch Tathlum +1",
-        head="Valorous Mask",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Etiolation Earring",
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Etiolation Earring",
         body="Wakido Domaru +3",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Flanchard",feet="Danzo Sune-Ate"}
 
     sets.idle.Weak = {ammo="Staunch Tathlum +1",
-        head="Valorous Mask",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Etiolation Earring",
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Infused Earring",ear2="Etiolation Earring",
         body="Wakido Domaru +3",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume belt +1",legs="Nyame Sollerets",feet="Nyame Sollerets"}
     

@@ -151,7 +151,7 @@ function init_gear_sets()
 	sets.midcast.Paeon = {}
 	sets.midcast.March = {hands="Fili Manchettes +1"}
 	sets.midcast['Honor March'] = set_combine(sets.midcast.March,{range="Marsyas"})
-	sets.midcast.Minuet = {body="Fili Hongreline +2"}
+	sets.midcast.Minuet = {body="Fili Hongreline +3"}
 	sets.midcast.Minne = {}
 	sets.midcast.Carol = {}
 	sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +2"}
@@ -162,7 +162,7 @@ function init_gear_sets()
 	-- For song buffs (duration and AF3 set bonus)
 	sets.midcast.SongEffect = {main=gear.kali_macc,sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
 		head="Fili Calot +1",neck="Moonbow Whistle +1",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Fili Hongreline +2",hands="Inyan. Dastanas +2",ring1="Defending Ring",ring2="Stikini Ring",
+		body="Fili Hongreline +3",hands="Inyan. Dastanas +2",ring1="Defending Ring",ring2="Stikini Ring",
 		back=gear.brd_jse_macc,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3"}
 		
 	sets.midcast.SongEffect.DW = {main=gear.kali_macc,sub=gear.kali_refresh}
@@ -170,7 +170,7 @@ function init_gear_sets()
 	-- For song defbuffs (duration primary, accuracy secondary)
 	sets.midcast.SongDebuff = {main=gear.kali_macc,sub="Ammurapi Shield",range="Gjallarhorn",ammo=empty,
 		head="Inyanga Tiara +2",neck="Moonbow Whistle +1",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Fili Hongreline +2",hands="Inyan. Dastanas +2",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Fili Hongreline +3",hands="Inyan. Dastanas +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.brd_jse_macc,waist="Eschan Stone",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3"}
 		
 	sets.midcast.SongDebuff.DW = {main="Kali",sub="Kali"}

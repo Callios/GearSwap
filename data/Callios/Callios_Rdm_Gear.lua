@@ -157,9 +157,9 @@ function init_gear_sets()
 	
 	-- Gear for Magic Burst mode.
     sets.MagicBurst = {main="Bunzi's Rod",sub="Ammurapi Shield", ammo="Ghastly Tathlum +1",
-		head="Leth. Chappel +2",neck="Sibyl Scarf",ear1="Regal Earring",ear2="Malignance Earring",
-		body="Amalric doublet +1",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Freke Ring",
-		back=gear.RDMCape_MACC,waist="Sacro Cord",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+		head="Ea Hat +1",neck="Sibyl Scarf",ear1="Regal Earring",ear2="Malignance Earring",
+		body="Ea Houppe. +1",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Freke Ring",
+		back=gear.RDMCape_MACC,waist="Sacro Cord",legs="Ea Slops +1",feet="Bunzi's Sabots"}
 	
 	sets.midcast.FastRecast = {main="Crocea Mors",sub="Sacro Shield",ammo="Sapience Orb",
         head="Atrophy Chapeau +2",								-- 14%
@@ -213,8 +213,8 @@ function init_gear_sets()
 
 	--Atrophy Gloves are better than Lethargy for me despite the set bonus for duration on others.		
 	sets.buff.ComposureOther = {
-		head="Lethargy Chappel +2",
-        body="Lethargy Sayon +2",
+		head="Lethargy Chappel +3",
+        body="Lethargy Sayon +3",
         hands="Atrophy Gloves +3",
         legs="Leth. Fuseau +2",
         feet="Leth. Houseaux +3"}
@@ -251,7 +251,7 @@ function init_gear_sets()
 	
 	sets.midcast['Enfeebling Magic'] = {main="Murgleis",sub="Ammurapi Shield",range=empty,ammo="Regal Gem",
 		head="Viti. Chapeau +3",neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
-		body="Lethargy Sayon +2",hands="Lethargy gantherots +2",ring1="Kishar Ring",ring2="Stikini Ring",
+		body="Lethargy Sayon +3",hands="Lethargy gantherots +2",ring1="Kishar Ring",ring2="Stikini Ring",
 		back=gear.RDMCape_MACC,waist="Obstinate Sash",legs=gear.chironic_enf_legs,feet="Vitiation Boots +3"}
 		
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Contemplator +1",sub="Enki Strap",range="Ullr",ammo=empty,
@@ -305,8 +305,8 @@ function init_gear_sets()
 	sets.midcast['Bio II'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast['Bio III'] = set_combine(sets.midcast['Enfeebling Magic'], {waist="Obstinate Sash"})
 
-    sets.midcast['Elemental Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Ghastly Tathlum +1",
-		head="Lethargy chappel +2",
+    sets.midcast['Elemental Magic'] = {main="Bunzi's Rod",sub="Ammurapi Shield",ammo="Sroda Tathlum",
+		head="Lethargy chappel +3",
 		neck="Sibyl Scarf",
 		ear1="Friomisi Earring",ear2="Malignance Earring",
 		body="Amalric Doublet +1",
@@ -317,9 +317,9 @@ function init_gear_sets()
 		legs="Amalric Slops +1",
 		feet="Amalric Nails +1"}
 		
-    sets.midcast['Elemental Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Ghastly Tathlum +1",
-        head="Lethargy chappel +2",
-		neck="Sanctity Necklace",
+    sets.midcast['Elemental Magic'].Resistant = {main="Marin Staff +1",sub="Enki Strap",ammo="Ghastly Tathlum +1",
+        head="Lethargy chappel +3",
+		neck="Sibyl Scarf",
 		ear1="Regal Earring",ear2="Malignance Earring",
 		body="Amalric Doublet +1",
 		hands="Amalric Gages +1",
@@ -329,8 +329,8 @@ function init_gear_sets()
 		legs="Amalric Slops +1",
 		feet="Vitiation Boots +3"}
 		
-    sets.midcast['Elemental Magic'].Fodder = {main="Daybreak",sub="Ammurapi Shield",range=empty,ammo="Ghastly Tathlum +1",
-        head="Lethargy chappel +2",
+    sets.midcast['Elemental Magic'].Fodder = {main="Bunzi's Rod",sub="Ammurapi Shield",range=empty,ammo="Ghastly Tathlum +1",
+        head="Lethargy chappel +3",
 		neck="Sibyl Scarf",
 		ear1="Friomisi Earring",ear2="Malignance Earring",
 		body="Amalric Doublet +1",
@@ -342,7 +342,7 @@ function init_gear_sets()
 		feet="Amalric Nails +1"}
 
     sets.midcast['Elemental Magic'].Proc = {main=empty,sub=empty,range=empty,ammo="Impatiens",
-        head="Lethargy chappel +2",neck="Sibyl Scarf",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
+        head="Lethargy chappel +3",neck="Sibyl Scarf",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
         body="Shamash Robe",hands="Regal Cuffs",ring1="Kishar Ring",ring2="Prolix Ring",
         back=EnfeebCape,waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
 		
@@ -356,7 +356,7 @@ function init_gear_sets()
 		back=gear.RDMCape_MACC,waist="Luminary Sash",legs="Merlinic Shalwar",feet="Vitiation Boots +3"}
 
 	sets.midcast['Dark Magic'] = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-		head="Lethargy chappel +2",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
+		head="Lethargy chappel +3",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
 		body="Atrophy Tabard +2",hands="Kaykaus Cuffs +1",ring1="Metamor. Ring +1",ring2="Stikini Ring",
 		back=gear.RDMCape_MACC,waist="Luminary Sash",legs=gear.chironic_enf_legs,feet="Vitiation Boots +3"}
 
@@ -397,19 +397,19 @@ function init_gear_sets()
 	-- Resting sets
 	sets.resting = {main="Chatoyant Staff",sub="Oneiros Grip",range=empty,ammo="Impatiens",
 		head="Viti. Chapeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Lethargy Sayon +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		body="Lethargy Sayon +3",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back="Moonbeam Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet='Nyame Sollerets'}
 	
 
 	-- Idle sets
 	sets.idle = {main="Daybreak",sub="Sacro Bulwark",ammo="Homiliary",
 		head="Viti. Chapeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		body="Lethargy Sayon +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		body="Lethargy Sayon +3",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back="Moonbeam Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet='Malignance Boots'}
 		
 	sets.idle.PDT = {main="Daybreak",sub="Sacro Bulwark",ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		body="Lethargy Sayon +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		body="Lethargy Sayon +3",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back="Moonbeam Cape",waist="Flume belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
 	sets.idle.MDT = {main="Daybreak",sub="Sacro Bulwark",ammo="Staunch Tathlum +1",
@@ -419,7 +419,7 @@ function init_gear_sets()
 		
 	sets.idle.Weak = {main="Daybreak",sub="Sacro Bulwark",ammo="Homiliary",
 		head="Viti. Chapeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Eabani Earring",
-		body="Lethargy Sayon +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		body="Lethargy Sayon +3",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back="Moonbeam Cape",waist="Flume belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 	
 	--sets.idle.DTHippo = set_combine(sets.idle.PDT, {back="Umbra Cape",legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})

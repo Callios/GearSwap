@@ -9,7 +9,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-    state.Weapons:options('None','AeneasCento','AeneasGleti','TauretCento','TauretGleti','NaeglingBK')
+    state.Weapons:options('None','AeneasCento','AeneasGleti','TauretCento','TauretGleti','NaeglingBK','NaeglingTP')
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWMax','Parry'}
 	state.AmbushMode = M(false, 'Ambush Mode')
@@ -66,6 +66,7 @@ function init_gear_sets()
     sets.weapons.TauretCento = {main="Tauret",sub="Fusetto +2"}
     sets.weapons.TauretGleti = {main="Tauret",sub="Gleti's Knife"}
     sets.weapons.NaeglingBK = {main="Naegling",sub="Blurred Knife +1"}
+    sets.weapons.NaeglingTP = {main="Naegling",sub="Fusetto +2"}
 
 	
     -- Actions we want to use to tag TH.
