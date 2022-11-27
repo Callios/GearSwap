@@ -216,7 +216,7 @@ function init_gear_sets()
 		head="Lethargy Chappel +3",
         body="Lethargy Sayon +3",
         hands="Atrophy Gloves +3",
-        legs="Leth. Fuseau +2",
+        legs="Lethargy Fuseau +3",
         feet="Leth. Houseaux +3"}
 		
 	--Red Mage enhancing sets are handled in a different way from most, layered on due to the way Composure works
@@ -227,7 +227,7 @@ function init_gear_sets()
 		body="Vitiation Tabard +3",hands="Viti. Gloves +3",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Ghostfyre Cape",waist="Olympus Sash",legs="Atrophy Tights +3",feet="Lethargy Houseaux +3"}
 		
-	sets.midcast.Refresh = {head="Amalric Coif +1",body="Atrophy Tabard +2",legs="Leth. Fuseau +2"}
+	sets.midcast.Refresh = {head="Amalric Coif +1",body="Atrophy Tabard +2",legs="Lethargy Fuseau +3"}
 	sets.midcast.Aquaveil = {head="Amalric Coif +1",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"}
 	sets.midcast.BarElement = {legs="Shedir Seraweels"}
 	sets.midcast.Temper = sets.EnhancingSkill
@@ -251,17 +251,17 @@ function init_gear_sets()
 	
 	sets.midcast['Enfeebling Magic'] = {main="Murgleis",sub="Ammurapi Shield",range=empty,ammo="Regal Gem",
 		head="Viti. Chapeau +3",neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
-		body="Lethargy Sayon +3",hands="Lethargy gantherots +2",ring1="Kishar Ring",ring2="Stikini Ring",
+		body="Lethargy Sayon +3",hands="Lethargy gantherots +3",ring1="Kishar Ring",ring2="Stikini Ring",
 		back=gear.RDMCape_MACC,waist="Obstinate Sash",legs=gear.chironic_enf_legs,feet="Vitiation Boots +3"}
 		
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Contemplator +1",sub="Enki Strap",range="Ullr",ammo=empty,
 		head="Viti. Chapeau +3",neck="Dls. Torque +2",ear1="Regal Earring",ear2="Snotra Earring",
-		body="Atrophy Tabard +2",hands="Lethargy gantherots +2",ring1="Metamor. Ring +1",ring2="Stikini Ring",
+		body="Atrophy Tabard +2",hands="Lethargy gantherots +3",ring1="Metamor. Ring +1",ring2="Stikini Ring",
 		back=gear.RDMCape_MACC,waist="Obstinate Sash",legs=gear.chironic_enf_legs,feet="Vitiation Boots +3"}
 		
 	sets.midcast.DurationOnlyEnfeebling = set_combine(sets.midcast['Enfeebling Magic'], {
 		body="Atrophy Tabard +2",
-		hands="Lethargy gantherots +2"})
+		hands="Lethargy gantherots +3"})
 		
 	sets.midcast.Silence = sets.midcast.DurationOnlyEnfeebling
 	sets.midcast.Silence.Resistant = sets.midcast['Enfeebling Magic'].Resistant
@@ -279,7 +279,7 @@ function init_gear_sets()
 	
 	sets.midcast.SkillBasedEnfeebling = set_combine(sets.midcast['Enfeebling Magic'], {
 		neck="Dls. Torque +2",ear1="Vor Earring",
-		hands="Lethargy gantherots +2",ring1="Stikini Ring",
+		hands="Lethargy gantherots +3",ring1="Stikini Ring",
 		waist="Obstinate Sash",legs="Psycloth Lappas"})
 	
 	sets.midcast['Frazzle II'] = sets.midcast['Enfeebling Magic'].Resistant

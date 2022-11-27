@@ -62,10 +62,10 @@ function init_gear_sets()
 	
 	-- Fast cast sets for spells
 
-	sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
-		head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
-		body="Zendik Robe",hands="Volte Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
-		back="Perimede Cape",waist="Witful Belt",legs="Geo. Pants +1",feet="Regal Pumps +1"}
+	sets.precast.FC = {main="Gada",range="Dunna",
+	head="Nahtirah Hat",neck="Voltsurge torque",ear1="Loquac. Earring",ear2="Etiolation Earring",
+	body="Volte Doublet",hands="Telchine gloves",ring1="Kishar ring",ring2="Rahab Ring",
+	back="Lifestream cape",waist="Witful belt",legs="Geomancy pants",feet="Regal Pumps"}
 
 	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {range="Dunna",ammo=empty})
 	
@@ -104,10 +104,10 @@ function init_gear_sets()
 		body="Zendik Robe",hands="Volte Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
 		back="Lifestream Cape",waist="Witful Belt",legs="Geo. Pants +1",feet="Regal Pumps +1"}
 
-	sets.midcast.Geomancy = {main="Solstice",sub="Genmei Shield",range="Dunna",
-		head="Vanya Hood",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Malignance Earring",
-		body="Vedic Coat",hands="Geo. Mitaines ",ring1="Defending Ring",ring2="Dark Ring",
-		back="Solemnity Cape",waist="Austerity Belt +1",legs="Vanya Slops",feet="Medium's Sabots"}
+		sets.midcast.Geomancy = {main="Solstice",sub="Genmei Shield",range="Dunna",
+		head="Azimuth Hood",neck="Loricate Torque +1",ear1="Azimuth Earring +1",ear2="Gwati Earring",
+		body="Bagua Tunic",hands="Geomancy Mitaines",ring1="Stikini Ring",ring2="Stikini Ring",
+		back="Solemnity Cape",waist="Austerity Belt +1",legs="Azimuth tights",feet="Azimuth Gaiters"}
 
 
 	--Extra Indi duration as long as you can keep your 900 skill cap.
@@ -262,24 +262,24 @@ function init_gear_sets()
 
 	-- Idle sets
 
-	sets.idle = {main="Mpaca's Staff",sub="Umbra Strap",ammo="Staunch Tathlum +1",
-		head="Befouled Crown",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
-		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back="Umbra Cape",waist="Carrier's Sash",legs="Assid. Pants +1",feet=gear.merlinic_refresh_feet}
-		
-	sets.idle.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
-		head="Nyame Helm",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
-		body="Jhakri Robe +2",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shadow Ring",
-		back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Mallquis Clogs +2"}
+    sets.idle = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
+        head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
+        body="Volte Doublet",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shneddick Ring",
+        back="Solemnity Cape",waist="Carrier's Sash",legs="Assiduity Pants",feet="Nyame Sollerets"}
+
+    sets.idle.PDT = {main="Solstice",sub="Genmei Shield",ammo="Staunch Tathlum",
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Hearty Earring",
+        body="Volte Doublet",hands="Geomancy Mitaines",ring1="Defending Ring",ring2="Shneddick Ring",
+        back="Solemnity Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	-- .Pet sets are for when Luopan is present.
-	sets.idle.Pet = {main="Sucellus",sub="Genmei Shield",range="Dunna",
-		head="Azimuth Hood",neck="Loricate Torque +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
-		body="Telchine Chas.",hands="Geo. Mitaines",ring1="Defending Ring",ring2="Warden's Ring",
+	sets.idle.Pet = {main="Solstice",sub="Genmei Shield",range="Dunna",
+		head="Azimuth Hood",neck="Loricate Torque +1",ear1="Azimuth Earring +1",ear2="Handler's Earring +1",
+		body="Telchine Chas.",hands="Geomancy Mitaines",ring1="Defending Ring",ring2="Warden's Ring",
 		back=gear.geo_idle_back,waist="Isa Belt",legs="Psycloth Lappas",feet="Bagua Sandals"}
 
-	sets.idle.PDT.Pet = {main="Malignance Pole",sub="Umbra Strap",range="Dunna",
-		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
+	sets.idle.PDT.Pet = {main="Solstice",sub="Genmei Shield",range="Dunna",
+		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Azimuth Earring +1",ear2="Handler's Earring +1",
 		body="Jhakri Robe +2",hands="Geo. Mitaines +3",ring1="Defending Ring",ring2="Dark Ring",
 		back=gear.geo_idle_back,waist="Isa Belt",legs="Nyame Flanchard",feet="Bagua Sandals"}
 

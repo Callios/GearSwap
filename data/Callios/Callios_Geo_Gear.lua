@@ -106,9 +106,9 @@ function init_gear_sets()
 		back="Lifestream Cape",waist="Witful Belt",legs="Geo. Pants +1",feet="Regal Pumps +1"}
 
 	sets.midcast.Geomancy = {main="Idris",sub="Genmei Shield",range="Dunna",
-		head="Azimuth Hood +2",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Malignance Earring",
+		head="Azimuth Hood +2",neck="Bagua Charm +2",ear1="Azimuth Earring +1",ear2="Malignance Earring",
 		body="Bagua Tunic +1",hands="Geo. Mitaines +2",ring1="Stikini Ring",ring2="Stikini Ring",
-		back="Solemnity Cape",waist="Austerity Belt +1",legs="Vanya Slops",feet="Medium's Sabots"}
+		back="Lifestream Cape",waist="Witful belt",legs="Geo. Pants +1",feet="Amalric Nails +1"}
 
 
 	--Extra Indi duration as long as you can keep your 900 skill cap.
