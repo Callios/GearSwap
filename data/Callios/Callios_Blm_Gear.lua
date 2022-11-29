@@ -4,7 +4,7 @@ function user_job_setup()
 	state.OffenseMode:options('Normal')
 	state.HybridMode:options('Normal','DT')
 	state.IdleMode:options('Normal','PDT','DTHippo')
-	state.Weapons:options('None','BurstWeapons','ClubShield','Melee')--'Khatvanga')
+	state.Weapons:options('None','BurstWeapons','ClubShield','Mpaca','Melee')--'Khatvanga')
 
 	gear.obi_cure_waist = "Witful Belt"
 	gear.obi_low_nuke_waist = "Sacro Cord"
@@ -49,6 +49,7 @@ function init_gear_sets()
 	sets.weapons.ClubShield = {main ="Bunzi's Rod",sub="Ammurapi Shield"}
 	--sets.weapons.Lathi = {main="Lathi",sub="Enki Strap"}
 	sets.weapons.Khatvanga = {main="Khatvanga",sub="Bloodrain Strap"}
+	sets.weapons.Mpaca = {main="Mpaca's Staff", sub="Enki Strap"}
 	sets.weapons.Melee = {main="Malignance Pole", sub="Khonsu"}
 	
     sets.buff.Sublimation = {waist="Embla Sash"}
@@ -80,7 +81,7 @@ function init_gear_sets()
 	
 	sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {})
 
-    sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {ammo="Sapience Orb",head="Wicce Petasos +2",ear1="Malignance Earring",ring2="Prolix Ring",waist="Siegel Sash"})
+    sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {ammo="Sapience Orb",head="Wicce Petasos +3",ear1="Malignance Earring",ring2="Prolix Ring",waist="Siegel Sash"})
 
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Daybreak",sub="Ammurapi Shield",body="Heka's Kalasiris"})
 
@@ -234,17 +235,17 @@ function init_gear_sets()
     -- Elemental Magic sets
     
     sets.midcast['Elemental Magic'] = {main="Bunzi's Rod",sub="Ammurapi Shield",ammo="Sroda Tathlum",
-        head="Wicce petasos +2",neck="Sorcerer's Stole +2",ear2="Malignance Earring",ear1="Regal Earring",
+        head="Wicce petasos +3",neck="Sorcerer's Stole +2",ear2="Malignance Earring",ear1="Regal Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Freke Ring",ring2="Metamorph Ring +1",
         back=gear.BLMNUKE,waist="Sacro Cord",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
-    sets.midcast['Elemental Magic'].Resistant = {main="Marin Staff +1",sub="Khonsu",ammo="Sroda Tathlum",
-        head="Wicce petasos +2",neck="Sorcerer's Stole +2",ear2="Malignance Earring",ear1="Regal Earring",
-        body="Wicce coat +3",hands="Amalric Gages +1",ring1="Freke Ring",ring2="Metamor. Ring +1",
+    sets.midcast['Elemental Magic'].Resistant = {main="Marin Staff +1",sub="Khonsu",ammo="Ghastly Tathlum +1",
+        head="Wicce petasos +3",neck="Sorcerer's Stole +2",ear2="Malignance Earring",ear1="Regal Earring",
+        body="Wicce coat +3",hands="Agwu's Gages",ring1="Freke Ring",ring2="Metamor. Ring +1",
         back=gear.BLMNUKE,waist="Sacro Cord",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 		
     sets.midcast['Elemental Magic'].Fodder = {main="Bunzi's Rod",sub="Ammurapi Shield",ammo="Sroda Tathlum",
-        head="Wicce petasos +2",neck="Sorcerer's Stole +2",ear1="Crematio Earring",ear2="Malignance Earring",
+        head="Wicce petasos +3",neck="Sorcerer's Stole +2",ear1="Crematio Earring",ear2="Malignance Earring",
         body="Wicce coat +3",hands="Amalric Gages +1",ring1="Freke Ring",ring2="Metamorph Ring +1",
         back=gear.BLMNUKE,waist="Sacro Cord",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 
@@ -265,7 +266,7 @@ function init_gear_sets()
 		
 		-- Minimal damage gear, maximum recast gear for procs.
     sets.midcast['Elemental Magic'].Proc = {main="Mpaca's Staff",sub="Khonsu",ammo="Sroda Tathlum",
-        head="Wicce petasos +2",neck="Sorcerer's Stole +2",ear2="Malignance Earring",ear1="Regal Earring",
+        head="Wicce petasos +3",neck="Sorcerer's Stole +2",ear2="Malignance Earring",ear1="Regal Earring",
         body="Wicce Coat +3",hands="Amalric Gages +1",ring1="Freke Ring",ring2="Metamorph Ring +1",
         back=gear.BLMNUKE,waist="Sacro Cord",legs="Wicce Chausses +3",feet="Amalric Nails +1"}
 		
@@ -359,10 +360,10 @@ function init_gear_sets()
 
 	-- Gear for Magic Burst mode. ring1="Freke Ring",ring2="Metamorph Ring +1"
 
-    sets.MagicBurst = {main="Marin Staff +1",sub="Alber Strap",ammo="Sroda Tathlum",head="Ea Hat +1",body="Wicce Coat +3",hands="Agwu's Gages",
+    sets.MagicBurst = {main="Marin Staff +1",sub="Alber Strap",ammo="Ghastly Tathlum +1",head="Ea Hat +1",body="Wicce Coat +3",hands="Agwu's Gages",
 	ring2="Metamor. Ring +1",legs="Wicce Chausses +3",feet="Agwu's Pigaches",back=gear.BLMNUKE}
 	
-	sets.ResistantMagicBurst = {sub="Khonsu",ammo="Sroda Tathlum",head="Ea Hat +1",body="Wicce Coat +3",hands="Agwu's Gages",
+	sets.ResistantMagicBurst = {sub="Khonsu",ammo="Ghastly Tathlum +1",head="Ea Hat +1",body="Wicce Coat +3",hands="Agwu's Gages",
 	ring2="Metamor. Ring +1",legs="Wicce Chausses +3",feet="Wicce Sabots +3",back=gear.BLMNUKE}
 	
 	-- Gear for specific elemental nukes.
@@ -400,6 +401,6 @@ function select_default_macro_book()
     set_macro_page(1, 17)
 end
 
-state.Weapons:options('None','BurstWeapons','Melee','Khatvanga')
+state.Weapons:options('None','BurstWeapons','Melee','Mpaca')
 
 autows_list = {['BurstWeapons']='Myrkr',['Khatvanga']='Myrkr',['Lathi']='Myrkr'}
