@@ -17,7 +17,7 @@ function user_job_setup()
     state.MagicalDefenseMode:options('MDT_HP','MDT','MDT_Reraise')
 	state.ResistDefenseMode:options('MEVA','MEVA_HP')
 	state.IdleMode:options('Normal','Tank','Magic','PDT','MDT','Kiting')
-	state.Weapons:options('None','BurtgangOchain','BurtgangAegis','BurtgangSrivatsa','NaeglingOchain','NaeglingAegis','NaeglingSrivatsa','Cleave','Cleave2')
+	state.Weapons:options('None','BurtgangDuban','BurtgangOchain','BurtgangAegis','BurtgangSrivatsa','NaeglingOchain','NaeglingAegis','NaeglingSrivatsa','Cleave','Cleave2','GS')
 	state.AutoEmblem = M(false, 'Auto Emblem')
     state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP','Twilight'}
 	
@@ -166,17 +166,17 @@ function init_gear_sets()
   
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Amar Cluster",
+    sets.precast.WS = {ammo="Oshasha's treatise",
         head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
         body="Nyame Mail",hands="Nyame gauntlets",ring1="Regal Ring",ring2="Epaminondas's ring",
         back=gear.PLDWS,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame sollerets"}
 		
-    sets.precast.WS.DT = {ammo="Amar Cluster",
+    sets.precast.WS.DT = {ammo="Oshasha's treatise",
         head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
         body="Nyame Mail",hands="Nyame gauntlets",ring1="Regal Ring",ring2="Epaminondas's ring",
         back=gear.PLDWS,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame sollerets"}
 
-    sets.precast.WS.Acc = {ammo="Amar Cluster",
+    sets.precast.WS.Acc = {ammo="Oshasha's treatise",
         head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
         body="Nyame Mail",hands="Nyame gauntlets",ring1="Regal Ring",ring2="Epaminondas's ring",
         back=gear.PLDWS,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame sollerets"}
@@ -188,9 +188,14 @@ function init_gear_sets()
 	sets.precast.WS['Chant du Cygne'] = set_combine(sets.precast.WS, {neck="Fotia Gorget",ear1="Brutal Earring",ear2="Moonshade Earring"})
     sets.precast.WS['Chant du Cygne'].Acc = set_combine(sets.precast.WS.Acc, {neck="Fotia Gorget",ear1="Mache Earring +1",ear2="Moonshade Earring"})
 
-	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {ammo="Amar Cluster",
-        head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Thrud Earring",
-        body="Nyame Mail",hands="Nyame gauntlets",ring1="Rufescent Ring",ring2="Epaminondas's ring",
+	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {ammo="Oshasha's treatise",
+        head="Nyame Helm",neck="Republican platinum medal",ear1="Moonshade Earring",ear2="Thrud Earring",
+        body="Nyame Mail",hands="Nyame gauntlets",ring1="Regal Ring",ring2="Epaminondas's ring",
+        back=gear.PLDWS,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame sollerets"})
+
+    sets.precast.WS['Torcleaver'] = set_combine(sets.precast.WS, {ammo="Oshasha's treatise",
+        head="Nyame Helm",neck="Republican platinum medal",ear1="Moonshade Earring",ear2="Thrud Earring",
+        body="Nyame Mail",hands="Nyame gauntlets",ring1="Regal Ring",ring2="Epaminondas's ring",
         back=gear.PLDWS,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame sollerets"})
 
     sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {ear1="Mache Earring +1",ear2="Telos Earring", waist="Sailfi Belt +1"})
@@ -376,6 +381,7 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {body="Valorous Mail"})
 	
 	-- Weapons sets
+    sets.weapons.BurtgangDuban = {main="Burtgang",sub="Duban"}
 	sets.weapons.BurtgangOchain = {main="Burtgang",sub="Ochain"}
 	sets.weapons.BurtgangAegis = {main="Burtgang",sub="Aegis"}
     sets.weapons.BurtgangSrivatsa ={main="Burtgang",sub="Srivatsa"}
@@ -387,6 +393,7 @@ function init_gear_sets()
 	sets.weapons.DualWeapons = {main="Naegling",sub="Machaera +2"}
     sets.weapons.Cleave = {main="Malevolence", augments={'INT+10','Mag. Acc.+10','"Mag.Atk.Bns."+10','"Fast Cast"+5',},sub="Ochain"}
     sets.weapons.Cleave2 = {main="Malevolence", augments={'INT+10','Mag. Acc.+10','"Mag.Atk.Bns."+10','"Fast Cast"+5',},sub="Duban"}
+    sets.weapons.GS = {main="Caladbolg",sub="Alber Strap"}
 
     sets.defense.Block = {main="Burtgang",sub="Ochain",ammo="Staunch Tathlum +1",
 		head="Chev. Armet +1",neck="Diemer Gorget",ear1="Creed Earring",ear2="Thureous Earring",
@@ -473,7 +480,7 @@ sets.engaged.MythicAM3 = set_combine(sets.engaged.Burtgang, {ammo="Coiste Bodhar
 
     sets.engaged.Cleave2 = {main="Malevolence", augments={'INT+10','Mag. Acc.+10','"Mag.Atk.Bns."+10','"Fast Cast"+5',}, sub="Duban",ammo="Staunch Tathlum +1",
         head="Chevalier's armet +3",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Chevalier's Earring",
-        body="Sakpata's breastplate",hands="Chevalier's gauntlets +2",ring1="Chirich Ring +1",ring2="Defending Ring",
+        body="Sakpata's breastplate",hands="Chevalier's gauntlets +3",ring1="Chirich Ring +1",ring2="Defending Ring",
         back=gear.PLDTP,waist="Flume belt +1",legs="Sakpata's cuisses",feet="Sakpata's Leggings"}
 
 sets.engaged.DW = sets.engaged
