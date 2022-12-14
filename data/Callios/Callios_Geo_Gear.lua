@@ -53,7 +53,7 @@ function init_gear_sets()
 	sets.precast.JA['Life Cycle'] = {body="Geo. Tunic +1",back=gear.idle_jse_back}
 	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +1"}
 	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +1"}
-	sets.precast.JA['Full Circle'] = {head="Azimuth Hood +2",hands="Bagua Mitaines +1"}
+	sets.precast.JA['Full Circle'] = {head="Azimuth Hood +3",hands="Bagua Mitaines +1"}
 	
 	-- Indi Duration in slots that would normally have skill here to make entrust more efficient.
 	sets.buff.Entrust = {}
@@ -106,7 +106,7 @@ function init_gear_sets()
 		back="Lifestream Cape",waist="Witful Belt",legs="Geo. Pants +1",feet="Regal Pumps +1"}
 
 	sets.midcast.Geomancy = {main="Idris",sub="Genmei Shield",range="Dunna",
-		head="Azimuth Hood +2",neck="Bagua Charm +2",ear1="Azimuth Earring +1",ear2="Malignance Earring",
+		head="Azimuth Hood +3",neck="Bagua Charm +2",ear1="Azimuth Earring +1",ear2="Malignance Earring",
 		body="Bagua Tunic +1",hands="Geo. Mitaines +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Lifestream Cape",waist="Witful belt",legs="Geo. Pants +1",feet="Amalric Nails +1"}
 
@@ -275,7 +275,7 @@ function init_gear_sets()
 
 	-- .Pet sets are for when Luopan is present.
 	sets.idle.Pet = {main="Idris",sub="Genmei Shield",range="Dunna",
-		head="Azimuth Hood +2",neck="Bagua charm +2",ear1="Genmei Earring",ear2="Handler's Earring +1",
+		head="Azimuth Hood +3",neck="Bagua charm +2",ear1="Genmei Earring",ear2="Handler's Earring +1",
 		body=gear.telchine_pet_body,hands="Geo. Mitaines +2",ring1="Defending Ring",ring2="Dark Ring",
 		back=gear.GEO_PetIdle,waist="Isa Belt",legs=gear.telchine_pet_legs,feet="Bagua Sandals +1"}
 
@@ -303,12 +303,12 @@ function init_gear_sets()
 		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Azimuth Gaiters +3"}
 
 	sets.defense.MDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
-		head="Azimuth Hood +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Handler's Earring +1",
+		head="Azimuth Hood +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Handler's Earring +1",
 		body="Mallquis Saio +2",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonbeam Cape",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Azimuth Gaiters +3"}
 		
     sets.defense.MEVA = {main="Malignance Pole",sub="Enki Strap",ammo="Staunch Tathlum +1",
-        head="Azimuth Hood +2",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+        head="Azimuth Hood +3",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
 		body=gear.merlinic_nuke_body,hands="Telchine Gloves",ring1="Vengeful Ring",Ring2="Purity Ring",
         back=gear.GEO_PetIdle,waist="Luminary Sash",legs="Telchine Braconi",feet="Azimuth Gaiters +3"}
 		
