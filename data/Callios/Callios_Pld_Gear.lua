@@ -17,7 +17,7 @@ function user_job_setup()
     state.MagicalDefenseMode:options('MDT_HP','MDT','MDT_Reraise')
 	state.ResistDefenseMode:options('MEVA','MEVA_HP')
 	state.IdleMode:options('Normal','Tank','Magic','PDT','MDT','Kiting')
-	state.Weapons:options('None','BurtgangDuban','BurtgangOchain','BurtgangAegis','BurtgangSrivatsa','NaeglingOchain','NaeglingAegis','NaeglingSrivatsa','Cleave','Cleave2','GS')
+	state.Weapons:options('None','BurtgangDuban','BurtgangOchain','BurtgangAegis','BurtgangSrivatsa','NaeglingOchain','NaeglingAegis','NaeglingSrivatsa','NaeglingBlur','Cleave','Cleave2','GS')
 	state.AutoEmblem = M(false, 'Auto Emblem')
     state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP','Twilight'}
 	
@@ -88,7 +88,11 @@ function init_gear_sets()
     sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +1"})
     sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet="Chev. Sabatons +1"})
     sets.precast.JA['Cover'] = set_combine(sets.Enmity, {body="Cab. Surcoat +1", "Reverence Coronet +1"}) --head="Rev. Coronet +1",
-	
+	sets.precast.JA['Vallation'] = set_combine(sets.Enmity,{})
+    sets.precast.JA['Valiance'] = set_combine(sets.Enmity,{})
+    sets.precast.JA['Pflug'] = set_combine(sets.Enmity,{})
+
+
     sets.precast.JA['Invincible'].DT = set_combine(sets.Enmity.DT,{legs="Cab. Breeches +1"})
     sets.precast.JA['Holy Circle'].DT = set_combine(sets.Enmity.DT,{feet="Rev. Leggings +1"})
     sets.precast.JA['Sentinel'].DT = set_combine(sets.Enmity.DT,{feet="Cab. Leggings +1"})
@@ -125,6 +129,9 @@ function init_gear_sets()
 	sets.precast.JA['Defender'].DT = set_combine(sets.Enmity.DT, {})
 	sets.precast.JA['Berserk'].DT = set_combine(sets.Enmity.DT, {})
 	sets.precast.JA['Aggressor'].DT = set_combine(sets.Enmity.DT, {})
+    sets.precast.JA['Vallation'].DT = set_combine(sets.Enmity.DT,{})
+    sets.precast.JA['Valiance'].DT = set_combine(sets.Enmity.DT,{})
+    sets.precast.JA['Pflug'].DT = set_combine(sets.Enmity.DT,{})
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {ammo="Aurgelmir Orb +1",
@@ -239,8 +246,12 @@ function init_gear_sets()
 
     sets.midcast.Flash = set_combine(sets.Enmity, {})
 	sets.midcast.Flash.SIRD = set_combine(sets.Enmity.SIRD, {})
+    sets.midcast.Foil = set_combine(sets.Enmity, {})
+    sets.midcast.Foil.SIRD = set_combine(sets.Enmity.SIRD, {})
+	sets.midcast.Foil.DT = set_combine(sets.Enmity.DT, {})
     sets.midcast.Stun = set_combine(sets.Enmity, {})
 	sets.midcast.Stun.SIRD = set_combine(sets.Enmity.SIRD, {})
+    sets.midcast.Banishga = set_combine(sets.Enmity.SIRD, {})
 	sets.midcast['Blue Magic'] = set_combine(sets.Enmity, {})
 	sets.midcast['Blue Magic'].SIRD = set_combine(sets.Enmity.SIRD, {})
 	sets.midcast.Cocoon = set_combine(sets.Enmity.SIRD, {})
@@ -270,9 +281,9 @@ function init_gear_sets()
         body="Shabti cuirass +1",hands="Souv. Handsch. +1",ring1="Kishar Ring",ring2="Moonbeam Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souveran Diechlings +1",feet="Souveran Schuhs +1"}
 
-	sets.Self_Healing = {main="Deacon Sword",sub="Sacro Bulwark",ammo="Staunch Tathlum +1",
+	sets.Self_Healing = {main="Sakpata's Sword",sub="Sacro Bulwark",ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1",neck="Sacro Gorget",ear1="Nourish. Earring",ear2="Nourish. Earring +1",
-		body="Souv. Cuirass +1",hands="Souv. Handsch. +1",ring1="Gelatinous Ring +1",ring2="Moonlight Ring",
+		body="Souv. Cuirass +1",hands="Souv. Handsch. +1",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		
 	sets.Self_Healing.SIRD = {main="Deacon Sword",sub="Sacro Bulwark",ammo="Staunch Tathlum +1",
@@ -389,6 +400,7 @@ function init_gear_sets()
 	sets.weapons.NaeglingOchain = {main="Naegling",sub="Ochain"}
 	sets.weapons.NaeglingAegis = {main="Naegling",sub="Aegis"}
     sets.weapons.NaeglingSrivatsa = {main="Naegling",sub="Srivatsa"}
+    sets.weapons.NaeglingBlur = {main="Naegling",sub="Blurred Shield +1"}
 	sets.weapons.SakpataOchain = {main="Sakpata's Sword",sub="Ochain"}
 	sets.weapons.DualWeapons = {main="Naegling",sub="Machaera +2"}
     sets.weapons.Cleave = {main="Malevolence", augments={'INT+10','Mag. Acc.+10','"Mag.Atk.Bns."+10','"Fast Cast"+5',},sub="Ochain"}
@@ -437,7 +449,7 @@ function init_gear_sets()
 	-- Engaged sets
 	--------------------------------------
     
-	sets.engaged = {main="Burtgang",sub="Ochain",ammo="Ginsen",
+	sets.engaged = {main="Burtgang",sub="Ochain",ammo="Coiste Bodhar",
         head="Hjarrandi Helm",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Brutal Earring",
         body="Dagon breastplate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Chirich Ring +1",
         back=gear.PLDTP,waist="Tempus Fugit +1",legs="Sakpata's Cuisses",feet="Flamma Gambieras +2"}
@@ -517,7 +529,7 @@ sets.engaged.DW = sets.engaged
 	sets.buff.Sleep = {neck="Vim Torque +1"}
     sets.buff.Cover = {body="Cab. Surcoat +1"}
     state.Buff.MythicAM3 = buffactive["Aftermath: Lv. 3"] or false
-    sets.buff.MythicAM3 = {ammo="Ginsen",
+    sets.buff.MythicAM3 = {ammo="Coiste Bodhar",
     head="Hjarrandi Helm",neck="Combatant's Torque",ear1="Telos Earring",ear2="Dedition Earring",
     body="Hjarrandi breastplate",hands="Sakpata's Gauntlets",ring1="Flamma Ring",ring2="Chirich Ring +1",
     back=gear.PLDTP,waist="Tempus Fugit +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
