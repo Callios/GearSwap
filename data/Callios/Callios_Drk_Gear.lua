@@ -620,7 +620,7 @@ sets.engaged.Caladbolg.Fodder.MDT.Adoulin.AM = {}
 	sets.weapons.Apocalypse = {main="Apocalypse", sub="Utu Grip"}
 	sets.weapons.Crepuscular = {main="Crepuscular Scythe", sub="Utu Grip"}
 	sets.weapons.Sword = {main="Naegling",sub="Blurred Shield +1"}
-	sets.weapons.Caladbolg = {main="Caladbolg",sub="Utu Grip"}
+	sets.weapons.Caladbolg = {main="Caladbolg", sub="Utu Grip"}
 	sets.weapons.GAxe = {main="Lycurgos", sub="Utu Grip"}
 	sets.weapons.Club = {main="Loxotic Mace +1", sub="Blurred Shield +1"}
 	sets.weapons.Anguta = {main="Anguta",sub="Utu Grip"}

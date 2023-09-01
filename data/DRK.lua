@@ -357,9 +357,11 @@ end
 buff_spell_lists = {
 	Auto = {	
 		{Name='Dread Spikes',Buff='Dread Spikes',SpellID=277,When='Combat'},
+		{Name='Endark II',Buff='Endark',SpellID=856,When='Combat'},
 	},
 	
 	Default = {
 		{Name='Dread Spikes',Buff='Dread Spikes',SpellID=277,Reapply=false},
+		{Name='Endark II',Buff='Endark',SpellID=856,When='Combat',Reapply=false},
 	},
 }
