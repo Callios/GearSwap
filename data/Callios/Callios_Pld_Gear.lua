@@ -53,10 +53,10 @@ function init_gear_sets()
 	-- Precast sets
 	--------------------------------------
 	
-    sets.Enmity = {main="Burtgang",sub="Ochain",ammo="Paeapua",
+    sets.Enmity = {main="Burtgang",ammo="Paeapua",
         head="Loess Barbuta +1",neck="Moonbeam Necklace",ear1="Friomisi Earring",ear2="Cryptic Earring",
         body="Souv. Cuirass +1",hands="Souveran handschuhs +1",ring1="Apeile Ring +1",ring2="Eihwaz Ring",
-        back=gear.PLDEnm,waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Eschite Greaves"}
+        back=gear.PLDEnm,waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Chevalier's sabatons +3"}
 		
     sets.Enmity.SIRD = {main="Burtgang",
     	sub="Sacro Bulwark", -- 7
@@ -75,7 +75,7 @@ function init_gear_sets()
 		feet=gear.odyssean_SIRDFeet -- 20
 	}
 		
-    sets.Enmity.DT = {ammo="Staunch Tathlum +1",
+    sets.Enmity.DT = {main="Burtgang",ammo="Staunch Tathlum +1",
         head="Souv. Schaller +1",neck="Unmoving Collar +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
         body="Rev. Surcoat +3",hands="Souv. Handsch. +1",ring1="Eihwaz Ring",ring2="Moonlight Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
@@ -86,7 +86,7 @@ function init_gear_sets()
     sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet="Cab. Leggings +1"})
     sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Caballarius Coronet +1"}) --head="Valor Coronet" (Also Vit?)
     sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +1"})
-    sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet="Chev. Sabatons +1"})
+    sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet="Chev. Sabatons +3"})
     sets.precast.JA['Cover'] = set_combine(sets.Enmity, {body="Cab. Surcoat +1", "Reverence Coronet +1"}) --head="Rev. Coronet +1",
 	sets.precast.JA['Vallation'] = set_combine(sets.Enmity,{})
     sets.precast.JA['Valiance'] = set_combine(sets.Enmity,{})
@@ -98,7 +98,7 @@ function init_gear_sets()
     sets.precast.JA['Sentinel'].DT = set_combine(sets.Enmity.DT,{feet="Cab. Leggings +1"})
     sets.precast.JA['Rampart'].DT = set_combine(sets.Enmity.DT,{head="Caballarius Coronet +1"}) --head="Valor Coronet" (Also Vit?)
     sets.precast.JA['Fealty'].DT = set_combine(sets.Enmity.DT,{body="Cab. Surcoat +1"})
-    sets.precast.JA['Divine Emblem'].DT = set_combine(sets.Enmity.DT,{feet="Chev. Sabatons +1"})
+    sets.precast.JA['Divine Emblem'].DT = set_combine(sets.Enmity.DT,{feet="Chev. Sabatons +3"})
     sets.precast.JA['Cover'].DT = set_combine(sets.Enmity.DT, {body="Cab. Surcoat +1","Reverence Coronet +1"}) --head="Rev. Coronet +1",
 	
     -- add mnd for Chivalry
@@ -112,7 +112,7 @@ function init_gear_sets()
 		body="Rev. Surcoat +3",hands="Cab. Gauntlets +1",ring1="Eihwaz Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Luminary Sash",legs="Nyame Flanchard",feet="Carmine Greaves +1"}
 
-	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {hands="Cab. Gauntlets +2", ear2="Knightly Earring"})		
+	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {sub="Aegis",hands="Cab. Gauntlets +2", ear2="Knightly Earring"})		
     sets.precast.JA['Provoke'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Warcry'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Palisade'] = set_combine(sets.Enmity, {})
@@ -385,8 +385,8 @@ function init_gear_sets()
     
     -- Extra defense sets.  Apply these on top of melee or defense sets.
 	sets.Knockback = {}
-    sets.MP = {head="Chev. Armet +1",neck="Coatl Gorget +1",ear2="Ethereal Earring",waist="Flume belt +1",feet="Rev. Leggings +3"}
-	sets.passive.AbsorbMP = {head="Chev. Armet +1",neck="Coatl Gorget +1",ear2="Ethereal Earring",waist="Flume belt +1",feet="Rev. Leggings +3"}
+    sets.MP = {head="Chev. Armet +3",neck="Coatl Gorget +1",ear2="Ethereal Earring",waist="Flume belt +1",feet="Rev. Leggings +3"}
+	sets.passive.AbsorbMP = {head="Chev. Armet +3",neck="Coatl Gorget +1",ear2="Ethereal Earring",waist="Flume belt +1",feet="Rev. Leggings +3"}
     sets.MP_Knockback = {}
     sets.Twilight = {head="Twilight Helm", body="Twilight Mail"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {body="Valorous Mail"})
@@ -408,7 +408,7 @@ function init_gear_sets()
     sets.weapons.GS = {main="Caladbolg",sub="Alber Strap"}
 
     sets.defense.Block = {main="Burtgang",sub="Ochain",ammo="Staunch Tathlum +1",
-		head="Chev. Armet +1",neck="Diemer Gorget",ear1="Creed Earring",ear2="Thureous Earring",
+		head="Chev. Armet +3",neck="Diemer Gorget",ear1="Creed Earring",ear2="Thureous Earring",
 		body="Sakpata's Breastplate",hands="Souv. Handsch. +1",ring1="Defending Ring",ring2="Warden's Ring",
 		back="Shadow Mantle",waist="Flume belt +1",legs="Sakpata's Cuisses",feet="Souveran Schuhs +1"}
 		

@@ -7,7 +7,7 @@ function user_job_setup()
     state.MagicalDefenseMode:options('MDT', 'MDTReraise')
 	state.ResistDefenseMode:options('MEVA')
 	state.IdleMode:options('Normal', 'PDT','Refresh','Reraise')
-	state.Weapons:options('Apocalypse','Caladbolg','GAxe','Club','Crepuscular','Sword','Anguta','Trial')
+	state.Weapons:options('Apocalypse','Foenaria','Caladbolg','GAxe','Club','Crepuscular','Sword','Anguta','Trial')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None'}
 	state.Passive = M{['description'] = 'Passive Mode','None','MP','Twilight'}
 	state.DrainSwapWeaponMode = M{'Always','Never','300','1000'}
@@ -618,6 +618,7 @@ sets.engaged.Caladbolg.Fodder.MDT.Adoulin.AM = {}
 	
 	-- Weapons sets
 	sets.weapons.Apocalypse = {main="Apocalypse", sub="Utu Grip"}
+	sets.weapons.Foenaria = {main="Foenaria", sub="Utu Grip"}
 	sets.weapons.Crepuscular = {main="Crepuscular Scythe", sub="Utu Grip"}
 	sets.weapons.Sword = {main="Naegling",sub="Blurred Shield +1"}
 	sets.weapons.Caladbolg = {main="Caladbolg", sub="Utu Grip"}
